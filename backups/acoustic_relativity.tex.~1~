@@ -1,0 +1,7 @@
+\documentclass[10pt, fleqn,final,showtrims,oldfontcommands]{memoir} %twoside,%\documentclass[10pt, astron]{article} %when have admin rights,astron
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

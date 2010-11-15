@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: acoustic_relativity.aux
+The style file: plainnat.bst
+Database file #1: ../../tshorrock_thesis/bib/tshorrock.bib
+You've used 25 entries,
+            2773 wiz_defined-function locations,
+            780 strings with 8279 characters,
+and the built_in function-call counts, 9730 in all, are:
+= -- 890
+> -- 382
+< -- 26
++ -- 137
+- -- 112
+* -- 708
+:= -- 1513
+add.period$ -- 82
+call.type$ -- 25
+change.case$ -- 105
+chr.to.int$ -- 25
+cite$ -- 50
+duplicate$ -- 511
+empty$ -- 915
+format.name$ -- 153
+if$ -- 2042
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 32
+newline$ -- 136
+num.names$ -- 102
+pop$ -- 221
+preamble$ -- 1
+purify$ -- 87
+quote$ -- 0
+skip$ -- 349
+stack$ -- 0
+substring$ -- 400
+swap$ -- 44
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 235
+warning$ -- 0
+while$ -- 105
+width$ -- 0
+write$ -- 337
