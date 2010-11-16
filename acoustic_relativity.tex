@@ -138,12 +138,13 @@ Abstract goes here
 The privileged role of light is perhaps the most mysterious aspect of Einstein's special theory of relativity.
 What is it about this signal, as opposed to any other means of communication, that makes it  so fundamental to the  concepts of time and space?
 The answer, for Einstein, was the constancy of the speed of light,
-and using this fact with the relativity postulate he eliminated the  various \aetherial\ explanations of electromagnetism that were present in the nineteenth century.
-This triumph, however, only emphasises the uniqueness of light, for it is the  only  signal that has no measurable medium, or {\em \aether}.
-The central role of light in the measurement process remains unsettling. 
+and using this fact with the relativity postulate he eliminated the  various \aetherial\ explanations of electrodynamics that were present in the nineteenth century.
+This triumph, however, only emphasises the uniqueness of light, for it is the  only  signal that has a  medium, or {\em \aether}, with no measurable mechanical properties.
+%The central role of light in the measurement process is unsettling. 
 How lucky we are to be born with eyes! %be the only signal that has no measurable medium - no \aether.
 Satisfactory definitions of time and space seem to come only at the expense of making light  an even greater puzzle,
 more and more distant from the world that we can touch and hear.
+We are very fortunate that we can see.
 
 The relativity theory of \Poincare, on the other hand,  neither  postulated  a fundamental speed for light nor eliminated the \aether.
 Instead, in addition to the relativity postulate, \Poincare\ postulated a  contraction to an object  when it moves with respect to the \aether.
@@ -159,18 +160,20 @@ It is demonstrated in section~\ref{sec:measurement} that \Poincare's relativity 
 Furthermore, in section~\ref{sec:Maxwell} it is demonstrated that the acoustics of an ideal fluid, when measured with ultrasound, 
 obey Maxwell's relation.
 In short, the generation and propagation of sound,  when time and space are defined with  sound,
-obeys the same physics as the generation and propagation of light,  when time and space are defined with light.
+obeys the same physical law as the generation and propagation of light,  when time and space are defined with light.
 
 \Poincare's motion dependent contraction makes sense in the context of ultrasound if it is taken very literally.
 In {\em Science and Hypothesis}\cite{Poincare1902} \Poincare\ declared that ``Experiment is the sole source of truth''.
 %We interpret this as \Poincare's {\em definition} of truth.
-It is easily demonstrated (\secref{measurement}) that the dimensions of an object that is measured with  ultrasound 
+It is easily demonstrated (\secref{measurement}) that the dimensions of an object as  measured with  ultrasound 
 is dependant upon its motion with respect to the bulk flow of the medium.
 \Poincare's contraction follows by  demanding that these experimental results be accepted as true.
 %There is no need to recourse to problematic \aetherial-forces that were proposed by Lorentz.
-It follows that  every truth  must be followed by a caveat that explains how time and space were  measured in a given instance.
+It follows that  every truth  must be stated with a caveat that explains how time and space were  measured in a given instance.
 This is because the measured dimensions of an object moving with respect to the medium  will depend upon whether it is measured with light or sound.
-However, proceeding otherwise does not reduce the anthropocentric nature of measurement, it merely prejudices one sense over all others.
+However, proceeding otherwise does not reduce the anthropocentric nature of measurement, it merely prejudices sight over all other senses.
+
+
 
 
 %Using the acoustic definition of space an object moving with respect to the bulk flow is measured as being contracted.
@@ -204,7 +207,7 @@ occurred is the midpoint of $\tm$ and $\tp$,
 \sub{
 \label{eqn:radar}
 \begin{align}
- \tau(x) &= \frac{\tp + \tm}{2}.
+ \tau(x) &= \frac{\tp + \tm}{2}.\label{eqn:radarTime}
 \intertext{Other choices could certainly be made, 
   but would imply a knowledge of the world beyond that learnt from $\tm$ and $\tp$ alone.
   To measure distances from the times $\tm$ and $\tp$ a sound speed, $c$, is required.
@@ -214,6 +217,8 @@ occurred is the midpoint of $\tm$ and $\tp$,
 \end{align}
 }
 These are the definitions of time and space that are used in ultrasound.
+They are identical to definitions of time and space used by \Poincare\ and Einstein,
+with the exception that the speed $c$ is here the speed of sound rather than the speed of light.
 %The assumption that the sound returns at the same speed as it left may be relaxed.
 %Then $\tau(x) =\epsilon \tp + (1-\epsilon)\tm$ and 
 %$\rho(x) = \epsilon \tp c - (1-\epsilon)\tm c$ for any
@@ -226,6 +231,79 @@ In diagnostic ultrasound scanners it is usually taken to be \unit{1540}\metre\re
 %This is of course obvious because ultrasound attempts to determine distances from temporal measurements.
 %Nevertheless, 
 %it does raise the question as to how the sound speed is to be found.
+
+\subsection{Physics as measured with ultrasound}
+
+The measurement rules of equations~\ref{eqn:radarTime} and \ref{eqn:radarDistance} enable two properties of the world as measured by ultrasound to be stated immediately.
+The first is that an entity that moves away from the transducer at a speed that is faster than the speed of sound (with respect to the bulk flow of the medium) 
+cannot be measured.  
+The sound will never catch  up with the entity and so it will never scatter the sound back to the transducer.
+
+The second is that ultrasound is not capable of  measuring variations in the speed of sound.
+In order to measure distances (and therefore speeds) the speed of sound must be known {\em a priori}.
+Fluctuations in the sound speed itself cannot be known without further {\em a priori} knowledge of the medium. 
+Fluctuations in the density  can therefore play no role in determining the sound speed. % when ultrasound is used to describe the world.
+It follows that sound must obey a linear wave equation when the acoustic definitions of time and space are used.
+In \secref{Maxwell} it will be demonstrated that this linear theory is identical to Maxwell's relation.
+
+
+These deductions are currently ignored in the ultrasound literature.
+When describing the physics of ultrasound a fluid medium is always described by a Galilean invariant theory such as Euler's equation or Naiver-Stokes equation.
+Motions faster than the speed of sound can therefore be described and sound obeys a non-linear wave equation.
+This is appropriate only if distances and times are to be defined with light, which travels at such a tremendous speed that the Galilean approximation is appropriate.
+If distances and times are to be defined with sound, as is done by the ultrasound scanner,
+then the Galilean description of the world is meaningless, in the sense that it predicts  results are impossible to verify.
+Currently ultrasound physics fails to recognise the distinction between  two equally valid descriptions of the world -
+the world that is seen
+and the world that is heard.
+In this ultrasound is not alone.
+More generally in physics it seems that the world must be seen to be believed.
+
+\subsection{A Michelson-Morely type experiment.}
+
+It is useful to apply the acoustic definitions of time and space, equation~\ref{eqn:radar}, to a simple example.
+We study the Michelson-Morely experiment might be studied acoustically.
+To do so we imagine a transducer and acoustic reflector mounted onto board a distance $l$ apart.
+This distance, $l$,  is informally  the `Galilean' distance measured by {\em looking} at the setup and using a ruler.
+Formally the `Galilean' measurements are the distances and times that are  measured with light signals in accordance to Einstein's method.
+
+The board also has a pivot below the transducer so that the transducer and reflector may  be rotated together to any angle.
+The board, transducer, and reflector are then placed into an ideal fluid medium.
+The setup is illustrated in \figref{MMsetup}.
+
+\subsubsection{When the setup is stationary with respect to the bulk flow}
+If the transducer and reflector  is stationary with respect to the bulk flow of the fluid,
+then the time it takes for the sound to return after a short pulse (the pulse-echo time)
+is $2l/c$, no matter what angle the transducer points in the fluid (\figref{MMa}).
+The the acoustic clock is set to zero when the pulse was emitted ($\tm = 0$), 
+then it follows from \eqnref{radarTime} that the echo occured  at an acoustically measured  time of $l/c$.
+From \eqnref{radarDistance} it follows that the board is measured by ultrasound to be a distance $l$.
+Both the acoustic time and distance measurements agree with the Galilean measurements.
+
+\subsubsection{When the setup is moving with respect to the bulk flow}
+
+
+
+The rotational invariance is not the case when the medium flows past the setup at a speed $v$.
+In \figref{MMb} for when the transducer and reflector are parallel to the flow,
+and drawn in \figref{MMc} for when the transducer and reflector are perpendicular to the flow.
+
+
+
+
+The board pivots about transducer is the classic experiment and so we imagine how to ite
+
+It is instructive to see this argument borne out in the equations that describe an acoustically measured fluid.
+The equations of motion must  be Lorentz invariant and this condition  is automatically fulfilled  when  the equations 
+are obtained from the divergence of the energy-momentum tensor of the ideal fluid.
+In the derivation we also need to use the hitherto unused  condition
+that the sound speed takes the role  of the speed of light.
+This condition is imposed by equating the two speeds.
+This further requires that the energy density for the fluid, as measured acoustically, be a function of the pressure only (barotripic),
+for the sound speed cannot equal the speed of light otherwise\cite{Taub1978}.
+
+
+
 
 To determine the speed of sound of a given medium an independent notion of length is required.
 This practically would be found with a set of callipers.
