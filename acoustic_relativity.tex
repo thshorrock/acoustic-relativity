@@ -8,9 +8,9 @@
 
 \usepackage[sort&compress,square, super]{natbib}
 
-\title{An acoustic analogue to the special theory of relativity}
+\title{An acoustic special theory of relativity}
 
-\author{Tom H. Shorrock }
+\author{Tom H. Shorrock}
 
 \graphicspath{{figs/}} 
 %\setlength{\headheight}{22.55pt}
@@ -105,6 +105,8 @@
 \newcommand{\pseudo}[1]{\left< #1 \right>_4}
 \newcommand{\multi}[2]{{\left< #1 \right>_{#2}}}
 \newcommand{\bivector}[1]{{\left< #1 \right>_2}}
+
+\newcommand{\eff}{{\textrm{eff}}}
 
 \newcommand{\g}{\gamma_0}
 \renewcommand{\H}{{\cal H}}
@@ -262,26 +264,493 @@ More generally in physics it seems that the world must be seen to be believed.
 \subsection{A Michelson-Morely type experiment.}
 
 It is useful to apply the acoustic definitions of time and space, equation~\ref{eqn:radar}, to a simple example.
-We study the Michelson-Morely experiment might be studied acoustically.
+To do so, an acoustic version of the  Michelson-Morely experiment is considered.
+%This is described in \secref{MMsetup}.
+
+The analysis of the experiment is done in two parts.
+The first, in secref{MMGalilean}, is the from the perspective of a `Galilean' observer that {\em looks} at the setup,
+measuring distances with a ruler and times with a single oscilloscope.
+Formally the `Galilean' measurements are the distances and times that are  measured with light signals in accordance to Einstein's method,
+however, in ultrasound experiments the Galilean approximation is entirely appropriate.
+This is the usual viewpoint from which ultrasound experiment are described.
+
+The second perspective, in \Secref{MMLorentz}, is taken by considering only  acoustical measurements - the pulse echo times $\tm$ and $\tp$ -
+and using the definitions of equation~\ref{radar} to determine measured spatial and temporal locations of distant entities.
+This is the viewpoint from which ultrasound experimental data is usually collected.
+
+%\subsubsection{The experiment}
+
+
+
+
+% Since acoustic waves propagate so much more slowly than light,
+% an acoustic Michelson-Morely type experiment need not be an interferometry experiment.
+% Rather the time it takes for a short pulse to propagate and return can be measured directly.
+
+
+% The (hypothetical) apparatus  that is to be used in this discussion is illustrated in \figref{MMapparatus}.
+% The transducer is capable of generating and receiving an acoustic pulse.
+% The central acoustic reflector can be opened or closed 
+% The  acoustic source/reciever
+
+% The acoustic source and acoustic receiver are two separate devices that are mounted onto a rail 
+% on which both the source and receiver may be translated.
+% Both the source and receiver are directional in that they emit and receive in the forward direction only.
+% The sound emitted is a short burst.
+% Both the source and receiver are facing  an acoustic reflector that is placed in the parallel to the rail on which the source and receiver  translate.
+% The shortest distance between the reflector and the rail denoted $l$.
+% The whole setup may be rotated, and it is placed in an ideal fluid to propagate the sound.
+
+\subsubsection{A Galilean observer}\label{sec:MMGalilean}
+
+The first case to be considered is illustrated in \figref{setupA}.
+This apparatus is appropriate when the equipment is stationary with respect to the bulk flow of the medium.
+It is clearly analogous to  Michelson-Morely setup;
+a piezoelectric transducer has replaced the light source and a medium that partially reflects sound has replaced the semi-silvered mirror.
+In the following we shall be comparing the time it takes the sound to propagate from $A$ to $B$ and to return to $A$ again,
+with the to-fro times between $A$ and $C$ (see \figref{setupA}).
+
+If the apparatus of \figref{setupA} were not stationary with respect to the bulk flow of the medium then the experiment would fail.
+This is because the sound would not travel between $A$ and $B$ and return.
+The motion of the medium will drag the sound pulse with it.
+The setup illustrated in \figref{setupB} gives spirit of the Michelson experiment for the case when the apparatus is not stationary with respect to the bulk flow.
+In this case we shall compare the time it takes the sound to propagate from $A$ to $B$ to $A^\prime$ with the time it takes 
+to go from $A$ to $C$ to $A^\prime$.
+
+First we consider the case of the apparatus being stationary with respect to the bulk flow (\figref{setupA}).
+If the propagation of the sound pulse were observed by a Galilean observer that is also stationary with respect to the flow
+then they would observe the sound travelling according to \figref{StatGA}.
+The time, $t_{AB}$, it takes for the sound to propagate from the $A$ to $B$ is the same as the time, $T_{BA}$, it takes the sound to propagate from $B$ to $A$,
+and is given by $l/c$, where $l$ is as marked in \figref{StatGA} and $c$ is the speed of sound for the medium.
+This time interval is the same for to and fro paths between $A$ and $C$ also.
+We have, therefore, 
+\begin{align}
+  t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c\label{eqn:setupA:stationary:Tab}.
+\end{align}
+
+An observer for whom  both the medium and apparatus flow past at a speed $v$ will measure the same intervals 
+but witness an altogether more complicated experiment.
+For this observer, the acoustic paths are illustrated in \figref{MovGA}.
+When the sound travels between $A$ and $B$ this observer will record that the sound travels at an effective speed of sound given by 
+\begin{align}
+c_\eff = \sqrt{c^2 +v^2}.
+\end{align}
+This is due to the additional contribution to the speed given by the  laminar flow.
+Additionally, the distance between $A$ and $B$ will be measured to be greater at  $\sqrt{l^2+v^2t^2}$.
+The propagation time therefore is,
+\begin{align}
+  \label{eqn:setupA:moving:Tab}
+  t_{AB} = t_{BA} = \frac{\sqrt{l^2+v^2t_{AB}^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c},
+\end{align}
+and it is seen that the increased distance that the sound must travel is exactly compensated by the increased speed of the sound pulse.
+
+The laminar flow contributes to the effective speed of the pulse from $A$ to $C$  ($c_\eff = c+v$) 
+and hinders the  the return from $C$ to $A$ ($c_\eff = c-v$).
+However, this is again exactly compensated by changes in the total distance that the moving observer measures.
+When the pulse passes $A$, the position $C$ is seen to be moving away at a speed of $v$ - the speed of the bulk flow - 
+and so effective distance between $A$ and $C$ is $l+vt$.  
+When travelling from $C$ to $A$ the effective distance is $l-vt$ because the sound pulse is now travelling the opposite direction.
+%%
+%
+%the travelling from  $A$ to $C$ is also viewed by this observer as having further to travel: a distance of $l+vt$.
+%The return journey is looks shrunk for this observer, a distance of $l-v$.
+Therefore the measured times are
+\begin{align}
+  \label{eqn:setupA:moving:Tac}
+  t_{AC} =  \frac{l+vt}{c+v}= t_{CA} =  \frac{l-vt}{c-v}= \frac{l}{c}.
+\end{align}
+
+The time it takes the sound to propagate from $A$ to $B$ and back again is
+identical to the time it takes the sound to propagate from $A$ to $C$ and back,
+irrespective of the speed of the observer with respect to the medium.
+The acoustic Michelson-Morely experiment should yield a  {\em null} result.
+%A {\em null} result  the acoustic Michelson-Morely experiment is correct.
+
+To be sure of this result, we must check that it still holds when the apparatus is moving with respect to the medium (\figref{SetupB}).
+The analysis  proceeds similarly to before.
+An observer that is stationary with respect to the apparatus (and moving with a speed $v$ with respect to the medium) will record,
+\begin{align}
+  \label{eqn:setupB:moving:Tab}
+  t_{AB} = t_{BA^\prime} =  \frac{\sqrt{l^2+v^2t_{AB}^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c},
+\end{align}
+and 
+\begin{align}
+  \label{eqn:setupB:moving:Tac}
+  t_{AC} =  \frac{l+vt_{AC}}{c+v}= t_{CA^\prime} =  \frac{l-vt_{CA^\prime}}{c-v}= \frac{l}{c}.
+\end{align}
+Equations~\ref{eqn:setupB:moving:Tab} and \ref{eqn:setupB:moving:Tac}  are exactly the same results as equations~\ref{eqn:setupA:moving:Tab} and \ref{eqn:setupB:moving:Tac},
+respectively.
+If the observer is instead stationary with respect to medium then it is easy to see that equations~\ref{eqn:setupA:stationary:Tab}  are repeated.
+
+\subsubsection{An acoustic interpretation}\label{sec:MMLorenztian}
+
+The Galilean observers in \secref{MMGalilean} were able to watch the path of the acoustic pulse as it propagated through the medium.
+To do this they could, for example use Scheirin camera.
+It therefore made sense to discuss the forward path from $A$ to $C$, say, independently from the path from $C$ to $A$
+and to discuss their differing sound speed, for all these properties are measurable.
+However, in an ultrasound experiment such distinctions are not possible.
+Equations~\ref{radar} assume that the forward propagation time is equal to the return time,
+a consequence of  a single sound speed being declared {\em a priori}.
+
+With this in mind let us reconsider the setup illustrated in \figref{setupA}, 
+which is  appropriate when the apparatus is stationary with respect to the bulk medium.
+If the observer is also stationary with respect to the apparatus then 
+the {\em total} to-fro times for the two arms are % $t_{AB}+t_{BA}$ and $t_{AC}+t_{CA}$.
+% Using the notation of \eqnref{radarTime} we write the total interval
+\begin{align}
+   t_{AB}+t_{BA}=t_{AC}+t_{CA}=2l/c, \label{eqn:setupA:stationary:Tab:acoustic}
+\end{align}
+where \eqnref{eqn:setupA:stationary:Tab} has been used.
+
+The physicist analysing this acoustic result must then attempt to {\em infer}
+the propagation of the sound paths using \eqnref{setupA:stationary:Tab:acoustic}
+and the assumed  sound speed, $c$.
+In this case the inference is straight-forward.
+The observer knows that they are rest with respect to the medium and knows their equipment.
+(The observer can measure the speed of the medium because they can measure distances and times by equation~\ref{eqn:radar},
+which in turn is possible because they have assumed a sound speed).
+The observer  therefore knows that the distance for the sound to travel is $2l$
+and the experimentally measured time interval is in exact agreement with the assumed speed.
+
+
+
+%The interpretation invited by the right-hand-side of \eqnref{setupA:stationary:Tab:acoustic} -
+
+However, when the observer is moving with respect to the bulk flow the inference is less easy.
+By using equations~\ref{} and \ref{}  the timings acoustically measured timings are again
+\begin{align}
+  t_{AB}+t_{BA}  &= t_{AC}+t_{CA} = 2l/c.
+\end{align}
+However this time the observer, who knows their equipment and who knows they are moving with a speed of $v$ with respect to the medium 
+(again,  because they have assume a fixed speed of sound and used \eqnref{eqn:radar},
+knows that the total distance that the sound must  propagate when moving from $A$ to $B$ and back is $2\sqrt{l^2+v^2t_{AB}^2}$.
+However, the observer has already been forced to assume that the speed of sound is and remains $c$ throughout.
+They therefore write
+\begin{align}
+ t_{AB}^\ast+t_{BA}^\ast  &= 2\frac{\sqrt{l^2+v^2t_{AB}^2}}{c},\label{eqn:setupA:moving:Tab:acoustic}
+\end{align}
+where $t^\ast$ are the {\em inferred} temporal intervals of the physicist using acoustic measurements.
+By comparing \eqnref{setupA:moving:Tab:acoustic} with \eqnref{setupA:moving:Tab} it is clear that
+\begin{align}
+ t_{AB}^\ast+t_{BA}^\ast = \sqrt{1-v^2/c^2}\lr{t_{AB}+t_{BA}}.
+\end{align}
+When the effective speed of sound  is different to  the speed of sound of the medium
+the acoustic observer has no choice but to re-scale their base unit of time.
+That is, when an acoustic observer is in motion with respect to the medium 
+they must revert to a {\em local-time} that is not the same as the time measured by a Galilean observer.
+
+The interpretation of the pulse echo between $A$ and $C$ is more straightforward.
+In this case the observer knows that the total distance that the sound must travel is $l +vt + l - vt = 2l$.
+Therefore 
+\begin{align}
+  t_{AC}+t_{CA} = \frac{2l}{c},
+\end{align}
+in agreement with \eqnref{}.
+Unfortunately the acoustic observer as already had to concede that since they are in motion with respect to the medium,
+the local-time is the unit of time that agrees with the  experiment.
+To compensate for this in \eqnref{}
+the unit of distance must be scaled by the same factor so that
+\begin{align}
+  t_{AC}^\ast+t_{CA}^\ast = \frac{2l^\ast}{c},
+\end{align}
+where $l^\ast = \sqrt{1-v^2/c^2} l$.
+These are the Lorentz-transformations of space and time that result from \Poincare's special relativity.
+
+\subsection{Discussion}
+The derivation of 
+
+
+
+the acthe acoustic unit of time is 
+
+
+medium faced with a faster 
+
+Using \eqnref{setupA:stationary:Tab:acoustic} with \ref{eqn:radarDistance} we find
+\begin{align}
+  \rho_{AB} \equiv \frac{\lr{t_{AB}+t_{BA}}c}{2}  = l.
+\end{align}
+The acoustic measurement  therefore agrees with tha
+
+
+
+
+\begin{align}
+   t_{ABA}   \sqrt{1-v^2/c^2} &=2 \frac{\sqrt{l^2+v^2t_{AB}^2}}{c} \\
+  %t_{BA} \sqrt{1-v^2/c^2} &= \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \\
+  t_{ACA} &= 2\frac{l}{c}
+\end{align}
+
+This means that when the apparatus of \figref{setupA} are being used only the comparison between 
+
+In \secref{MMGalilean} it was possible for a Galilean observer to watch the path of the acoustic pulse. observer was able to 
+
+When discussing what is actually measured acoustically a little care i
+An acoustic observer will interpret the pulse-echo times from carry out the same experiments has 
+
+Next we reinterpret  the above calculations from the perspective of acoustic observers.
+Remembering that to \eqnref{radar} an acoustic observer must set an {\em a priori} speed of sound.
+They can have no recourse to an effective speed $c_\eff \ne c$.
+Secondly the acoustic observer uses only the total outward and return journey - the difference between $\tp$ and $\tm$.
+% To do so we recognise that an acoustic observer cannot distinguish between the outward and return journey.
+%Therefore, using \eqnref{radarTime}
+%\begin{align}
+%  t_{AB} = t_{BA} = \half t_{ABA},
+%\end{align}
+%always, where $t_{ABA} = t_{AB}+t_{BA}$.
+
+First \figref{}.
+When the observer is stationary with respect to the bulk flow and the setup then nothing changes in the interpretation:
+\begin{align}
+t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c.
+\end{align}
+%In this case the outward journey times are predicted to be the same as the return journey times
+
+When the observer is motiving with respect to the bulk flow there is a problem in interpretation, however.
+For in this case $c_\eff\ne c$ for any of the paths. %This is because an acoustic observer cannot have a locally varying speed of sound, 
+%and the $c_\eff>c$ interpretation to the results cannot be used.
+To resolve this we rearrange ... to find 
+\begin{align}
+  t_{ABA}    \sqrt{1-v^2/c^2} &=2 \frac{\sqrt{l^2+v^2t_{AB}^2}}{c} \\
+  %t_{BA} \sqrt{1-v^2/c^2} &= \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \\
+  t_{ACA} &= 2\frac{l}{c}
+\end{align}
+These provide measurable  interpretations for the ultrasound experiment, for they are both framed for a constant speed of sound.
+However, the cost of this is to rescale the temporal axis so that 
+\begin{align}
+t^\ast = t_{ABA}    \sqrt{1-v^2/c^2}
+\end{align}
+which in turn demands that 
+\begin{align}
+l^\ast_{ACA} = l_{ACA}    \sqrt{1-v^2/c^2}
+\end{align}
+to compensate.
+But these are the Lorentz transformations, using the \Poincare\ definition of simultaneity.
+
+%\begin{align}%
+%
+%\end{align}
+%To provide an acoustic interpretation 
+
+
+It is necessary to reinterpret 
+Interpreting  $c_\eff = c$ is problematic, however.
+For if we were to do this alone then 
+\begin{align}
+  t_{AB} = t_{BA} =  \half t_{ABA} = \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \implies t = \frac{1}{\sqrt{1-v^2/c^2}} \frac{l}{c}.
+\end{align}
+%In this case $t_{AB}$ is larger than before but only by a small amount.
+Secondly
+\begin{align}
+ t_{AC} =  \frac{l+vt_{AC}}{c}\implies t_{AC} = \frac{l}{c-v}
+\end{align}
+and 
+\begin{align}
+ t_{CA} =  \frac{l-vt}{c} \implies t_{CA} = \frac{l}{c+v}
+\end{align}
+and so 
+\begin{align}
+t_{AC}+t_{CA} = \frac{1}{{1-v^2/c^2}} \frac{2l}{c}.
+\end{align}
+Using the $\tp-\tm= t_{AB}+t_{BA}$ and $\tp-\tm= t_{AC}+t_{CA}$ in \eqnref{radar} not only predicts the wrong distances for $A$ to $B$ and for $A$ to $C$,
+but also predicts that the two distances are different lengths.
+An acoustic observer  would predict the wrong result to the  Michelson-Morely experiment.
+
+It is not too hard to see what has gone wrong.
+When the sound travelling from $A$ to $B$ is viewed by an observer moving with respect to the medium 
+the sound {\em really is} travelling at $c_\eff$.  
+To give $c_\eff$ a different value, so that it equates to $c$, 
+a change in base unit is required, not just a blunt reassignment.
+The 
+
+
+
+
+
+
+The situation is not changed if viewed by an observer moving with the bulk flow (but with the setup moving).
+Again a null result is correct for the acoustic Michelson-Morely experiment.
+
+Rather after leaving $A$ the sound will be carried by the medium towards  because it would be
+
+when the setup is stationary with respect to the bulk flow of the fluid.
+
+In this case the acoustic Michelson-Morely experiment can be carried out entirely analogously to the original with light.
+A piezoelectric transducer replaces the light source and acts as the receiver too.
+The partially silvered mirror can be replaced with an angled material of partial acoustic impedance.
+The setup is given in \figref{MMapparatus}.
+
+It is assumed that the distances from the transducers to the partial reflector,
+and from the partial reflector to the complete reflectors are all $l$.
+When viewed from an observer that moves with the setup (and with the bulk flow of the fluid) 
+the time, $t_{AB}$, it takes for the sound to propagate from the $A$ to $B$ is the same as the time, $T_{BA}$ it takes to propagate from $B$ to $A$.
+Also this time is the same as the to and fro paths between $A$ and $C$.
+For all cases we have
+\begin{align}
+  t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c,
+\end{align}
+where $c$ is the speed of sound of the medium.
+
+The same timings are measured when by someone who travels at a speed $-v$ with respect to the bulk flow of the fluid.
+However, when the setup passes this observer with the laminar velocity $v$ their interpretation is slightly different,
+for the sound pulse has the additional contribution of the bulk flow of the medium.
+The sound propagating from $A$ to $B$  has the effective speed, $c_\eff$ of $\sqrt{c^2 +v^2}$.
+However, this sound also has further to travel, the distance from $A$ to $B$ now being $\sqrt{l^2+v^2t^2}$.
+Like wise for the return journey.
+We now have
+\begin{align}
+  t_{AB} = t_{BA} = \frac{\sqrt{l^2+v^2t^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c}.
+\end{align}
+The pulse from $A$ to $C$ is viewed to travel at an effective speed of $c+v$, whereas the return from $C$ to $A$ is viewed to travel at $c-v$.
+However, the pulse from $A$ to $C$ is also viewed by this observer as having further to travel: a distance of $l+vt$.
+The return journey is looks shrunk for this observer, a distance of $l-v$.
+Therefore
+\begin{align}
+  t_{AC} =  \frac{l+vt}{c+v}= t_{CA} =  \frac{l-vt}{c-v}= \frac{l}{c}.
+\end{align}
+This experiment, irrespective of the motion of the observer, produces the same timings.
+A {\em null} result to this half of the acoustic Michelson-Morely experiment is correct.
+
+The second case to consider is when the setup is moving with respect to the bulk flow of the fluid.
+In this case it is important to recognise that the apparatus of \figref{} will fail.
+The sound will never propagate from $A$ to $B$ as the bulk flow will carry the sound with it.
+To overcome this problem two partial reflectors are required, as drawn in \figref{}.
+The analysis then proceeds similarly to before with,
+\begin{align}
+  t_{AB} = t_{BA^\prime} =  \frac{\sqrt{l^2+v^2t^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c}.
+\end{align}
+and 
+\begin{align}
+  t_{AC} =  \frac{l+vt}{c+v}= t_{CA^\prime} =  \frac{l-vt}{c-v}= \frac{l}{c}.
+\end{align}
+The situation is not changed if viewed by an observer moving with the bulk flow (but with the setup moving).
+Again a null result is correct for the acoustic Michelson-Morely experiment.
+
+
+
+% The experiment they witness is drawn in \figref{}.
+% For this observer the transducer still emits a pulse that travels in the md
+% The velocity of the sound m
+
+% Next we consider the view of another observer, 
+% the previous experiment 
+% Next we confirm that the same conclusion is drawn by a Galilean observer who 
+
+% Since there is no bulk flow, the emitted sound will return to the receiver only if they are located at the same position along the rail.
+% (This could be achieved by having the transmitter being manufactured in two halves through which  the receiver may pass through).
+% The time, $t$, it takes the sound to propagate from the transmitter to the reflector is in this case $t = l/c$, where $c$ is the speed of sound of the medium.
+% The return time is the same. %total time it takes for the sound to return is $2t=2l/c$.
+% This result is the same no matter what angle the setup as a whole is orientated.
+
+% Let us now consider the same experiment but this case in the presence of a laminar flow of speed $v$ in the $x$ direction, say.
+% The case the orientation of the setup does matter.
+
+% First we consider the case where the reflector is orthogonal  to the flow, as drawn in \figref{MMperp}.
+% When the sound propagates from the source to the reflector it travels with an effective speed of $c_\eff = c+ v$,
+% On the return journey the sound travels at an effective speed of $c_\eff = c-v$.
+% The time interval for the forward and back journey is therefore $s /$
+ 
+% In addition the sound must travel a distance of $l + vt$ since the 
+% In this case the propagation of the sound from the source to the reflector is not the same as from the reflector to th
+
+% If the setup is now rotated so that the reflector is parallel to the flow
+% then it is soon apparent that repeating the experiment exactly as before is impossible.
+% The flow of the medium carries the sound with it and the emitted sound will  never be received.
+% In order to do pulse echo, the transmitter and receiver must be separated by a distance, $2vt$,
+% where $t$ is the time interval between the transmitter emitting an acoustic pulse and it arriving at the reflector, as measured by the Galilean observer.
+% This modification to the setup is drawn \figref{MMparallel}. 
+
+% In this case, the sound pulse is still emitted towards the reflector at a speed $c$.
+% It also has, however, a horizontal component with speed $v$ which is the speed of the bulk flow.
+% The effective speed of sound, $c_\eff$, observed in this case is therefore 
+% \begin{align}
+%   c_\eff = \sqrt{v^2+c^2}.
+% \end{align}
+% Since the transmitter and receiver are now separated the total distance that the sound must travel is also  increased.
+% The distance from the transmitter to the reflector  is
+% \begin{align}
+%   s =  \sqrt{l^2 + v^2 t^2}
+% \end{align}
+% The  time of flight for this distance is therefore
+% \begin{align}
+%   t c_\eff = s/c_\eff = l/c
+% \end{align}
+% as before.
+
+
+
+
+The effect of this will be to make the distance $A$ to $B$ seem larger than it is  by a factor of $(1-v^2/c^2)^{-1}$.
+Unfortunately 
+
+However, the sound does of course  still travel at $c_\eff>c$ and this 
+
+ot interpret the change in effective speed of sound.
+
+  
+%t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c,
+It is clear immediately that  important to next understand how the 
+
+
 To do so we imagine a transducer and acoustic reflector mounted onto board a distance $l$ apart.
 This distance, $l$,  is informally  the `Galilean' distance measured by {\em looking} at the setup and using a ruler.
 Formally the `Galilean' measurements are the distances and times that are  measured with light signals in accordance to Einstein's method.
 
-The board also has a pivot below the transducer so that the transducer and reflector may  be rotated together to any angle.
+The board  has a pivot below the transducer so that the transducer and reflector may  be rotated together to any angle.
 The board, transducer, and reflector are then placed into an ideal fluid medium.
 The setup is illustrated in \figref{MMsetup}.
 
+
+The purpose of this section is to compare the acoustic measurements for the distance and time of the reflection, $\rho$ and $\tau$ respectively,
+with the Galilean position and time of reflection, $r$ and $t$.
+
+
 \subsubsection{When the setup is stationary with respect to the bulk flow}
 If the transducer and reflector  is stationary with respect to the bulk flow of the fluid,
-then the time it takes for the sound to return after a short pulse (the pulse-echo time)
-is $2l/c$, no matter what angle the transducer points in the fluid (\figref{MMa}).
-The the acoustic clock is set to zero when the pulse was emitted ($\tm = 0$), 
+then the Galilean time it takes for the sound to return after a short pulse (the pulse-echo time)
+is 
+\begin{align}
+  2t = 2l/c,
+\end{align}
+no matter what angle the transducer points in the fluid (\figref{MMstationary}).
+
+If the acoustic clock is set to zero when the pulse was emitted, so that $\tm = 0$, 
 then it follows from \eqnref{radarTime} that the echo occured  at an acoustically measured  time of $l/c$.
 From \eqnref{radarDistance} it follows that the board is measured by ultrasound to be a distance $l$.
 Both the acoustic time and distance measurements agree with the Galilean measurements.
 
 \subsubsection{When the setup is moving with respect to the bulk flow}
 
+When  the bulk fluid flows past the transducer and reflector the acoustically measured time and 
+space are not the same as the Galilean measurements.
+
+This is because the sound get carried along by the bulk flow.
+
+First consider when the transducer and reflector are parallel to the flow.
+Since the sound gets carried with the bulk flow the Galilean distance that the sound travels is greater than before.
+The path from a Galilean observer (using light signals) is drawn in \figref{MMperpG}.
+The  Galilean distance that the pulse must travel is
+\begin{align}
+ r =  \sqrt{l^2 + v^2t^2},
+\end{align}
+and the pulse echo time case is therefore
+\begin{align}
+ 2t = 2r/c =   2\sqrt{l^2 + v^2t^2}/c.
+\end{align}
+It follows that 
+\begin{align}
+   \tp-\tm = \frac{1}{\sqrt{1-v^2/c^2}} \frac{2l}{c}.
+\end{align}
+
+%The acoustically measured time is therefore
+%\begin{align}
+%  \tau =  \frac{1}{\sqrt{1-v^2/c^2}}  \frac{l}{c}
+%\end{align}
+The acoustically measured distance is
+\begin{align}
+  \rho =  \frac{1}{\sqrt{1-v^2/c^2}} l.
+\end{align}
+However, in contradistinction to the Galilean observer, the ultrasound 
 
 
 The rotational invariance is not the case when the medium flows past the setup at a speed $v$.
@@ -289,6 +758,26 @@ In \figref{MMb} for when the transducer and reflector are parallel to the flow,
 and drawn in \figref{MMc} for when the transducer and reflector are perpendicular to the flow.
 
 
+In the parallel case:
+
+The Galilean observer:
+
+The sound moves with a speed of $c+v$ on the way to the reflector and moves with a speed $c-v$ on the way back from the reflector.
+The total time to travel to and fro from the reflector is therefore
+\begin{align}
+  \tp-\tm = \frac{l}{c+v} + \frac{l}{c-v} = \frac{1}{1+v^2/c^2} \frac{2l}{c}.
+\end{align}
+The acoustically measured distance is therefore,
+\begin{align}
+  \rho = \frac{1}{1+v^2/c^2} l.
+\end{align}
+
+
+But the time interval and the space interval must be identical
+so
+\begin{align}
+  dfd
+\end{align}
 
 
 The board pivots about transducer is the classic experiment and so we imagine how to ite
