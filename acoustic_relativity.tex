@@ -1,4 +1,4 @@
-\documentclass[10pt, fleqn,draft,showtrims,oldfontcommands]{article} %twoside,%\documentclass[10pt, astron]{article} %when have admin rights,astron
+\documentclass[10pt, fleqn,final,showtrims,oldfontcommands]{article} %twoside,%\documentclass[10pt, astron]{article} %when have admin rights,astron
 
 
 \usepackage{emp,ifpdf}
@@ -22,6 +22,10 @@
 \usepackage[mediumspace , textstyle, amssymb ]{SIunits} %change \mu to \micro
 \usepackage{subfig}
 \usepackage{amsmath, amsthm}
+
+
+\usepackage{marginnote}
+\usepackage{todonotes}
 
 
 \newcommand{\sub}[1]{\begin{subequations}#1\end{subequations}}
@@ -148,7 +152,7 @@ Satisfactory definitions of time and space seem to come only at the expense of m
 more and more distant from the world that we can touch and hear.
 We are very fortunate that we can see.
 
-The relativity theory of \Poincare, on the other hand,  neither  postulated  a fundamental speed for light nor eliminated the \aether.
+The relativity theory of \Poincare, on the other hand,  neither gave a privileged role to light nor eliminated the \aether.
 Instead, in addition to the relativity postulate, \Poincare\ postulated a  contraction to an object  when it moves with respect to the \aether.
 %For Einstein  moving objects are {\em measured} to be smaller.
 %For \Poincare\ moving objects {\em are} smaller.
@@ -171,9 +175,10 @@ It is easily demonstrated (\secref{measurement}) that the dimensions of an objec
 is dependant upon its motion with respect to the bulk flow of the medium.
 \Poincare's contraction follows by  demanding that these experimental results be accepted as true.
 %There is no need to recourse to problematic \aetherial-forces that were proposed by Lorentz.
-It follows that  every truth  must be stated with a caveat that explains how time and space were  measured in a given instance.
-This is because the measured dimensions of an object moving with respect to the medium  will depend upon whether it is measured with light or sound.
-However, proceeding otherwise does not reduce the anthropocentric nature of measurement, it merely prejudices sight over all other senses.
+It follows that  every truth  must be stated with a caveat that explains how time and space were  measured: 
+the measured dimensions of an object moving with respect to the medium   depend upon whether it is measured with light or sound.
+It should be emphasised that  proceeding otherwise does not reduce the anthropocentric nature of measurement, 
+it merely prejudices sight over all the other senses.
 
 
 
@@ -184,11 +189,11 @@ However, proceeding otherwise does not reduce the anthropocentric nature of meas
 %As experimental result are as true  as any other phenomenon - 
 %but there is no need to recourse to \aetherial-forces such as those proposed by Lorentz.
 
-Finally in section~\ref{sec:bubble} the radial pulsations of a micron sized bubble are studied as a specific example.
-The resonances of such bubbles are important in medical ultrasound because they  radiate sound
-and are used to improve contrast.
-At high pressures the surface of the bubble is predicted to collapse and rebound at faster than the speed of sound.
-The  loss of temporal ordering to such events mean that without a relativistic treatment the ultrasound measurements are impossible  to predict.
+%Finally in section~\ref{sec:bubble} the radial pulsations of a micron sized bubble are studied as a specific example.
+%The resonances of such bubbles are important in medical ultrasound because they  radiate sound
+%and are used to improve contrast.
+%At high pressures the surface of the bubble is predicted to collapse and rebound at faster than the speed of sound.
+%The  loss of temporal ordering to such events mean that without a relativistic treatment the ultrasound measurements are impossible  to predict.
 
 
 \section{The acoustic definition of time and space}\label{sec:measurement}
@@ -228,7 +233,7 @@ with the exception that the speed $c$ is here the speed of sound rather than the
 %This does not change any of the arguments that follow\cite{Debs1996}.
 
 Equation \eqnref{radarDistance} requires an {\em a priori} knowledge of the sound speed
-for otherwise distances could not be determined from temporal measurements.
+for otherwise distances cannot be determined from temporal measurements.
 In diagnostic ultrasound scanners it is usually taken to be \unit{1540}\metre\reciprocal\second.
 %This is of course obvious because ultrasound attempts to determine distances from temporal measurements.
 %Nevertheless, 
@@ -243,40 +248,50 @@ The sound will never catch  up with the entity and so it will never scatter the 
 
 The second is that ultrasound is not capable of  measuring variations in the speed of sound.
 In order to measure distances (and therefore speeds) the speed of sound must be known {\em a priori}.
-Fluctuations in the sound speed itself cannot be known without further {\em a priori} knowledge of the medium. 
+Fluctuations in the sound speed  cannot be known without further {\em a priori} knowledge of the medium. 
 Fluctuations in the density  can therefore play no role in determining the sound speed. % when ultrasound is used to describe the world.
-It follows that sound must obey a linear wave equation when the acoustic definitions of time and space are used.
-In \secref{Maxwell} it will be demonstrated that this linear theory is identical to Maxwell's relation.
+It follows that sound must propagate according to a linear wave equation. % when the acoustic definitions of time and space are used.
+In \secref{Maxwell} it will be demonstrated that this linear relation is identical to Maxwell's relation.
 
-
-These deductions are currently ignored in the ultrasound literature.
-When describing the physics of ultrasound a fluid medium is always described by a Galilean invariant theory such as Euler's equation or Naiver-Stokes equation.
-Motions faster than the speed of sound can therefore be described and sound obeys a non-linear wave equation.
-This is appropriate only if distances and times are to be defined with light, which travels at such a tremendous speed that the Galilean approximation is appropriate.
-If distances and times are to be defined with sound, as is done by the ultrasound scanner,
-then the Galilean description of the world is meaningless, in the sense that it predicts  results are impossible to verify.
+The ultrasound literature does not comply with these deductions.
+Currently, when describing the physics of ultrasound, a fluid medium is always described by a Galilean invariant theory such as Euler's equation or Naiver-Stokes' equation.
+This enables motions that are faster than the speed of sound to be tracked 
+and predicts that  a sound pulse  propagates according to  a non-linear wave equation.
+Both of these predictions are impossible when the world is measured with sound.
+%Such a description is only meaningful only when distances and times are to be defined with light, 
+%which travels at such a tremendous speed that the Galilean approximation is appropriate.%
+%
+%This is appropriate only if distances and times are to be defined with light, which travels at such a tremendous speed that the Galilean approximation is appropriate.
+%If distances and times are to be defined with sound, as is done by the ultrasound scanner,
+%then the Galilean description of the world is meaningless, in the sense that it predicts  results that are impossible to verify.
 Currently ultrasound physics fails to recognise the distinction between  two equally valid descriptions of the world -
 the world that is seen
 and the world that is heard.
-In this ultrasound is not alone.
-More generally in physics it seems that the world must be seen to be believed.
+In doing so ultrasound physics repeats the curious  fallacy that  the world must be seen to be believed.
 
-\subsection{A Michelson-Morely type experiment.}
+\subsection{An acoustic Michelson-Morely  experiment.}
 
-It is useful to apply the acoustic definitions of time and space, equation~\ref{eqn:radar}, to a simple example.
-To do so, an acoustic version of the  Michelson-Morely experiment is considered.
+It is useful to compare the two viewpoints - the Galilean%
+\footnote{Formally the `Galilean' measurements are the distances and times that are  measured with light signals in accordance to Einstein's method.
+In ultrasound experiments, however, the Galilean approximation is entirely appropriate.}
+ world that is {\em seen} 
+and the world that is measured with ultrasound - on a simple pulse echo experiment.
+%To do so, an acoustic version of the  Michelson-Morely experiment is considered.
+%For this we %
+%
+% apply the acoustic definitions of time and space, equation~\ref{eqn:radar}, to a simple example.
 %This is described in \secref{MMsetup}.
 
-The analysis of the experiment is done in two parts.
-The first, in secref{MMGalilean}, is the from the perspective of a `Galilean' observer that {\em looks} at the setup,
-measuring distances with a ruler and times with a single oscilloscope.
-Formally the `Galilean' measurements are the distances and times that are  measured with light signals in accordance to Einstein's method,
-however, in ultrasound experiments the Galilean approximation is entirely appropriate.
-This is the usual viewpoint from which ultrasound experiment are described.
+%The analysis of the experiment is done in two parts.
+%The first, in \secref{MMGalilean}, is the from the perspective of a `Galilean' observer that {\em looks} at the setup,
+%measuring distances with a ruler and times with a single oscilloscope.
+%Formally the `Galilean' measurements are the distances and times that are  measured with light signals in accordance to Einstein's method.
+%In ultrasound experiments, however, the Galilean approximation is entirely appropriate.
+%This is the usual viewpoint from which ultrasound experiment are described.
 
-The second perspective, in \Secref{MMLorentz}, is taken by considering only  acoustical measurements - the pulse echo times $\tm$ and $\tp$ -
-and using the definitions of equation~\ref{radar} to determine measured spatial and temporal locations of distant entities.
-This is the viewpoint from which ultrasound experimental data is usually collected.
+%The second perspective, in \secref{MMLorentzian}, is taken by considering only  acoustical measurements - the pulse echo times $\tm$ and $\tp$ -
+%and using the definitions of equation~\ref{eqn:radar} to determine measured spatial and temporal locations of distant entities.
+%This is the viewpoint from which ultrasound experimental data is usually collected.
 
 %\subsubsection{The experiment}
 
@@ -303,53 +318,88 @@ This is the viewpoint from which ultrasound experimental data is usually collect
 
 \subsubsection{A Galilean observer}\label{sec:MMGalilean}
 
+ \begin{figure}[t]
+      \centering
+     \subfloat[Apparatus when bulk medium is stationary.]{
+           \label{fig:setupA}
+           \includegraphics{Michelson.0}}
+\hfill
+     \subfloat[Apparatus when the bulk flow of the medium is $v$]{
+           \label{fig:setupB}
+           \includegraphics{Michelson.1}}
+      % \subfloat[\unit{100}\kilo\pascal]{
+      %      \label{fig:R1vel}
+      %      \includegraphics{velocity_r2_f2_a0.1.3}}
+\label{fig:setups}
+      \caption{Apparatus with an without a bulk laminar flow}
+ \end{figure}
 The first case to be considered is illustrated in \figref{setupA}.
 This apparatus is appropriate when the equipment is stationary with respect to the bulk flow of the medium.
-It is clearly analogous to  Michelson-Morely setup;
-a piezoelectric transducer has replaced the light source and a medium that partially reflects sound has replaced the semi-silvered mirror.
-In the following we shall be comparing the time it takes the sound to propagate from $A$ to $B$ and to return to $A$ again,
-with the to-fro times between $A$ and $C$ (see \figref{setupA}).
+It is  analogous to  Michelson and Morely's famous experiment:
+a piezoelectric transducer  replaces the light source and a medium that partially reflects sound has replaced the semi-silvered mirror.
+The distance between $A$ and $B$ is denoted $l$ and is the same distance as between $A$ and $C$.
+In the following the time it takes for the sound to propagate from $A$ to $B$ and back again is compared with the to-fro times between $A$ and $C$.
+
 
 If the apparatus of \figref{setupA} were not stationary with respect to the bulk flow of the medium then the experiment would fail.
-This is because the sound would not travel between $A$ and $B$ and return.
-The motion of the medium will drag the sound pulse with it.
+This is because the sound would not travel from  $A$ to $B$ and return.
+The motion of the medium would drag the sound pulse with it.
 The setup illustrated in \figref{setupB} gives spirit of the Michelson experiment for the case when the apparatus is not stationary with respect to the bulk flow.
-In this case we shall compare the time it takes the sound to propagate from $A$ to $B$ to $A^\prime$ with the time it takes 
+In this case there are two separate partially reflecting surfaces.
+The time it takes the sound to propagate from $A$ to $B$ to $A^\prime$ is now compared with the time it takes the sound 
 to go from $A$ to $C$ to $A^\prime$.
+
+When the to-fro times along the two arms are the same, irrespective of the flow  of the bulk medium,  the result is described as {\em null}.
+
+ \begin{figure}[t]
+      \centering
+     \subfloat[Observer stationary with respect to medium.]{
+           \label{fig:StatGA}
+           \includegraphics{Michelson.2}}
+\hfill
+     \subfloat[Observer moves at speed $v$ with respect to medium]{
+           \label{fig:MovingGA}
+           \includegraphics{Michelson.3}}
+      % \subfloat[\unit{100}\kilo\pascal]{
+      %      \label{fig:R1vel}
+      %      \includegraphics{velocity_r2_f2_a0.1.3}}
+\label{fig:GalileanA}
+      \caption{Observed motion of apparatus for the setup of \figref{setupA}}
+ \end{figure}
 
 First we consider the case of the apparatus being stationary with respect to the bulk flow (\figref{setupA}).
 If the propagation of the sound pulse were observed by a Galilean observer that is also stationary with respect to the flow
 then they would observe the sound travelling according to \figref{StatGA}.
-The time, $t_{AB}$, it takes for the sound to propagate from the $A$ to $B$ is the same as the time, $T_{BA}$, it takes the sound to propagate from $B$ to $A$,
-and is given by $l/c$, where $l$ is as marked in \figref{StatGA} and $c$ is the speed of sound for the medium.
-This time interval is the same for to and fro paths between $A$ and $C$ also.
-We have, therefore, 
+The time, $t_{AB}$, it takes for the sound to propagate from the $A$ to $B$ is the same as the time, $t_{BA}$, it takes the sound to propagate from $B$ to $A$.
+It is given by $l/c$, where  $c$ is the speed of sound for the medium.
+This time interval is the same for the to and fro paths between $A$ and $C$ also,
 \begin{align}
   t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c\label{eqn:setupA:stationary:Tab}.
 \end{align}
 
-An observer for whom  both the medium and apparatus flow past at a speed $v$ will measure the same intervals 
+An observer for whom  both the medium and apparatus flow past at a speed $v$ will measure the same time intervals 
 but witness an altogether more complicated experiment.
-For this observer, the acoustic paths are illustrated in \figref{MovGA}.
-When the sound travels between $A$ and $B$ this observer will record that the sound travels at an effective speed of sound given by 
+The acoustic paths that will be observed by this observer are illustrated in \figref{MovingGA}.
+When the sound travels between $A$ and $B$ the observer will record that the sound travels at an effective speed of
 \begin{align}
-c_\eff = \sqrt{c^2 +v^2}.
+\label{eqn:ceffone}
+c_\eff(v) = \sqrt{c^2 +v^2}.
 \end{align}
 This is due to the additional contribution to the speed given by the  laminar flow.
-Additionally, the distance between $A$ and $B$ will be measured to be greater at  $\sqrt{l^2+v^2t^2}$.
-The propagation time therefore is,
+Additionally, the distance between $A$ and $B$ will be measured to be greater by  $\sqrt{l^2+v^2t_{AB}^2}$.
+The increased distance and increased speed cancel so that 
 \begin{align}
   \label{eqn:setupA:moving:Tab}
   t_{AB} = t_{BA} = \frac{\sqrt{l^2+v^2t_{AB}^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c},
 \end{align}
-and it is seen that the increased distance that the sound must travel is exactly compensated by the increased speed of the sound pulse.
+as before.
 
-The laminar flow contributes to the effective speed of the pulse from $A$ to $C$  ($c_\eff = c+v$) 
-and hinders the  the return from $C$ to $A$ ($c_\eff = c-v$).
+For the moving observer the bulk flow will also contribute to the effective speed of the pulse from $A$ to $C$  ($c_\eff = c+v$) 
+and hinder  the return from $C$ to $A$ ($c_\eff = c-v$).
 However, this is again exactly compensated by changes in the total distance that the moving observer measures.
-When the pulse passes $A$, the position $C$ is seen to be moving away at a speed of $v$ - the speed of the bulk flow - 
-and so effective distance between $A$ and $C$ is $l+vt$.  
-When travelling from $C$ to $A$ the effective distance is $l-vt$ because the sound pulse is now travelling the opposite direction.
+As is illustrated in \figref{MovingGA}, the effective distance from $A$ to $C$ is $l+vt$. % when the pulse passes $A$, the position $C$ is seen to be moving away at a speed of $v$ - the speed of the bulk flow - 
+%and so effective distance between $A$ and $C$ is $l+vt$.  
+When travelling from $C$ to $A$ the effective distance is $l-vt$. % because the sound pulse is now travelling the opposite direction.
 %%
 %
 %the travelling from  $A$ to $C$ is also viewed by this observer as having further to travel: a distance of $l+vt$.
@@ -360,14 +410,9 @@ Therefore the measured times are
   t_{AC} =  \frac{l+vt}{c+v}= t_{CA} =  \frac{l-vt}{c-v}= \frac{l}{c}.
 \end{align}
 
-The time it takes the sound to propagate from $A$ to $B$ and back again is
-identical to the time it takes the sound to propagate from $A$ to $C$ and back,
-irrespective of the speed of the observer with respect to the medium.
-The acoustic Michelson-Morely experiment should yield a  {\em null} result.
-%A {\em null} result  the acoustic Michelson-Morely experiment is correct.
-
-To be sure of this result, we must check that it still holds when the apparatus is moving with respect to the medium (\figref{SetupB}).
-The analysis  proceeds similarly to before.
+Next, we must check that these timings still hold when the apparatus is moving with respect to the medium (\figref{setupB}).
+%The analysis  proceeds similarly to before.
+The equivilance of \figref{setupB} and \figref{MovingGA} demonstrate this.
 An observer that is stationary with respect to the apparatus (and moving with a speed $v$ with respect to the medium) will record,
 \begin{align}
   \label{eqn:setupB:moving:Tab}
@@ -382,165 +427,36 @@ Equations~\ref{eqn:setupB:moving:Tab} and \ref{eqn:setupB:moving:Tac}  are exact
 respectively.
 If the observer is instead stationary with respect to medium then it is easy to see that equations~\ref{eqn:setupA:stationary:Tab}  are repeated.
 
-\subsubsection{An acoustic interpretation}\label{sec:MMLorenztian}
+In summary, we find that the time it takes the sound to propagate from $A$ to $B$ and back again is
+identical to the time it takes the sound to propagate from $A$ to $C$ and back,
+irrespective of the speed of the observer with respect to the medium.
+The acoustic Michelson-Morely experiment, therefore, should yield a  {\em null} result.
+%A {\em null} result  the acoustic Michelson-Morely experiment is correct.
+\subsubsection{An acoustic interpretation}\label{sec:MMLorentzian}
 
-The Galilean observers in \secref{MMGalilean} were able to watch the path of the acoustic pulse as it propagated through the medium.
-To do this they could, for example use Scheirin camera.
-It therefore made sense to discuss the forward path from $A$ to $C$, say, independently from the path from $C$ to $A$
-and to discuss their differing sound speed, for all these properties are measurable.
-However, in an ultrasound experiment such distinctions are not possible.
-Equations~\ref{radar} assume that the forward propagation time is equal to the return time,
-a consequence of  a single sound speed being declared {\em a priori}.
+When distances are measured acoustically the previous experiment is very difficult to interpret.
+This is because the effective sound speed used in equation~\ref{eqn:ceffone}  is contradictory to the acoustic definition of time and space given in equation~\ref{eqn:radar}.
+If ultrasound data is all you have then you cannot define a  speed of sound that is a function of the relative velocity of the bulk medium;
+you needed the speed of sound {\em before} you could determine the relative speed.
 
-With this in mind let us reconsider the setup illustrated in \figref{setupA}, 
-which is  appropriate when the apparatus is stationary with respect to the bulk medium.
-If the observer is also stationary with respect to the apparatus then 
-the {\em total} to-fro times for the two arms are % $t_{AB}+t_{BA}$ and $t_{AC}+t_{CA}$.
-% Using the notation of \eqnref{radarTime} we write the total interval
+
+%A physicist using  ultrasound measurements may determine their speed relative to the bulk flow by using \eqnref{radar},
+%but only after a constant speed of sound has been assumed.
+%It is impossible to define an effective speed of sound that is a function of this relative velocity.
+
+The physicist attempting to infer the passage of the sound through the equipment %(unlike the Galilean observer they cannot directly measure it)
+ would  draw a figure such as \figref{MovingGA}.
+However, unlike the Galilean observer they cannot directly measure the propagation of the sound.
+The inference of the ultrasound physicist is subject to the rules of their measurement system - 
+the speed of sound is fixed - and so they would write equation~\ref{eqn:setupA:moving:Tab} as 
 \begin{align}
-   t_{AB}+t_{BA}=t_{AC}+t_{CA}=2l/c, \label{eqn:setupA:stationary:Tab:acoustic}
-\end{align}
-where \eqnref{eqn:setupA:stationary:Tab} has been used.
-
-The physicist analysing this acoustic result must then attempt to {\em infer}
-the propagation of the sound paths using \eqnref{setupA:stationary:Tab:acoustic}
-and the assumed  sound speed, $c$.
-In this case the inference is straight-forward.
-The observer knows that they are rest with respect to the medium and knows their equipment.
-(The observer can measure the speed of the medium because they can measure distances and times by equation~\ref{eqn:radar},
-which in turn is possible because they have assumed a sound speed).
-The observer  therefore knows that the distance for the sound to travel is $2l$
-and the experimentally measured time interval is in exact agreement with the assumed speed.
-
-
-
-%The interpretation invited by the right-hand-side of \eqnref{setupA:stationary:Tab:acoustic} -
-
-However, when the observer is moving with respect to the bulk flow the inference is less easy.
-By using equations~\ref{} and \ref{}  the timings acoustically measured timings are again
-\begin{align}
-  t_{AB}+t_{BA}  &= t_{AC}+t_{CA} = 2l/c.
-\end{align}
-However this time the observer, who knows their equipment and who knows they are moving with a speed of $v$ with respect to the medium 
-(again,  because they have assume a fixed speed of sound and used \eqnref{eqn:radar},
-knows that the total distance that the sound must  propagate when moving from $A$ to $B$ and back is $2\sqrt{l^2+v^2t_{AB}^2}$.
-However, the observer has already been forced to assume that the speed of sound is and remains $c$ throughout.
-They therefore write
-\begin{align}
- t_{AB}^\ast+t_{BA}^\ast  &= 2\frac{\sqrt{l^2+v^2t_{AB}^2}}{c},\label{eqn:setupA:moving:Tab:acoustic}
-\end{align}
-where $t^\ast$ are the {\em inferred} temporal intervals of the physicist using acoustic measurements.
-By comparing \eqnref{setupA:moving:Tab:acoustic} with \eqnref{setupA:moving:Tab} it is clear that
-\begin{align}
- t_{AB}^\ast+t_{BA}^\ast = \sqrt{1-v^2/c^2}\lr{t_{AB}+t_{BA}}.
-\end{align}
-When the effective speed of sound  is different to  the speed of sound of the medium
-the acoustic observer has no choice but to re-scale their base unit of time.
-That is, when an acoustic observer is in motion with respect to the medium 
-they must revert to a {\em local-time} that is not the same as the time measured by a Galilean observer.
-
-The interpretation of the pulse echo between $A$ and $C$ is more straightforward.
-In this case the observer knows that the total distance that the sound must travel is $l +vt + l - vt = 2l$.
-Therefore 
-\begin{align}
-  t_{AC}+t_{CA} = \frac{2l}{c},
-\end{align}
-in agreement with \eqnref{}.
-Unfortunately the acoustic observer as already had to concede that since they are in motion with respect to the medium,
-the local-time is the unit of time that agrees with the  experiment.
-To compensate for this in \eqnref{}
-the unit of distance must be scaled by the same factor so that
-\begin{align}
-  t_{AC}^\ast+t_{CA}^\ast = \frac{2l^\ast}{c},
-\end{align}
-where $l^\ast = \sqrt{1-v^2/c^2} l$.
-These are the Lorentz-transformations of space and time that result from \Poincare's special relativity.
-
-\subsection{Discussion}
-The derivation of 
-
-
-
-the acthe acoustic unit of time is 
-
-
-medium faced with a faster 
-
-Using \eqnref{setupA:stationary:Tab:acoustic} with \ref{eqn:radarDistance} we find
-\begin{align}
-  \rho_{AB} \equiv \frac{\lr{t_{AB}+t_{BA}}c}{2}  = l.
-\end{align}
-The acoustic measurement  therefore agrees with tha
-
-
-
-
-\begin{align}
-   t_{ABA}   \sqrt{1-v^2/c^2} &=2 \frac{\sqrt{l^2+v^2t_{AB}^2}}{c} \\
-  %t_{BA} \sqrt{1-v^2/c^2} &= \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \\
-  t_{ACA} &= 2\frac{l}{c}
-\end{align}
-
-This means that when the apparatus of \figref{setupA} are being used only the comparison between 
-
-In \secref{MMGalilean} it was possible for a Galilean observer to watch the path of the acoustic pulse. observer was able to 
-
-When discussing what is actually measured acoustically a little care i
-An acoustic observer will interpret the pulse-echo times from carry out the same experiments has 
-
-Next we reinterpret  the above calculations from the perspective of acoustic observers.
-Remembering that to \eqnref{radar} an acoustic observer must set an {\em a priori} speed of sound.
-They can have no recourse to an effective speed $c_\eff \ne c$.
-Secondly the acoustic observer uses only the total outward and return journey - the difference between $\tp$ and $\tm$.
-% To do so we recognise that an acoustic observer cannot distinguish between the outward and return journey.
-%Therefore, using \eqnref{radarTime}
-%\begin{align}
-%  t_{AB} = t_{BA} = \half t_{ABA},
-%\end{align}
-%always, where $t_{ABA} = t_{AB}+t_{BA}$.
-
-First \figref{}.
-When the observer is stationary with respect to the bulk flow and the setup then nothing changes in the interpretation:
-\begin{align}
-t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c.
-\end{align}
-%In this case the outward journey times are predicted to be the same as the return journey times
-
-When the observer is motiving with respect to the bulk flow there is a problem in interpretation, however.
-For in this case $c_\eff\ne c$ for any of the paths. %This is because an acoustic observer cannot have a locally varying speed of sound, 
-%and the $c_\eff>c$ interpretation to the results cannot be used.
-To resolve this we rearrange ... to find 
-\begin{align}
-  t_{ABA}    \sqrt{1-v^2/c^2} &=2 \frac{\sqrt{l^2+v^2t_{AB}^2}}{c} \\
-  %t_{BA} \sqrt{1-v^2/c^2} &= \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \\
-  t_{ACA} &= 2\frac{l}{c}
-\end{align}
-These provide measurable  interpretations for the ultrasound experiment, for they are both framed for a constant speed of sound.
-However, the cost of this is to rescale the temporal axis so that 
-\begin{align}
-t^\ast = t_{ABA}    \sqrt{1-v^2/c^2}
-\end{align}
-which in turn demands that 
-\begin{align}
-l^\ast_{ACA} = l_{ACA}    \sqrt{1-v^2/c^2}
-\end{align}
-to compensate.
-But these are the Lorentz transformations, using the \Poincare\ definition of simultaneity.
-
-%\begin{align}%
-%
-%\end{align}
-%To provide an acoustic interpretation 
-
-
-It is necessary to reinterpret 
-Interpreting  $c_\eff = c$ is problematic, however.
-For if we were to do this alone then 
-\begin{align}
-  t_{AB} = t_{BA} =  \half t_{ABA} = \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \implies t = \frac{1}{\sqrt{1-v^2/c^2}} \frac{l}{c}.
+  \label{eqn:setupA:moving:Tab:acoustic}
+  t_{AB} = t_{BA} =  \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \implies t_{AB} = \frac{1}{\sqrt{1-v^2/c^2}} \frac{l}{c}.
 \end{align}
 %In this case $t_{AB}$ is larger than before but only by a small amount.
-Secondly
+For the sound pulse between $A$ and $C$  they would infer
+\sub{
+\label{eqn:setupA:moving:Tac:acoustic}
 \begin{align}
  t_{AC} =  \frac{l+vt_{AC}}{c}\implies t_{AC} = \frac{l}{c-v}
 \end{align}
@@ -548,83 +464,333 @@ and
 \begin{align}
  t_{CA} =  \frac{l-vt}{c} \implies t_{CA} = \frac{l}{c+v}
 \end{align}
-and so 
+}
+rather than  equation~\ref{eqn:setupA:moving:Tac}.
+The total to-fro time between $A$ and $C$ would then be inferred to be
 \begin{align}
 t_{AC}+t_{CA} = \frac{1}{{1-v^2/c^2}} \frac{2l}{c}.
 \end{align}
-Using the $\tp-\tm= t_{AB}+t_{BA}$ and $\tp-\tm= t_{AC}+t_{CA}$ in \eqnref{radar} not only predicts the wrong distances for $A$ to $B$ and for $A$ to $C$,
-but also predicts that the two distances are different lengths.
-An acoustic observer  would predict the wrong result to the  Michelson-Morely experiment.
 
-It is not too hard to see what has gone wrong.
-When the sound travelling from $A$ to $B$ is viewed by an observer moving with respect to the medium 
-the sound {\em really is} travelling at $c_\eff$.  
-To give $c_\eff$ a different value, so that it equates to $c$, 
-a change in base unit is required, not just a blunt reassignment.
-The 
-
-
-
-
-
-
-The situation is not changed if viewed by an observer moving with the bulk flow (but with the setup moving).
-Again a null result is correct for the acoustic Michelson-Morely experiment.
-
-Rather after leaving $A$ the sound will be carried by the medium towards  because it would be
-
-when the setup is stationary with respect to the bulk flow of the fluid.
-
-In this case the acoustic Michelson-Morely experiment can be carried out entirely analogously to the original with light.
-A piezoelectric transducer replaces the light source and acts as the receiver too.
-The partially silvered mirror can be replaced with an angled material of partial acoustic impedance.
-The setup is given in \figref{MMapparatus}.
-
-It is assumed that the distances from the transducers to the partial reflector,
-and from the partial reflector to the complete reflectors are all $l$.
-When viewed from an observer that moves with the setup (and with the bulk flow of the fluid) 
-the time, $t_{AB}$, it takes for the sound to propagate from the $A$ to $B$ is the same as the time, $T_{BA}$ it takes to propagate from $B$ to $A$.
-Also this time is the same as the to and fro paths between $A$ and $C$.
-For all cases we have
+Unfortunately, the interpretations of equation~\ref{eqn:setupA:moving:Tab:acoustic} and \ref{eqn:setupA:moving:Tac:acoustic} do not agree with the measured intervals.
+The reassignment $c_\eff \rightarrow c$ made by the ultrasound physicist 
+has resulted in predicted time intervals for sound to traverse between $A$ and $B$ and between $A$ and $C$ that are too large
+by a factor of $\gamma$ and $\gamma^2$ respectively,
+%Unfortunately, both the inferred times for $t_{AB} + t_{AB}$ and $t_{AC}+t_{CA}$ given in \eqnref{} and \ref{} are wrong.
+%They are, as comparison with \eqnref{} and \ref{} demonstrates, too large by a factor of $\gamma$ and $\gamma^2$ respectively,
+where 
 \begin{align}
-  t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c,
+  \gamma = \frac{1}{\sqrt{1-v^2/c^2}}.
 \end{align}
-where $c$ is the speed of sound of the medium.
+Moreover, the to-fro times between $A$ and $B$ are not predicted equal to the to-fro times between $A$ and $C$,
+which is demonstrably false.
 
-The same timings are measured when by someone who travels at a speed $-v$ with respect to the bulk flow of the fluid.
-However, when the setup passes this observer with the laminar velocity $v$ their interpretation is slightly different,
-for the sound pulse has the additional contribution of the bulk flow of the medium.
-The sound propagating from $A$ to $B$  has the effective speed, $c_\eff$ of $\sqrt{c^2 +v^2}$.
-However, this sound also has further to travel, the distance from $A$ to $B$ now being $\sqrt{l^2+v^2t^2}$.
-Like wise for the return journey.
-We now have
+This predicament faced by the ultrasound physicist  is, of course, a familiar one.
+When moving with respect to the bulk flow of the medium the effective speed of sound is different 
+to the speed of sound that is assumed by the ultrasound physicist.
+They must compensate this error by rescaling their temporal units.
+They need, therefore, to re-write equation~\ref{eqn:setupA:moving:Tab:acoustic} as
 \begin{align}
-  t_{AB} = t_{BA} = \frac{\sqrt{l^2+v^2t^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c}.
+ t_{AB}^\ast+t_{BA}^\ast  &= 2\frac{\sqrt{l^2+v^2t_{AB}^2}}{c},\label{eqn:setupA:moving:Tab:acoustic}
 \end{align}
-The pulse from $A$ to $C$ is viewed to travel at an effective speed of $c+v$, whereas the return from $C$ to $A$ is viewed to travel at $c-v$.
-However, the pulse from $A$ to $C$ is also viewed by this observer as having further to travel: a distance of $l+vt$.
-The return journey is looks shrunk for this observer, a distance of $l-v$.
-Therefore
+where $t^\ast$ are the {\em inferred} temporal intervals of the physicist using acoustic measurements.
+By comparing \eqnref{setupA:moving:Tab:acoustic} with \eqnref{setupA:moving:Tab} it is clear that
 \begin{align}
-  t_{AC} =  \frac{l+vt}{c+v}= t_{CA} =  \frac{l-vt}{c-v}= \frac{l}{c}.
+ t_{AB}^\ast+t_{BA}^\ast = \gamma^{-1}\lr{t_{AB}+t_{BA}}.
 \end{align}
-This experiment, irrespective of the motion of the observer, produces the same timings.
-A {\em null} result to this half of the acoustic Michelson-Morely experiment is correct.
+%When the effective speed of sound  is different to  the speed of sound of the medium
+%the acoustic observer has no choice but to re-scale their base unit of time.
+That is, when an acoustic observer is in motion with respect to the medium 
+they must revert to a {\em local-time} that is not the same as the time measured by a Galilean observer.
 
-The second case to consider is when the setup is moving with respect to the bulk flow of the fluid.
-In this case it is important to recognise that the apparatus of \figref{} will fail.
-The sound will never propagate from $A$ to $B$ as the bulk flow will carry the sound with it.
-To overcome this problem two partial reflectors are required, as drawn in \figref{}.
-The analysis then proceeds similarly to before with,
+%The interpretation of the pulse echo between $A$ and $C$ is more straightforward.
+For the ultrasound measurements to match equation~\ref{eqn:setupA:moving:Tac} 
+a {\em local} distance measure must also be introduced: %If the time for the sound to travel between $A$ and $C$, 
+%In this case the observer knows that the total distance that the sound must travel is $l +vt + l - vt = 2l$.
+%Therefore 
+%\begin{align}
+%  t_{AC}+t_{CA} = \frac{2l}{c},
+%\end{align}
+%in agreement with \eqnref{}.
+%Unfortunately the acoustic observer as already had to concede that since they are in motion with respect to the medium,
+%the local-time is the unit of time that agrees with the  experiment.
+%To compensate for this in \eqnref{}
+%the unit of distance must be scaled by the same factor so that
+%is to become
 \begin{align}
-  t_{AB} = t_{BA^\prime} =  \frac{\sqrt{l^2+v^2t^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c}.
+  t_{AC}^\ast+t_{CA}^\ast = \frac{2l^\ast}{c},
 \end{align}
-and 
+where 
 \begin{align}
-  t_{AC} =  \frac{l+vt}{c+v}= t_{CA^\prime} =  \frac{l-vt}{c-v}= \frac{l}{c}.
+l^\ast = \gamma^{-1} l.
 \end{align}
-The situation is not changed if viewed by an observer moving with the bulk flow (but with the setup moving).
-Again a null result is correct for the acoustic Michelson-Morely experiment.
+These are the Lorentz-transformations of space and time that result from \Poincare's special relativity.
+
+When an ultrasound transducer moves with respect to the bulk flow the oscilloscope should be re-calibrated to the local time.
+The mistakes of the past are repeated when this is not done.
+%When ultrasound physicists fail to re-calibrate their oscilloscopes to a local time 
+%when their transducer's move with respect to the bulk flow they are destined to repeat the mistakes of the past.
+
+
+%It may be noted at this point that ultrasound physicists are not in the habit of 
+%re-calibrating their oscilloscopes to a local time.
+%Firstly we note 
+%Finally, it may be noted that when ultrasound measurements the 
+%time axis (measured on the oscilloscope) is rarely re-calibrated to the local time
+%of a transducer moving with respect to the bulk fluid.
+%All that can be said to this is that where this is true,
+%the physicist is destined to predict the wrong physics in 
+%by repeating of the mistakes of the past.
+%However, in practice, 
+%the need for such re-calibrations is rare - 
+%for in general the transducer is chosen to be at rest with respect 
+%to the bulk flow of the medium.
+
+\subsection{Comparison between acoustic relativity with \Poincare's relativity}
+
+
+
+% The Galilean observers in \secref{MMGalilean} were able to watch the path of the acoustic pulse as it propagated through the medium.
+% To do this they could, for example use Scheirin camera.
+% It therefore made sense to discuss the forward path from $A$ to $C$, say, independently from the path from $C$ to $A$
+% and to discuss their differing sound speed, for all these properties are measurable.
+% However, in an ultrasound experiment such distinctions are not possible.
+% Equations~\ref{radar} assume that the forward propagation time is equal to the return time,
+% a consequence of  a single sound speed being declared {\em a priori}.
+
+% With this in mind let us reconsider the setup illustrated in \figref{setupA}, 
+% which is  appropriate when the apparatus is stationary with respect to the bulk medium.
+% If the observer is also stationary with respect to the apparatus then 
+% the {\em total} to-fro times for the two arms are % $t_{AB}+t_{BA}$ and $t_{AC}+t_{CA}$.
+% % Using the notation of \eqnref{radarTime} we write the total interval
+% \begin{align}
+%    t_{AB}+t_{BA}=t_{AC}+t_{CA}=2l/c, \label{eqn:setupA:stationary:Tab:acoustic}
+% \end{align}
+% where \eqnref{eqn:setupA:stationary:Tab} has been used.
+
+% The physicist analysing this acoustic result must then attempt to {\em infer}
+% the propagation of the sound paths using \eqnref{setupA:stationary:Tab:acoustic}
+% and the assumed  sound speed, $c$.
+% In this case the inference is straight-forward.
+% The observer knows that they are rest with respect to the medium and knows their equipment.
+% (The observer can measure the speed of the medium because they can measure distances and times by equation~\ref{eqn:radar},
+% which in turn is possible because they have assumed a sound speed).
+% The observer  therefore knows that the distance for the sound to travel is $2l$
+% and the experimentally measured time interval is in exact agreement with the assumed speed.
+
+
+
+% %The interpretation invited by the right-hand-side of \eqnref{setupA:stationary:Tab:acoustic} -
+
+% However, when the observer is moving with respect to the bulk flow the inference is less easy.
+% By using equations~\ref{} and \ref{}  the timings acoustically measured timings are again
+% \begin{align}
+%   t_{AB}+t_{BA}  &= t_{AC}+t_{CA} = 2l/c.
+% \end{align}
+% However this time the observer, who knows their equipment and who knows they are moving with a speed of $v$ with respect to the medium 
+% (again,  because they have assume a fixed speed of sound and used \eqnref{radar},
+% knows that the total distance that the sound must  propagate when moving from $A$ to $B$ and back is $2\sqrt{l^2+v^2t_{AB}^2}$.
+% However, the observer has already been forced to assume that the speed of sound is and remains $c$ throughout.
+% They therefore write
+% \begin{align}
+%  t_{AB}^\ast+t_{BA}^\ast  &= 2\frac{\sqrt{l^2+v^2t_{AB}^2}}{c},\label{eqn:setupA:moving:Tab:acoustic}
+% \end{align}
+% where $t^\ast$ are the {\em inferred} temporal intervals of the physicist using acoustic measurements.
+% By comparing \eqnref{setupA:moving:Tab:acoustic} with \eqnref{setupA:moving:Tab} it is clear that
+% \begin{align}
+%  t_{AB}^\ast+t_{BA}^\ast = \sqrt{1-v^2/c^2}\lr{t_{AB}+t_{BA}}.
+% \end{align}
+% When the effective speed of sound  is different to  the speed of sound of the medium
+% the acoustic observer has no choice but to re-scale their base unit of time.
+% That is, when an acoustic observer is in motion with respect to the medium 
+% they must revert to a {\em local-time} that is not the same as the time measured by a Galilean observer.
+
+% The interpretation of the pulse echo between $A$ and $C$ is more straightforward.
+% In this case the observer knows that the total distance that the sound must travel is $l +vt + l - vt = 2l$.
+% Therefore 
+% \begin{align}
+%   \label{eqn:}
+%   t_{AC}+t_{CA} = \frac{2l}{c},
+% \end{align}
+% in agreement with \eqnref{}.
+% Unfortunately the acoustic observer as already had to concede that since they are in motion with respect to the medium,
+% the local-time is the unit of time that agrees with the  experiment.
+% To compensate for this in \eqnref{}
+% the unit of distance must be scaled by the same factor so that
+% \begin{align}
+%   t_{AC}^\ast+t_{CA}^\ast = \frac{2l^\ast}{c},
+% \end{align}
+% where $l^\ast = \sqrt{1-v^2/c^2} l$.
+% These are the Lorentz-transformations of space and time that result from \Poincare's special relativity.
+
+% \subsection{Discussion}
+% The derivation of 
+
+
+
+% the acthe acoustic unit of time is 
+
+
+% medium faced with a faster 
+
+% Using \eqnref{setupA:stationary:Tab:acoustic} with \ref{eqn:radarDistance} we find
+% \begin{align}
+%   \rho_{AB} \equiv \frac{\lr{t_{AB}+t_{BA}}c}{2}  = l.
+% \end{align}
+% The acoustic measurement  therefore agrees with tha
+
+
+
+
+% \begin{align}
+%    t_{ABA}   \sqrt{1-v^2/c^2} &=2 \frac{\sqrt{l^2+v^2t_{AB}^2}}{c} \\
+%   %t_{BA} \sqrt{1-v^2/c^2} &= \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \\
+%   t_{ACA} &= 2\frac{l}{c}
+% \end{align}
+
+% This means that when the apparatus of \figref{setupA} are being used only the comparison between 
+
+% In \secref{MMGalilean} it was possible for a Galilean observer to watch the path of the acoustic pulse. observer was able to 
+
+% When discussing what is actually measured acoustically a little care i
+% An acoustic observer will interpret the pulse-echo times from carry out the same experiments has 
+
+% Next we reinterpret  the above calculations from the perspective of acoustic observers.
+% Remembering that to \eqnref{radar} an acoustic observer must set an {\em a priori} speed of sound.
+% They can have no recourse to an effective speed $c_\eff \ne c$.
+% Secondly the acoustic observer uses only the total outward and return journey - the difference between $\tp$ and $\tm$.
+% % To do so we recognise that an acoustic observer cannot distinguish between the outward and return journey.
+% %Therefore, using \eqnref{radarTime}
+% %\begin{align}
+% %  t_{AB} = t_{BA} = \half t_{ABA},
+% %\end{align}
+% %always, where $t_{ABA} = t_{AB}+t_{BA}$.
+
+% First \figref{}.
+% When the observer is stationary with respect to the bulk flow and the setup then nothing changes in the interpretation:
+% \begin{align}
+% t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c.
+% \end{align}
+% %In this case the outward journey times are predicted to be the same as the return journey times
+
+% When the observer is motiving with respect to the bulk flow there is a problem in interpretation, however.
+% For in this case $c_\eff\ne c$ for any of the paths. %This is because an acoustic observer cannot have a locally varying speed of sound, 
+% %and the $c_\eff>c$ interpretation to the results cannot be used.
+% To resolve this we rearrange ... to find 
+% \begin{align}
+%   t_{ABA}    \sqrt{1-v^2/c^2} &=2 \frac{\sqrt{l^2+v^2t_{AB}^2}}{c} \\
+%   %t_{BA} \sqrt{1-v^2/c^2} &= \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \\
+%   t_{ACA} &= 2\frac{l}{c}
+% \end{align}
+% These provide measurable  interpretations for the ultrasound experiment, for they are both framed for a constant speed of sound.
+% However, the cost of this is to rescale the temporal axis so that 
+% \begin{align}
+% t^\ast = t_{ABA}    \sqrt{1-v^2/c^2}
+% \end{align}
+% which in turn demands that 
+% \begin{align}
+% l^\ast_{ACA} = l_{ACA}    \sqrt{1-v^2/c^2}
+% \end{align}
+% to compensate.
+% But these are the Lorentz transformations, using the \Poincare\ definition of simultaneity.
+
+% %\begin{align}%
+% %
+% %\end{align}
+% %To provide an acoustic interpretation 
+
+
+% It is necessary to reinterpret 
+% Interpreting  $c_\eff = c$ is problematic, however.
+% For if we were to do this alone then 
+% \begin{align}
+%   t_{AB} = t_{BA} =  \half t_{ABA} = \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \implies t = \frac{1}{\sqrt{1-v^2/c^2}} \frac{l}{c}.
+% \end{align}
+% %In this case $t_{AB}$ is larger than before but only by a small amount.
+% Secondly
+% \begin{align}
+%  t_{AC} =  \frac{l+vt_{AC}}{c}\implies t_{AC} = \frac{l}{c-v}
+% \end{align}
+% and 
+% \begin{align}
+%  t_{CA} =  \frac{l-vt}{c} \implies t_{CA} = \frac{l}{c+v}
+% \end{align}
+% and so 
+% \begin{align}
+% t_{AC}+t_{CA} = \frac{1}{{1-v^2/c^2}} \frac{2l}{c}.
+% \end{align}
+% Using the $\tp-\tm= t_{AB}+t_{BA}$ and $\tp-\tm= t_{AC}+t_{CA}$ in \eqnref{radar} not only predicts the wrong distances for $A$ to $B$ and for $A$ to $C$,
+% but also predicts that the two distances are different lengths.
+% An acoustic observer  would predict the wrong result to the  Michelson-Morely experiment.
+
+% It is not too hard to see what has gone wrong.
+% When the sound travelling from $A$ to $B$ is viewed by an observer moving with respect to the medium 
+% the sound {\em really is} travelling at $c_\eff$.  
+% To give $c_\eff$ a different value, so that it equates to $c$, 
+% a change in base unit is required, not just a blunt reassignment.
+% The 
+
+
+
+
+
+
+% The situation is not changed if viewed by an observer moving with the bulk flow (but with the setup moving).
+% Again a null result is correct for the acoustic Michelson-Morely experiment.
+
+% Rather after leaving $A$ the sound will be carried by the medium towards  because it would be
+
+% when the setup is stationary with respect to the bulk flow of the fluid.
+
+% In this case the acoustic Michelson-Morely experiment can be carried out entirely analogously to the original with light.
+% A piezoelectric transducer replaces the light source and acts as the receiver too.
+% The partially silvered mirror can be replaced with an angled material of partial acoustic impedance.
+% The setup is given in \figref{MMapparatus}.
+
+% It is assumed that the distances from the transducers to the partial reflector,
+% and from the partial reflector to the complete reflectors are all $l$.
+% When viewed from an observer that moves with the setup (and with the bulk flow of the fluid) 
+% the time, $t_{AB}$, it takes for the sound to propagate from the $A$ to $B$ is the same as the time, $T_{BA}$ it takes to propagate from $B$ to $A$.
+% Also this time is the same as the to and fro paths between $A$ and $C$.
+% For all cases we have
+% \begin{align}
+%   t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c,
+% \end{align}
+% where $c$ is the speed of sound of the medium.
+
+% The same timings are measured when by someone who travels at a speed $-v$ with respect to the bulk flow of the fluid.
+% However, when the setup passes this observer with the laminar velocity $v$ their interpretation is slightly different,
+% for the sound pulse has the additional contribution of the bulk flow of the medium.
+% The sound propagating from $A$ to $B$  has the effective speed, $c_\eff$ of $\sqrt{c^2 +v^2}$.
+% However, this sound also has further to travel, the distance from $A$ to $B$ now being $\sqrt{l^2+v^2t^2}$.
+% Like wise for the return journey.
+% We now have
+% \begin{align}
+%   t_{AB} = t_{BA} = \frac{\sqrt{l^2+v^2t^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c}.
+% \end{align}
+% The pulse from $A$ to $C$ is viewed to travel at an effective speed of $c+v$, whereas the return from $C$ to $A$ is viewed to travel at $c-v$.
+% However, the pulse from $A$ to $C$ is also viewed by this observer as having further to travel: a distance of $l+vt$.
+% The return journey is looks shrunk for this observer, a distance of $l-v$.
+% Therefore
+% \begin{align}
+%   t_{AC} =  \frac{l+vt}{c+v}= t_{CA} =  \frac{l-vt}{c-v}= \frac{l}{c}.
+% \end{align}
+% This experiment, irrespective of the motion of the observer, produces the same timings.
+% A {\em null} result to this half of the acoustic Michelson-Morely experiment is correct.
+
+% The second case to consider is when the setup is moving with respect to the bulk flow of the fluid.
+% In this case it is important to recognise that the apparatus of \figref{} will fail.
+% The sound will never propagate from $A$ to $B$ as the bulk flow will carry the sound with it.
+% To overcome this problem two partial reflectors are required, as drawn in \figref{}.
+% The analysis then proceeds similarly to before with,
+% \begin{align}
+%   t_{AB} = t_{BA^\prime} =  \frac{\sqrt{l^2+v^2t^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c}.
+% \end{align}
+% and 
+% \begin{align}
+%   t_{AC} =  \frac{l+vt}{c+v}= t_{CA^\prime} =  \frac{l-vt}{c-v}= \frac{l}{c}.
+% \end{align}
+% The situation is not changed if viewed by an observer moving with the bulk flow (but with the setup moving).
+% Again a null result is correct for the acoustic Michelson-Morely experiment.
 
 
 
@@ -680,127 +846,120 @@ Again a null result is correct for the acoustic Michelson-Morely experiment.
 
 
 
-The effect of this will be to make the distance $A$ to $B$ seem larger than it is  by a factor of $(1-v^2/c^2)^{-1}$.
-Unfortunately 
+% The effect of this will be to make the distance $A$ to $B$ seem larger than it is  by a factor of $(1-v^2/c^2)^{-1}$.
+% Unfortunately 
 
-However, the sound does of course  still travel at $c_\eff>c$ and this 
+% However, the sound does of course  still travel at $c_\eff>c$ and this 
 
-ot interpret the change in effective speed of sound.
+% ot interpret the change in effective speed of sound.
 
   
-%t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c,
-It is clear immediately that  important to next understand how the 
+% %t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c,
+% It is clear immediately that  important to next understand how the 
 
 
-To do so we imagine a transducer and acoustic reflector mounted onto board a distance $l$ apart.
-This distance, $l$,  is informally  the `Galilean' distance measured by {\em looking} at the setup and using a ruler.
-Formally the `Galilean' measurements are the distances and times that are  measured with light signals in accordance to Einstein's method.
+% To do so we imagine a transducer and acoustic reflector mounted onto board a distance $l$ apart.
+% This distance, $l$,  is informally  the `Galilean' distance measured by {\em looking} at the setup and using a ruler.
+% Formally the `Galilean' measurements are the distances and times that are  measured with light signals in accordance to Einstein's method.
 
-The board  has a pivot below the transducer so that the transducer and reflector may  be rotated together to any angle.
-The board, transducer, and reflector are then placed into an ideal fluid medium.
-The setup is illustrated in \figref{MMsetup}.
-
-
-The purpose of this section is to compare the acoustic measurements for the distance and time of the reflection, $\rho$ and $\tau$ respectively,
-with the Galilean position and time of reflection, $r$ and $t$.
+% The board  has a pivot below the transducer so that the transducer and reflector may  be rotated together to any angle.
+% The board, transducer, and reflector are then placed into an ideal fluid medium.
+% The setup is illustrated in \figref{MMsetup}.
 
 
-\subsubsection{When the setup is stationary with respect to the bulk flow}
-If the transducer and reflector  is stationary with respect to the bulk flow of the fluid,
-then the Galilean time it takes for the sound to return after a short pulse (the pulse-echo time)
-is 
-\begin{align}
-  2t = 2l/c,
-\end{align}
-no matter what angle the transducer points in the fluid (\figref{MMstationary}).
-
-If the acoustic clock is set to zero when the pulse was emitted, so that $\tm = 0$, 
-then it follows from \eqnref{radarTime} that the echo occured  at an acoustically measured  time of $l/c$.
-From \eqnref{radarDistance} it follows that the board is measured by ultrasound to be a distance $l$.
-Both the acoustic time and distance measurements agree with the Galilean measurements.
-
-\subsubsection{When the setup is moving with respect to the bulk flow}
-
-When  the bulk fluid flows past the transducer and reflector the acoustically measured time and 
-space are not the same as the Galilean measurements.
-
-This is because the sound get carried along by the bulk flow.
-
-First consider when the transducer and reflector are parallel to the flow.
-Since the sound gets carried with the bulk flow the Galilean distance that the sound travels is greater than before.
-The path from a Galilean observer (using light signals) is drawn in \figref{MMperpG}.
-The  Galilean distance that the pulse must travel is
-\begin{align}
- r =  \sqrt{l^2 + v^2t^2},
-\end{align}
-and the pulse echo time case is therefore
-\begin{align}
- 2t = 2r/c =   2\sqrt{l^2 + v^2t^2}/c.
-\end{align}
-It follows that 
-\begin{align}
-   \tp-\tm = \frac{1}{\sqrt{1-v^2/c^2}} \frac{2l}{c}.
-\end{align}
-
-%The acoustically measured time is therefore
-%\begin{align}
-%  \tau =  \frac{1}{\sqrt{1-v^2/c^2}}  \frac{l}{c}
-%\end{align}
-The acoustically measured distance is
-\begin{align}
-  \rho =  \frac{1}{\sqrt{1-v^2/c^2}} l.
-\end{align}
-However, in contradistinction to the Galilean observer, the ultrasound 
+% The purpose of this section is to compare the acoustic measurements for the distance and time of the reflection, $\rho$ and $\tau$ respectively,
+% with the Galilean position and time of reflection, $r$ and $t$.
 
 
-The rotational invariance is not the case when the medium flows past the setup at a speed $v$.
-In \figref{MMb} for when the transducer and reflector are parallel to the flow,
-and drawn in \figref{MMc} for when the transducer and reflector are perpendicular to the flow.
+% \subsubsection{When the setup is stationary with respect to the bulk flow}
+% If the transducer and reflector  is stationary with respect to the bulk flow of the fluid,
+% then the Galilean time it takes for the sound to return after a short pulse (the pulse-echo time)
+% is 
+% \begin{align}
+%   2t = 2l/c,
+% \end{align}
+% no matter what angle the transducer points in the fluid (\figref{MMstationary}).
+
+% If the acoustic clock is set to zero when the pulse was emitted, so that $\tm = 0$, 
+% then it follows from \eqnref{radarTime} that the echo occured  at an acoustically measured  time of $l/c$.
+% From \eqnref{radarDistance} it follows that the board is measured by ultrasound to be a distance $l$.
+% Both the acoustic time and distance measurements agree with the Galilean measurements.
+
+% \subsubsection{When the setup is moving with respect to the bulk flow}
+
+% When  the bulk fluid flows past the transducer and reflector the acoustically measured time and 
+% space are not the same as the Galilean measurements.
+
+% This is because the sound get carried along by the bulk flow.
+
+% First consider when the transducer and reflector are parallel to the flow.
+% Since the sound gets carried with the bulk flow the Galilean distance that the sound travels is greater than before.
+% The path from a Galilean observer (using light signals) is drawn in \figref{MMperpG}.
+% The  Galilean distance that the pulse must travel is
+% \begin{align}
+%  r =  \sqrt{l^2 + v^2t^2},
+% \end{align}
+% and the pulse echo time case is therefore
+% \begin{align}
+%  2t = 2r/c =   2\sqrt{l^2 + v^2t^2}/c.
+% \end{align}
+% It follows that 
+% \begin{align}
+%    \tp-\tm = \frac{1}{\sqrt{1-v^2/c^2}} \frac{2l}{c}.
+% \end{align}
+
+% %The acoustically measured time is therefore
+% %\begin{align}
+% %  \tau =  \frac{1}{\sqrt{1-v^2/c^2}}  \frac{l}{c}
+% %\end{align}
+% The acoustically measured distance is
+% \begin{align}
+%   \rho =  \frac{1}{\sqrt{1-v^2/c^2}} l.
+% \end{align}
+% However, in contradistinction to the Galilean observer, the ultrasound 
 
 
-In the parallel case:
-
-The Galilean observer:
-
-The sound moves with a speed of $c+v$ on the way to the reflector and moves with a speed $c-v$ on the way back from the reflector.
-The total time to travel to and fro from the reflector is therefore
-\begin{align}
-  \tp-\tm = \frac{l}{c+v} + \frac{l}{c-v} = \frac{1}{1+v^2/c^2} \frac{2l}{c}.
-\end{align}
-The acoustically measured distance is therefore,
-\begin{align}
-  \rho = \frac{1}{1+v^2/c^2} l.
-\end{align}
+% The rotational invariance is not the case when the medium flows past the setup at a speed $v$.
+% In \figref{MMb} for when the transducer and reflector are parallel to the flow,
+% and drawn in \figref{MMc} for when the transducer and reflector are perpendicular to the flow.
 
 
-But the time interval and the space interval must be identical
-so
-\begin{align}
-  dfd
-\end{align}
+% In the parallel case:
+
+% The Galilean observer:
+
+% The sound moves with a speed of $c+v$ on the way to the reflector and moves with a speed $c-v$ on the way back from the reflector.
+% The total time to travel to and fro from the reflector is therefore
+% \begin{align}
+%   \tp-\tm = \frac{l}{c+v} + \frac{l}{c-v} = \frac{1}{1+v^2/c^2} \frac{2l}{c}.
+% \end{align}
+% The acoustically measured distance is therefore,
+% \begin{align}
+%   \rho = \frac{1}{1+v^2/c^2} l.
+% \end{align}
 
 
-The board pivots about transducer is the classic experiment and so we imagine how to ite
+% But the time interval and the space interval must be identical
+% so
+% \begin{align}
+%   dfd
+% \end{align}
 
-It is instructive to see this argument borne out in the equations that describe an acoustically measured fluid.
-The equations of motion must  be Lorentz invariant and this condition  is automatically fulfilled  when  the equations 
-are obtained from the divergence of the energy-momentum tensor of the ideal fluid.
-In the derivation we also need to use the hitherto unused  condition
-that the sound speed takes the role  of the speed of light.
-This condition is imposed by equating the two speeds.
-This further requires that the energy density for the fluid, as measured acoustically, be a function of the pressure only (barotripic),
-for the sound speed cannot equal the speed of light otherwise\cite{Taub1978}.
+
+% The board pivots about transducer is the classic experiment and so we imagine how to ite
 
 
 
 
-To determine the speed of sound of a given medium an independent notion of length is required.
-This practically would be found with a set of callipers.
-The average speed of sound is then found from equation \eqnref{radarDistance},
-using the times measured and the predetermined ({\em a priori})  distance.
-The point is that %the distance measured by the callipers now represents the {\em a priori} knowledge.
-in order to use equation \eqnref{radarDistance} something must be taken for granted; 
-it is impossible to measure simultaneously both speeds and distances from temporal measurements.
+
+
+% To determine the speed of sound of a given medium an independent notion of length is required.
+% This practically would be found with a set of callipers.
+% The average speed of sound is then found from equation \eqnref{radarDistance},
+% using the times measured and the predetermined ({\em a priori})  distance.
+% The point is that %the distance measured by the callipers now represents the {\em a priori} knowledge.
+% in order to use equation \eqnref{radarDistance} something must be taken for granted; 
+% it is impossible to measure simultaneously both speeds and distances from temporal measurements.
 
 %All this is familiar. %Before ultrasound measurements can be made a calibration measurement to determine the speed of sound is required.
 %In order to use ultrasound to measure distances within people (without reaching for the callipers, and therefore for the scalpel)
@@ -808,6 +967,11 @@ it is impossible to measure simultaneously both speeds and distances from tempor
 %Bovine liver, typically, is used for this purpose, and is  cut into carefully measured thicknesses,
 %with care being taken to known a great deal about the sample before \eqnref{radarDistance} is applied.
 %[can you suggest a few  citations for here Jeff...]
+
+%In retrospect the recover of \Poincare's special relativity is not too surprising.
+%We have insisted upon the constancy of the propagating signal  and demanded invariance with translations. ...
+
+\todo[inline]{Need to compare this special relativity with \Poincare's SR with Einsteins SR.  I suggest asking Pierseaux to join this article for this - as he is the expert}.
 
 When using equation \eqnref{radarDistance} to measure distances the sound speed must be constant.
 This is because there is no way to measure its variations.
@@ -830,17 +994,132 @@ To investigate this, we now derive and analyse a version of the Keller-Miksis mo
 %This will be different than the current Keller-Miksis model that describes the pulsations of a bubble when observed optically under a microscope.
 
 
-\section{Maxwell}\label{sec:Maxwell}
+\section{Acoustics when measured with ultrasound}\label{sec:Maxwell}
 
 
-\section{Introduction}
+Ultrasound is not capable of  measuring variations in the speed of sound.
+Second order fluctuations in the density  can therefore play no role when ultrasound is used to describe the world.
+It is instructive to see this argument borne out in the equations that describe an acoustically measured fluid.
+The equations of motion must  be Lorentz invariant and this condition  is automatically fulfilled  when  the equations 
+are obtained from the divergence of the energy-momentum tensor of the ideal fluid.
+In the derivation we also need to use the hitherto unused  condition
+that the sound speed takes the role  of the speed of light.
+This condition is imposed by equating the two speeds.
+This further requires that the energy density for the fluid, as measured acoustically, be a function of the pressure only (barotripic),
+for the sound speed cannot equal the speed of light otherwise\cite{Taub1978}.
 
-In \chapref{measurement} we argued that ultrasound is a relativistic theory,
-where the sound speed takes the role of the speed of light.
-This was argued in terms of the  ultrasound measurement process,
-that a constant sound speed must be known before anything can be said about distance.
-We also assumed  physical invariance between inertial observers
-on the belief that ultrasound should not change this.
+The energy-momentum tensor of an ideal fluid is\cite{Doran2003}
+\eqal{
+  T(a) = w a \cdot u u - a p = (\epsilon + p) a \cdot u u - a p,
+}{EMtensor}
+where, $\epsilon \equiv \epsilon(p)$ is the barotropic total energy density,
+$p$ is the pressure
+and 
+$u=u(\tau)$ is the velocity vector of the spacetime path, with the parameterisation chosen such that $u^2 = 1$. % and $P$ is the pressure.
+Natural units have been chosen in this section, and so that the speed of light is unity.
+
+The speed of sound, $c$,  given at constant entropy density, $\sigma$, is\cite{LandauBook,Taub1978} 
+\begin{align}
+  c^2 = \given{\frac{\d p}{\d \epsillon}}{\sigma}. \label{eqn:soundspeed}
+\end{align}
+This is the same as the non-relativistic expression except that the energy density has replaced the mass density.
+Setting the speed of sound to equal the speed of light (unity) and the integrating 
+ gives,
+ \begin{align}
+   \epsilon = p^\prime - p_0 + \epsilon_0
+ \end{align} 
+where $p^\prime$ is a pressure that fluctuates with position, so that $dp = dp^\prime$,
+and $p_0$  and $\epsilon_0$  are the ambient  pressure and mean energy density, respectively.
+%Rather can carry the constants $ p_0 $ and $\epsilon_0$ through the rest of the derivation we write
+The thermodynamic pressure is therefore
+\begin{align}
+  p \equiv p^\prime - p_0 + \epsilon_0. \label{eqn:pshort}
+\end{align}
+and the fluid obeys the equation of state, 
+\eqal{
+  \epsilon(p) = p.
+}{eos}
+At infinity $p^\prime = p_0$ 
+and so $\epsilon_\infty = p_\infty = \epsilon_0 \ne p_0$.
+
+%therefore enforces that the sound speed equals that of light (unity).
+%The notation of equation \eqn{eos} is quite compact.
+%For \eqnref{eos} to be consistent with the integral of the sound speed (equation \eqnref{soundspeed}),
+%the pressure $p$ must be interpreted as follows,
+%\begin{align}
+%  p = p^\prime - p_0 + \epsilon_0. \label{eqn:pshort}
+%\end{align}
+%Here $p^\prime$ is the pressure perturbation measured with a hydrophone,
+%$p_0$  and $\epsilon_0$  are the mean  pressure and energy density respectively.
+
+
+
+Applying \eqnref{eos} simplifies the energy momentum tensor considerably,
+\eqal{
+  T(a) =  p\lr{2 a \cdot u u  - a} \equiv  \frac{1}{4}  A a A,
+}{EMFluid}
+where vector potential, $A$, introduced on the right hand side satisfies
+\eqal{
+  A = 2p^{1/2}u =2 \epsilon^{1/2} u.
+}{defnA}
+
+%The vector $A$ is the same as was introduced in \eqnref{RelVPot},
+i.e.
+\begin{align}
+  \del \psi = - \frac{wu}{n} = - 2\sqrt p u.
+\end{align}
+%where $n$ is the proper particle number density of the fluid and equation \eqnref{eos} has been used for the second equality.
+To demonstrate this second equality we  use an argument of Taub\cite{Taub1978}.
+Using the isentropic thermodynamic relation $m de = - p d\lr{\frac{1}{n}}$ with the relation for the internal energy, $\epsilon= nm( 1 + e(p))$,
+it follows that 
+\begin{align}
+ n d\epsilon = \epsilon dn - n^2 p d \lr{\frac{1}{n}} = \lr{\epsilon + p} dn.
+\end{align}
+Applying equation \eqnref{eos} and integrating we obtain
+\begin{align}
+  n = \sqrt p, \label{eqn:nrootp}
+\end{align}
+from which we find
+\begin{align}
+A = 2\sqrt p  u = \frac{2\epsilon}{n} u = \frac{wu}{n} =  - \del \psi,
+\end{align}
+as claimed.
+
+
+The divergence of the energy momentum tensor (equation \eqnref{EMFluid}) vanishes in the absence of external fields.
+Therefore, by projecting the divergence of \eqnref{EMFluid} along the timelike component we find
+\eqa{
+  u\cdot\scope T(\scope\del)= \half  u\cdot A \del \cdot A = 0.
+}
+The check denotes the scope of the derivative.
+Since, from \eqnref{defnA}, $A$ is parallel to $u$  it follows that 
+\eqal{
+  \del \cdot A  =0
+}{eomTime}
+and so the vector potential $A$ is conserved.
+The spacelike projection, $\scope T(\scope \del) - u u\cdot \scope T(\scope\del)$, gives in turn,
+\eqal{
+  u \cdot \lr{\del \wedge A} = 0.
+}{eomSpace}
+The relativistic vorticity bivector is 
+\eqal{F = \del \wedge A,}{DefnVorticity}
+and so \eqnref{eomSpace} implies that the vorticity is orthogonal to the velocity.
+
+By taking the divergence of \eqnref{eomTime} and using the vector identity
+$\del \del \cdot A = \del^2 A - \del\cdot\lr{ \del \wedge A} $
+ we find,
+\eqal{
+  \del^2 A = \del \cdot F = \del F.
+}{wave}
+The second equality follows because $\del F = \del \cdot F + \del \wedge F$ 
+and because the  operator identity $\del\wedge \del = 0$ causes $\del \wedge F$ to vanish.
+Equation \eqnref{wave} is a wave equation and so interpreting the right-hand-side of \eqnref{wave} as an acoustic source current, $J$, we obtain
+\eqal{
+  \del  F = J.
+}{Maxwell}
+Interestingly equation \eqnref{Maxwell} is Maxwell's equation and equation \eqnref{eomTime} has specified that we are working in the Lorenz gauge.
+%We do not explore this observation further here.
+
 
 Acoustics was then formulated for  a ideal and isentropic fluid.
 Consistency with the measurement process required the fluid to be relativistic, 
@@ -1003,7 +1282,7 @@ Solutions to both these problems are suggested in \secref{Interpretations}.
 
 
 
-\section{The acoustic analogues to the electric and magnetic fields}\label{sec:int:EM}
+\subsection{The acoustic analogues to the electric and magnetic fields}\label{sec:int:EM}
 
 In classical electromagnetism the electric and magnetic fields are 
 3-dimensional vector fields that are measured (usually) in the laboratory frame.
@@ -1036,7 +1315,7 @@ $\phi$ and $\vA$ are the temporal and spatial components of the vector potential
 %& \quad\text{and} &&
 %\vA &\equiv  \phi \vv,  %A \wedge \g.
 %}
-As we found in \secref{measurement:alterations}, $\phi$ may be interpreted as the total enthalpy density,
+As we found, $\phi$ may be interpreted as the total enthalpy density,
 and $\vA = \phi \vv$.
 $\vv$ is the three dimensional velocity.
 
@@ -1241,7 +1520,7 @@ The acoustic interpretation of these equations are as follows:
 % acoustic fields.
 
 
-\subsection{The acoustic sources}
+\subsubsection{The acoustic sources}
 % The acoustic
 % From Maxwell's equations we may write explicit forms for the 
 % acoustic sources.
@@ -1305,7 +1584,44 @@ We suppress the issue by  returning to c.g.s. units, where $c= \epsilon_0 = 1$.
 %\end{align}
 %with $\vu$ being the velocity of the source.
 
-\section{The interpretation of a sound pulse}\label{sec:Interpretations}
+
+\subsection{Changes in Gauge}
+
+
+The electromagnetic gauge transformation,
+\begin{align}
+  A^\prime = A - \del \psi,
+\end{align}
+in the acoustic analogy corresponds to an introduction of a potential flow of the medium.
+To demonstrate this, we first note that the relativistic generalisation to the velocity potential, $\psi$,  is defined by\cite{LandauBook}
+\begin{align}
+  \del \psi = - \frac{\epsilon+p}{n} v = - \frac{2\epsilon}{n} v,
+\end{align}
+where $n$ is the proper particle number density of the fluid and equation \eqnref{eos} has been used for the second equality.
+To show that this is equal to the negative of the potential $A$, we use an argument of Taub\cite{Taub1978}.
+The internal energy, $\epsilon$, is equal to the sum of the rest mass and the thermodynamic internal energy \cite{LandauBook, Doran2003},
+\begin{align}
+  \epsilon(p) = nm( 1 + e(p)),
+\end{align}
+where $m$ is the proper mass.
+From the isentropic thermodynamic relation $m de = - p d\lr{\frac{1}{n}}$
+it follows that 
+\begin{align}
+ n d\epsilon = \epsilon dn - n^2 p d \lr{\frac{1}{n}} = \lr{\epsilon + p} dn.
+\end{align}
+Applying equation \eqnref{eos} and integrating we obtain
+\begin{align}
+n = \sqrt p,
+\end{align}
+from which we find
+\begin{align}
+A = 2\sqrt p  v = \frac{2\epsilon}{n} v = - \del \psi.
+\end{align}
+Therefore, and as asserted, the presence of a potential flow in the acoustic medium corresponds to a gauge transformation of Maxwell's equations,
+and hence, the description of the acoustic wave is unaffected by potential flows of the medium.
+
+
+\subsection{The interpretation of a sound pulse}\label{sec:Interpretations}
 
 The equivalence of the formulation of ultrasound measured acoustics and electromagnetism raises a number of issues of interpretation.
 The first of these is the linearity of the theory.
@@ -1317,14 +1633,14 @@ The second is that a sound pulse is a longitudinal wave, the compressions and ra
 whereas Maxwell's relations describe a pair of self interacting transverse waves (the Coriolis acceleration and the vorticity).
 The compatibility of these two equations is discussed in \secref{transversivity}
 
-\subsection{On the absence of non-linear propagation} \label{sec:NonlinearProp}
+\subsubsection{On the absence of non-linear propagation} \label{sec:NonlinearProp}
 
 The linearity of the acoustic field is entirely appropriate for ultrasound.
 To apply a non-linear wave equation you need to know 
 the spatial variations of the speed of sound. 
 %which depend in turn, upon the spatial variations of the density.
 This is seen in the left hand side of equations \eqnref{WavesREG}.
-As argued in \chapref{measurement}, such knowledge is impossible
+Such knowledge is impossible
 when using sound to define the concept of distance:
 the sound speed used by ultrasound must be a spatially invariant constant to be able to measure anything at all.
 What is to be explained, therefore, 
@@ -1358,7 +1674,7 @@ the term $- \dt \lr{ \vv \times \lr{\vdel \times \vA}}$ most certainly is a curr
 
 
 
-\subsection{Interpreting the transversivity of the sound pulse} \label{sec:transversivity}
+\subsubsection{Interpreting the transversivity of the sound pulse} \label{sec:transversivity}
 
 
 An acoustic plain wave is  a  perturbation of the fluid particles in the direction of propagation of the pulse.
@@ -1455,11 +1771,10 @@ we leave this question unanswered.
 % as the orbital angular momentum of  the fluid particles about their mean flow.
 % %\cite{Moffatt1969, Moffatt1988, Chechkin1993,  Trueba1996, Trueba2000}.
 
-\section{Discussion}
+\subsection{Discussion}
 
 This  chapter has explicitly formulated the (exact) analogy between ultrasound measured acoustics 
 and electromagnetism.
-This ties the loose ends of \chapref{measurement}, where the analogy was noticed but not explored.
 It has been found that the acoustic analogue to the electric field is the Coriolis acceleration,
 and that the acoustic analogue to the magnetic field is the vorticity,
 The spacetime vorticity bivector takes the role of the field tensor.
@@ -1513,7 +1828,7 @@ Acoustically observed microbubbles could offer an interesting experimental model
 % In this sense, the acoustic source is silent, and not, perhaps dissimilar to an a
 % emitted by an acoustic source that is carried away by bulk flow faster than the speed of sound.Starting from the observation that it is impossible to measure the acoustics of a 
 
-\subsection{The acoustic Lagrangian}\label{sec:int:spin}
+\subsubsection{The acoustic Lagrangian}\label{sec:int:spin}
 Finally, let us use the acoustic analogy to set out some directions for future work.
 %%
 %
@@ -1603,7 +1918,7 @@ although this is changing with the increasing availability of 3 dimensional prob
 %This is because, due to the limitations on what ultrasound can measure, reassigns the temporal and spatial locations of entities so that 
 %the non-linearity in their motion vanishes.
 
-\subsection{Helicity and Spin}
+\subsubsection{Helicity and Spin}
 
 The existence of the intrinsic acoustic spin raises further interpretative issues.
 In the absence of satisfactory explanation for these, however, we resist the temptation to speculate.
@@ -2608,703 +2923,10 @@ We refer the interested reader to the literature\cite{Trueba1996, Trueba2000, Ra
 
 
 
+\section{Discussion}
 
 
-\section{The acoustically-measured bubble}\label{sec:bubble}
-\subsection{The original formulation}\label{sec:KMoriginal}
-The Keller-Miksis model\cite{Keller1980}  assumes that a gas bubble is located within a stationary and vorticity free fluid medium.
-The fluid particles are described by the velocity potential, $\psi$.
-The  bubble is assumed to remain spherical, with a  time dependent radius, $a \equiv a(t)$,
-and assumed to remain at the origin.
-From the spherical symmetry of the model only radial components of the velocity need to be considered. 
 
-Keller and Miksis retain perturbations in density only up to first order, from which it follows that variations in the sound speed, $c$, are neglected
-and that the velocity potential obeys the linear wave equation,
-\begin{align}
-\label{eqn:WaveEqn}
-\lr{\dr^2 - \frac{1}{c^2}\frac{\d^2}{\d t^2}} \psi = 0.
-\end{align}
-The notation $\dr \equiv\frac{\d}{\d r}$ is used to denote the radial derivative
-while both  $\dt \equiv \frac{\d}{\d t}$ and the over dot notation will be employed to denote the differential with respect to time.
-
-The solution to \eqnref{WaveEqn} is
-\begin{align}
-  \label{eqn:Ansatz}
-  \psi = \frac{1}{r}\lr{f_1\lr{t-\tfrac{r}{c}} + f_2\lr{t+\tfrac{r}{c}}},
-\end{align}
-where $r$ is the radial distance from the centre of the bubble
-and $f_1$ and $f_2$ are functions to be determined.
-
-Since equation \eqnref{WaveEqn} is second order two boundary conditions are required.
-The first is that the radial velocity of the fluid, $v$, is equal to the velocity of the bubble wall.
-That is 
-\sub{
-\begin{align}
-  v \equiv \dot a(t) = v \text{ at $r = a$.}
-\end{align}
-The second boundary condition is that the pressure in the liquid adjacent to the surface of bubble, $p(a,t)$,
-must equal the pressure on the bubble wall, $p_b$,
-\begin{align}
-  p(a,t) = p_b. \label{eqn:pressureBC}
-\end{align}
-}
-We will consider explicit expression for $p_b$ \secref{surface_pressure} and in \secref{viscosity}.
-
-To apply these boundary conditions Keller and Miksis eliminated the spatial derivate of $\psi$ by using its definition,
-\sub{
-\begin{align}
-  \dr \psi &= v, \label{eqn:VelocityPotNR}
-\intertext{
-and used Bernoulli's equation to eliminate the temporal derivatives,}
-\dt \psi &= -\frac{1}{2}v^2 - h.\label{eqn:BernoulliNR}
-\end{align}
-}
-$h$ is the enthalpy of the fluid.
-
-The completes the specification of the model that was setup and solved by Keller and Miksis\cite{Keller1980}.
-
-\subsection{Alterations required when making measurements with ultrasound}
-\label{sec:measurement:alterations}
-Equations that describe  measurements made with ultrasound require, via  special relativity,  Lorentz invariance.
-Equations \eqnref{VelocityPotNR} and \eqnref{BernoulliNR} do not have this property and so 
-do not apply to acoustical measurement.
-To fix  \eqnref{VelocityPotNR} and \eqnref{BernoulliNR} the  relativistic generalisation to the velocity potential\cite{LandauBook} must be used,
-\eqa{
-  \label{eqn:RelVPot}
-  \del \psi = -\frac{w u}{nc} \equiv -A.
-}
-Here $w$ is the heat function per proper volume and $n$ is the particle number per proper volume.
-The velocity $u$ and the vector potential, $A$,  are spacetime vectors and $\del$ is the spacetime derivative.
-The heat per proper volume can be written in terms of the total energy density, 
-such that\cite{LandauBook, Doran2003}
-\eqa{
-  w = \epsilon + p = n m c^2 + nm e + p,
-}
-where $e$ is the thermodynamic energy and $m$ is the proper mass.
-Spacetime vectors are sometimes referred to as 4-vectors, although this terminology will not be used here.
-The spacetime velocity, $u$, is parameterised so that $u^2 = c^2$ where $c$ is the speed of sound.
-The symbol $u$ has been used to avoid confusion with the radial component, $v$, of the spatial velocity (a 3-vector).
-
-
-%
-%in order for the resulting equations to be consistent with the way ultrasound assigns spatio-temporal locations to echo sources.
-The temporal and spatial projections of \eqnref{RelVPot} in the laboratory frame are
-\sub{
-\begin{align}
-\dr \psi &= \frac{\gamma w v}{nc} \equiv \frac{\phi v}{c} \label{eqn:VelocityPot}
-\intertext {and}
-\dt \psi &=- \frac{\gamma w  c}{n} \equiv - \phi c \label{eqn:Bernoulli}
-\end{align}
-}
-where  $\gamma = \lr{1-v^2/c^2}^{-1/2}$ is the Lorentz factor and  the potential 
-\begin{align}
-  \phi \equiv \frac{\gamma w}{n} \label{eqn:phiDefn}
-\end{align}
-has been introduced for convenience.
-The heat function per particle is related to the enthalpy by the proper mass,
-\begin{align}
-  w/n = \lr{mc^2 + me + p/n} = m\lr{c^2 +  h}.
-\end{align}
-The thermodynamic relation $h = e + p/(nm)$ has been used in the second equality.
-
-The potential $\phi$ is the relativistic generalisation to the total enthalpy (multiplied by the proper mass).
-In the non-relativistic it becomes, 
-\begin{align}
-  \phi \rightarrow \lr{1+\tfrac{1}{2}\tfrac{v^2}{c^2}} \lr{mc^2 + mh} = mc^2 + \tfrac{1}{2}m v^2 + mh \text{\quad as ${v/c\rightarrow 0.}$}
-\end{align}
-The right hand side is the energy contributed by the rest mass plus the  standard non-relativistic expression for the  total enthalpy (multiplied by the mass),
-as claimed.
-
-By replacing equations \eqnref{VelocityPotNR} and \eqnref{BernoulliNR} with equations \eqnref{VelocityPot} and \eqnref{Bernoulli} the derivation of Keller and Miksis
-can be used without further alteration.
-The resulting equation will be Lorentz invariant and therefore satisfy the constraints imposed by using pulse-echo to  define the spatio-temporal locations of the echo's source.
-
-
-\subsection{The derivation of the acoustically-measured-Keller-Miksis equation}
-Differentiating equation \eqnref{Ansatz} with respect to time obtains
-\begin{align}
-  r \dt \psi =  f_1^\prime + f_2^\prime, \label{eqn:dtAnsatz}
-\end{align}
-where the prime denotes differentiation with respect to the argument,
-while differentiating with respect to the radius gives,
-\begin{align}
- r^2 c \del \psi = r \lr{f_2^\prime - f_1^\prime} - c\lr{f_1+f_2}. \label{eqn:drAnsatz}
-\end{align}
-Equations \eqnref{dtAnsatz} and \eqnref{drAnsatz}, evaluated at $r = a$, are combined to eliminate $f_1^\prime$,
-\begin{align}
-  a^2 \lr{\dt \psi + c \dr \psi} - 2 a f_2^\prime + c\lr{f_1 + f_2} = 0. \label{eqn:Combo1}
-\end{align}
-By using equations \eqnref{VelocityPot} and \eqnref{Bernoulli} in \eqnref{Combo1} (rather than \eqnref{VelocityPotNR} and \eqnref{BernoulliNR}) 
-we obtain
-\begin{align}
-a^2 \lr{\phi \dot a -\phi c } - 2 a f_2^\prime + c\lr{f_1 + f_2} = 0.  \label{eqn:Combo2}
-\end{align}
-Differentiating \eqnref{Combo2} with respect to time and reusing \eqnref{dtAnsatz} and \eqnref{Bernoulli} gives
-\begin{align}
-  a \frac{\phi}{c^2} \ddot a + 2 {\dot a}^2\frac{\phi}{c^2} - \phi\lr{1 + \frac{\dot a}{c}} - a \frac{\dot \phi}{c}\lr{1-\frac{\dot a}{c}} - \frac{2}{c^2} f_2^\dprime\lr{1+\frac{\dot a}{c}} = 0
-  \label{eqn:Combo3}
-\end{align}
-
-The driving acoustic pressure comes from the converging acoustic wave, $f_2$.
-To evaluate this term, following Keller and Miksis, 
-we assume that the incident wave is planar and decompose it into  spherical harmonics.
-By assumption, however, the bubble pulsates purely radially and so only the zeroth harmonic interacts with the bubble.
-The potential of the incoming wave, $\psi_i (r,t)$, is accordingly 
-%\begin{align}
-  $\psi_i (r,t) = \frac{1}{r}\lr{f_2(t+r/c) + f_3(t-r/c)}$.
-%\end{align}
-Requiring that the potential is finite at the bubble's centre implies that  $f_2 = -f_3$ and so
-\begin{align}
-  \psi_i (r,t) = \frac{f_2(t+r/c) - f_2(t-r/c)}{r}.
-\end{align}
-The bubble is small in comparison to the wavelength and so the velocity potential of the fluid near the origin satisfies
-\begin{align}
-  \label{eqn:Tau}
- \psi_i (a,t) = \frac{f_2(t+a/c) - f_2(t-a/c)}{a} \approx \frac{2}{c}f_2^\prime(\tau).
-\end{align}
-The differential on the right-hand-side of \eqnref{Tau} is a function of the proper time, $\tau$, of the bubble.
-This is because the equation holds only in a frame of reference where the bubble is stationary and at the origin.
-Differentiating \eqnref{Tau} with respect to the proper time we obtain
-\begin{align}
-  \frac{d}{d \tau} \psi_i \equiv \gamma \lr{\d_t+ v\dr } \psi_i = u \cdot \del \psi = \frac{2}{c}f^\dprime.
-\end{align}
-Using equation \eqnref{RelVPot}  this gives
-\begin{align}
-\frac{2}{c}f^\dprime =-\frac{wc}{n}= - \frac{\phi_i c}{\gamma}, \label{eqn:IncidentWave}
-\end{align}
-where $\phi_i$ is the incident  potential.
-Substituting  \eqnref{IncidentWave} into \eqnref{Combo3} and using equation \eqnref{phiDefn} in the form $\phi = \gamma m\lr{c^2 + h}$ we obtain
-%\begin{align}
-%  a \frac{\phi}{c^2} \ddot a + 2 {\dot a}^2\frac{\phi}{c^2} - \lr{\phi-\frac{\phi_i}{\gamma}}\lr{1 + \frac{\dot a}{c}} - a \frac{\dot \phi}{c}\lr{1-\frac{\dot a}{c}}  = 0
-%  \label{eqn:Combo4}
-%\end{align}
-\begin{align}
-  a \ddot a & \gamma \lr{1 + \frac{h}{c^2}}\lr{1 - \frac{\dot a}{c}\gamma^2\lr{1- \frac{\dot a}{c}}}+ 2 {\dot a}^2\gamma\lr{1 + \frac{h}{c^2}}\nonumber\\
-  &- \lrsquare{\gamma\lr{c^2 + h} - \lr{c^2 + h_i}}\lr{1 + \frac{\dot a}{c}}- \gamma \dot h \lr{\frac{a}{c}}\lr{1 - \frac{\dot a}{c}}
-= 0\label{eqn:RKM}
-\end{align}
-Equation \eqnref{RKM} is the final answer. The enthalpy contains the pressure terms, and with them the boundary condition of equation \eqnref{pressureBC}
-
- The  non-relativistic limit (with $\gamma \approx 1 - \frac{{\dot a}^2}{2c^2}$), equation \eqnref{RKM} reduces to
-\begin{align}
-  a \ddot a\lr{1 - \frac{\dot a}{c}}+ \frac{3}{2} {\dot a}^2\lr{1- \frac{1}{3}\frac{\dot a }{c}}
-    - \lr{h - h_i}\lr{1 + \frac{\dot a}{c}}
-  -  \dot h \lr{\frac{a}{c}}
-= 0, \label{eqn:KM}
-\end{align}
-which is the original Keller-Miksis equation\cite{Hoff2001}.
-
-The acoustically-measured-Keller-Miksis model therefore reduces to the original when the maximum speed of the bubble wall is small in comparison to the sound speed.
-In the non-relativistic approximation made to obtain equation \eqnref{KM} discards terms of order $M^2$, 
-where  $M = \abs{\frac{\dot a}{c}}$ is the Mach number of the bubble wall.
-Therefore, the original Keller-Miksis model approximates the acoustically measured motion when $M^2$ is small.
-I.e. %for acoustical measurements, the two equations may be used interchangeably 
-up to about $M=0.4$.
-
-
-\subsection{The applicability of the equation}
-In the original derivation Keller and Miksis linearised the density. 
-The consequence of this is that fluctuations in the sound speed are ignored.
-This enabled our starting point, the linear wave equation of  \eqnref{WaveEqn}, to be derived.
-The discarded second order terms become important when $M^2$ is not small.
-The approximation holds, therefore, up to about Mach 0.4.
-Interestingly,  the optical and acoustical observer
-agree over the range of speeds to which the original Keller-Miksis equation is applicable.
-
-When the measurements are made with ultrasound,
-however, 
-no approximation is made to obtain equation \eqnref{WaveEqn}.
-The reason is that  ultrasound is not capable of  measuring variations in the speed of sound.
-Second order fluctuations in the density  can therefore play no role when ultrasound is used to describe the world.
-It is instructive to see this argument borne out in the equations that describe an acoustically measured fluid.
-The equations of motion must  be Lorentz invariant and this condition  is automatically fulfilled  when  the equations 
-are obtained from the divergence of the energy-momentum tensor of the ideal fluid.
-In the derivation we also need to use the hitherto unused  condition
-that the sound speed takes the role  of the speed of light.
-This condition is imposed by equating the two speeds.
-This further requires that the energy density for the fluid, as measured acoustically, be a function of the pressure only (barotripic),
-for the sound speed cannot equal the speed of light otherwise\cite{Taub1978}.
-
-The energy-momentum tensor of an ideal fluid is\cite{Doran2003}
-\eqal{
-  T(a) = w a \cdot u u - a p = (\epsilon + p) a \cdot u u - a p,
-}{EMtensor}
-where, $\epsilon \equiv \epsilon(p)$ is the barotropic total energy density,
-$p$ is the pressure
-and 
-$u=u(\tau)$ is the velocity vector of the spacetime path, with the parameterisation chosen such that $u^2 = 1$. % and $P$ is the pressure.
-Natural units have been chosen in this section, and so that the speed of light is unity.
-
-The speed of sound, $c$,  given at constant entropy density, $\sigma$, is\cite{LandauBook,Taub1978} 
-\begin{align}
-  c^2 = \given{\frac{\d p}{\d \epsillon}}{\sigma}. \label{eqn:soundspeed}
-\end{align}
-This is the same as the non-relativistic expression except that the energy density has replaced the mass density.
-Setting the speed of sound to equal the speed of light (unity) and the integrating 
- gives,
- \begin{align}
-   \epsilon = p^\prime - p_0 + \epsilon_0
- \end{align} 
-where $p^\prime$ is a pressure that fluctuates with position, so that $dp = dp^\prime$,
-and $p_0$  and $\epsilon_0$  are the ambient  pressure and mean energy density, respectively.
-%Rather can carry the constants $ p_0 $ and $\epsilon_0$ through the rest of the derivation we write
-The thermodynamic pressure is therefore
-\begin{align}
-  p \equiv p^\prime - p_0 + \epsilon_0. \label{eqn:pshort}
-\end{align}
-and the fluid obeys the equation of state, 
-\eqal{
-  \epsilon(p) = p.
-}{eos}
-At infinity $p^\prime = p_0$ 
-and so $\epsilon_\infty = p_\infty = \epsilon_0 \ne p_0$.
-
-%therefore enforces that the sound speed equals that of light (unity).
-%The notation of equation \eqn{eos} is quite compact.
-%For \eqnref{eos} to be consistent with the integral of the sound speed (equation \eqnref{soundspeed}),
-%the pressure $p$ must be interpreted as follows,
-%\begin{align}
-%  p = p^\prime - p_0 + \epsilon_0. \label{eqn:pshort}
-%\end{align}
-%Here $p^\prime$ is the pressure perturbation measured with a hydrophone,
-%$p_0$  and $\epsilon_0$  are the mean  pressure and energy density respectively.
-
-
-
-Applying \eqnref{eos} simplifies the energy momentum tensor considerably,
-\eqal{
-  T(a) =  p\lr{2 a \cdot u u  - a} \equiv  \frac{1}{4}  A a A,
-}{EMFluid}
-where vector potential, $A$, introduced on the right hand side satisfies
-\eqal{
-  A = 2p^{1/2}u =2 \epsilon^{1/2} u.
-}{defnA}
-
-The vector $A$ is the same as was introduced in \eqnref{RelVPot},
-i.e.
-\begin{align}
-  \del \psi = - \frac{wu}{n} = - 2\sqrt p u.
-\end{align}
-%where $n$ is the proper particle number density of the fluid and equation \eqnref{eos} has been used for the second equality.
-To demonstrate this second equality we  use an argument of Taub\cite{Taub1978}.
-Using the isentropic thermodynamic relation $m de = - p d\lr{\frac{1}{n}}$ with the relation for the internal energy, $\epsilon= nm( 1 + e(p))$,
-it follows that 
-\begin{align}
- n d\epsilon = \epsilon dn - n^2 p d \lr{\frac{1}{n}} = \lr{\epsilon + p} dn.
-\end{align}
-Applying equation \eqnref{eos} and integrating we obtain
-\begin{align}
-  n = \sqrt p, \label{eqn:nrootp}
-\end{align}
-from which we find
-\begin{align}
-A = 2\sqrt p  u = \frac{2\epsilon}{n} u = \frac{wu}{n} =  - \del \psi,
-\end{align}
-as claimed.
-
-
-The divergence of the energy momentum tensor (equation \eqnref{EMFluid}) vanishes in the absence of external fields.
-Therefore, by projecting the divergence of \eqnref{EMFluid} along the timelike component we find
-\eqa{
-  u\cdot\scope T(\scope\del)= \half  u\cdot A \del \cdot A = 0.
-}
-The check denotes the scope of the derivative.
-Since, from \eqnref{defnA}, $A$ is parallel to $u$  it follows that 
-\eqal{
-  \del \cdot A  =0
-}{eomTime}
-and so the vector potential $A$ is conserved.
-The spacelike projection, $\scope T(\scope \del) - u u\cdot \scope T(\scope\del)$, gives in turn,
-\eqal{
-  u \cdot \lr{\del \wedge A} = 0.
-}{eomSpace}
-The relativistic vorticity bivector is 
-\eqal{F = \del \wedge A,}{DefnVorticity}
-and so \eqnref{eomSpace} implies that the vorticity is orthogonal to the velocity.
-
-By taking the divergence of \eqnref{eomTime} and using the vector identity
-$\del \del \cdot A = \del^2 A - \del\cdot\lr{ \del \wedge A} $
- we find,
-\eqal{
-  \del^2 A = \del \cdot F = \del F.
-}{wave}
-The second equality follows because $\del F = \del \cdot F + \del \wedge F$ 
-and because the  operator identity $\del\wedge \del = 0$ causes $\del \wedge F$ to vanish.
-Equation \eqnref{wave} is a wave equation and so interpreting the right-hand-side of \eqnref{wave} as an acoustic source current, $J$, we obtain
-\eqal{
-  \del  F = J.
-}{Maxwell}
-Interestingly equation \eqnref{Maxwell} is Maxwell's equation and equation \eqnref{eomTime} has specified that we are working in the Lorenz gauge.
-We explore this observation more in \chapref{interactions}.
-%We do not explore this observation further here.
-
-
-When deriving the Keller-Miksis equation potential flow in the fluid was assumed.
-This implies that the vorticity tensor vanishes, for
-$F = \del \wedge A = -\del \wedge \del \psi = 0$.
-Therefore the acoustic sources vanish and the wave equation $\del^2 A =0$ is satisfied.
-This was the starting equation in the derivation of the Keller-Miksis model, 
-equation \eqnref{WaveEqn}. 
-Notice that other than potential flow, no approximation  has been made to derive \eqnref{WaveEqn}.
-When using ultrasound, sound must be measured to propagate linearly.
-This is simply because it is impossible for ultrasound to measure fluctuations in the speed of its propagating signal.
-The acoustically-measured-Keller-Miksis equation is exact.
-
-%Since no perturbation scheme has been used to obtain \eqnref{WaveEqn} when the measurements are made acoustically 
-%(in contradistinction to the case when optical measurements are made)
-%the acoustically-measured-Keller-Miksis equation can claim validity over a much greater range of sound speeds than the original.
-%The original equation may be obtained as an approximation to the acoustically-measured-Keller-Miksis equation when the sound speed is small.
-%This approximation, interestingly, is to the same order as the (quite different) approximations of the original Keller-Miksis equation.
-%Therefore both acoustic measurements and optical measurements agree that the original Keller-Miksis is valid so long as $M^2$ is small.
-
-
-
-\subsection{The pressure on the surface of the bubble}\label{sec:surface_pressure}
-
-When introducing the original Keller-Miksis model in \secref{KMoriginal} the pressure on the surface of the bubble was not specified (equation \eqnref{pressureBC}).
-In this section and the next we fix this boundary condition for the cases with and without viscosity.
-
-
-The gas within the bubble may simply be modelled a polytropic exponent, $\kappa$. 
-The pressure within the bubble is then $p_e \lr{\frac{a}{a_e}}^{-3\kappa}$ where $p_e$ is the pressure of the gas within the bubble at equilibrium,
-and $a_e$ is the radius of the bubble at equilibrium\cite{Hoff2001}.
-The contribution of the vapour pressure has been neglected for simplicity.
-This within the bubble pressure exceeds the pressure of the fluid at the surface, $p(a,t)$, due to the contributions of the surface tension, $\sigma$.
-The pressure boundary condition is then
-\begin{align}
-  p_b(a) = p_e \lr{\frac{a}{a_e}}^{-3\kappa} - 2\frac{\sigma}{a}. 
-\end{align}
-To write the boundary condition in terms of the enthalpy we use the  thermodynamic relation $d h = \frac{1}{m n} dp$.
-Substituting in \eqnref{nrootp} gives
-\begin{align}
-  h(a) =  \int_{p_\infty}^{p}  \frac{1}{m n}dp = 2\lr{\sqrt{p}-\sqrt{ p_\infty}} = 2 \frac{p_\infty}{n_\infty} \lr{\sqrt{p/p_\infty} - 1} 
-\end{align}
-where  $n_\infty = \sqrt{p_\infty} = \sqrt{\epsilon_\infty} $ has been used in the second equality.
-Expanding $p$ from \eqnref{pshort} gives
-\begin{align}
-  h(a) = 2 \frac{p_\infty}{n_\infty} \lr{\sqrt{{p-p_0+p_\infty}/p_\infty} - 1} =  2 \frac{p_\infty}{n_\infty} \lr{\sqrt{1 + {p - p_0}{p_\infty}} - 1}
-\end{align}
-In the non-relativistic limit $p_\infty = \epsilon_\infty \approx n_\infty m c^2 \approx \unit{1}\giga\pascal$\cite{Hoff2001}.
-This is much larger than any pressures reached in ultrasound and so we may write, simply, that
-\begin{align}
-  h(a) \approx \frac{p - p_0}{mn_\infty}
-\end{align}
-
-
-%The incident pressure $p_i$ is a perturbation about the  pressure at infinity $p_\infty$.
-%Therefore
-%\begin{align}
-%  h_i(a) = 2\lr{\sqrt{p(a) + p_\infty }-\sqrt{ p_\infty}}.
-%\end{align}
-
-The acoustically-measured-Keller-Miksis equation is now complete. 
-We emphasise that for an free polytropic gas bubble pulsating in ideal vortex-free fluid, the model is exact.
-
-
-\subsection{Acoustically-measured viscosity}\label{sec:viscosity}
-
-Viscous fluids have so far been excluded from our analysis.
-Viscosity usually plays a minor role in medical applications - 
-an ideal fluid does a fairly good job for propagation.
-However, the viscosity does play an important role in dampening the oscillations of the bubble.
-In ultrasound contrast physics, therefore, the viscosity is usually incorporated into the pressure boundary condition of equation \eqnref{pressureBC}.
-% Even though viscous effects have been ignored to find \eqnref{WaveEqn} they are generally incorporated into the boundary conditions.
-% If they were neglected altogether there would be no dampening mechanism in the final model.
-% Transient solutions to equation \eqnref{WaveEqn} would never relax and numerical studies of the resulting equations predict exotic harmonics resulting from beating between the 
-% stable and transient solutions of \eqnref{WaveEqn}.
-% The  second boundary condition used by Keller and Miksis is therefore
-% \begin{align}
-% p(a, t) =  k a^{-3\gamma} + \frac{4\mu}{3}\lr{\dr \dot a - \frac{\dot a}{a}} - 2 \frac{\sigma}{a},
-%  \label{eqn:BCPressure}
-% \end{align}
-% }
-% where $\mu$ is the viscosity and $\sigma$ is the surface tension.
-To model the viscous dampening it is assumed that the fluid is Newtonian; only the  {\em  dynamic viscosity}, $\eta$, is considered. %while the {\em second viscosity} is neglected\cite{LandauBook}.
-Then the stress tensor measured with ultrasound is\cite{LandauBook}, 
-\begin{align}
-  \sigma(a) = a p - c\eta \lr{a \cdot \del u + \del u\cdot a - a\cdot u u\cdot \del u - u u \cdot \del  u\cdot a -\tfrac{2}{3}\del \cdot u \lr{a - a\cdot u v}}.\label{eqn:RelStress}
-\end{align}
-The derivative with respect to the vector $a$ yields the trace\cite{Hestenes1984},
-\begin{align}
-  \Tr\ \sigma(a) \equiv \d_a \cdot \sigma(a) = 4p. \label{eqn:RelStressTrace} 
-  % 4 p -2 c\eta \lr{ \del\cdot v  -  u\cdot \scope\del \scope v \cdot v -  \del \cdot v } = 4 p.
-\end{align}
-%\begin{align}
-%\sigma_{00}  &=  p - \tfrac{2}{3}\eta\lr{1-\gamma^2}\lr{2\dt \gamma + 2 \vu\cdot \vdel \gamma - \gamma \vdel \cdot \vv} 
-%+ 2 \eta \vv \cdot \vdel \gamma,\\
-%\sigma_{ii} \equiv \gamma_i \cdot \sigma(\gamma_i) &=  -p + 2 \eta\lr{ \vdel_i \lr{\gamma \vv_i} + \gamma \vv_i/c u\cdot \del \lr{\gamma \vv_i} + \tfrac{1}{3}c\del\cdot u \lr{1+\gamma^2 %\vv_i^2/c^2 }}
-%\end{align}
-We wish to evaluate the radial component of the stress tensor, $\sigma_{rr} \equiv \hat r \cdot \sigma(\hat r)$, where $\hat r$ is the radial unit vector.
-This is because in our spherically symmetric model it is this component that dampens the oscillation.
-From \eqnref{RelStress} this is evaluated to be 
-\begin{align}
-  \sigma_{rr}  &= -p + 2\eta \lrsquare{\dr v + \tfrac{\gamma^2 v}{c} \tfrac{c u\cdot \del }{\gamma}\lr{\tfrac{\gamma v}{c}} - \tfrac{1}{3} c\del\cdot u\lr{1 + \tfrac{\gamma^2v^2}{c^2}}}, \label{eqn:sigmarr1}
-\end{align}
-where $v$ is the radial component of the velocity.
-To keep the expressions short  the inner products $ u\cdot \del = \frac{\gamma }{c} \lr{\dt + v \dr}$ and $\del\cdot u = \frac{1}{c}\lr{\dt\gamma + \dr(\gamma v)}$ have not been expanded.
-
-Equation \eqnref{sigmarr1} can be simplified by noting that $\lr{1 + \tfrac{\gamma^2v^2}{c^2}} = \lr{1 - \gamma^2\lr{1-\tfrac{v^2}{c^2}} + \gamma^2 } =  \gamma^2$.
-Using a similar trick we find,
-\begin{align}
-   \frac{\gamma^2 v}{c} \frac{c u\cdot \del }{\gamma}\lr{\frac{\gamma v}{c}} 
-=-\lr{1-\gamma^2 } \frac{c u\cdot \del }{\gamma}\gamma +\frac{\gamma^3 v}{c^2} \frac{c u\cdot \del }{\gamma}v
-=\gamma c u\cdot \del \gamma. 
-\end{align}
-The relation $d \gamma = \frac{\gamma^3}{c^2} v d v$ has been used to obtain the second equality.
-Equation \eqnref{sigmarr1} then simplifies to
-\begin{align}
-  \sigma_{rr}  &= -p + 2\eta \lrsquare{\dr v + \gamma c u\cdot \del\gamma - \tfrac{1}{3}\gamma^2 c\del\cdot u}. \label{eqn:sigmarr2}
-\end{align}
-To make further progress we re-evaluate the trace using \eqnref{sigmarr2} and the other components of the diagonal of the stress tensor,
-\begin{align}
-  \sigma_{tt} &= p - 2 \eta \lrsquare{\dt \gamma - \gamma c u \cdot \del \gamma - \tfrac{1}{3} \lr{1-\gamma^2} c \del\cdot u    }\\
-  \sigma_{\theta\theta} =  \sigma_{\phi\phi}  &= -p + 2\eta\lrsquare{\tfrac{v}{r} - \tfrac{1}{3} c \del \cdot u},
-\end{align}
-and find that 
-\begin{align}
-  \Tr\ \sigma(a) = 4p - 2 \eta \lrsquare{2 \tfrac{v}{r} + \dr v - \dr(\gamma v) }.\label{eqn:RelStressTrace2}
-\end{align}
-Equating \eqnref{RelStressTrace} with \eqnref{RelStressTrace2} implies that
-\begin{align}
-  \dr v = - 2 \frac{v}{r}  + \dr(\gamma v)
-\end{align}
-and so
-\begin{align}
-  \sigma_{rr}  &= -p - 4\eta \lrsquare{  \frac{v}{r}  -\tfrac{1}{2}\lr{1-\tfrac{1}{3}\gamma^2}\dr(\gamma v) - \tfrac{6\gamma^2}{5c^2} v \dt v  }. \label{eqn:sigmarr3}
-\end{align}
-
-In the non-relativistic limit this equals 
-\begin{align}
- \sigma_{rr}  &= -p - 4\eta \lrsquare{  \frac{v}{r}  -\tfrac{1}{3}\dr v }, \label{eqn:NRsigmarr}
-\end{align}
-which is  the standard expression for the radial stress exerted on a bubble \cite{Hoff2001}.
-
-The spatial derivative $\dr(\gamma v) $ in \eqnref{sigmarr3} may be evaluated from the relation $\dr (\phi v) = -\dt \phi$, 
-obtained from the spatial projection of \eqnref{eomTime}  in the laboratory frame.
-However, the resulting equation is complicated to evaluate and contributes of order $c^-2$ compared to the first term of \eqnref{sigmarr2},
-which of itself is small if the viscosity of the fluid is low.
-Therefore,
-for analytic simplicity, we neglect the small terms on the right of 
- \eqnref{sigmarr3} and write
-\begin{align}
- \sigma_{rr}  &\approx -p - 4\eta  \frac{v}{r}. \label{eqn:sigmarr4}
-\end{align}
-Equation \eqnref{sigmarr4} is of  adequate accuracy for our purposes and is used in the numerical studies that follow.
-It has the additional virtue in that it is identical for both acoustical and optical measurement.
-
-The pressure boundary condition is then
-\begin{align}
-  p_b(a) = p_e \lr{\frac{a}{a_e}}^{-3\kappa} - 2\frac{\sigma}{a} - 4\eta  \frac{\dot a}{r}. 
-\end{align}
-
-\section{Analysis of the equation}
- \begin{figure}[p!]
-      \centering
-     \subfloat[\unit{100}\kilo\pascal]{
-           \label{fig:R1rad}
-           \includegraphics{radius_r2_f2_a0.1.0}}
-      \subfloat[\unit{100}\kilo\pascal]{
-           \label{fig:R1vel}
-           \includegraphics{velocity_r2_f2_a0.1.3}}
-     \subfloat[\unit{300}\kilo\pascal]{
-           \label{fig:R3rad}
-           \includegraphics{radius_r2_f2_a0.3.1}}
-      \subfloat[\unit{300}\kilo\pascal]{
-           \label{fig:R3vel}
-           \includegraphics{velocity_r2_f2_a0.3.4}}
-     \subfloat[\unit{500}\kilo\pascal]{
-           \label{fig:R5rad}
-           \includegraphics{radius_r2_f2_a0.5.2}}
-      \subfloat[\unit{500}\kilo\pascal]{
-           \label{fig:R5vel}
-           \includegraphics{velocity_r2_f2_a0.5.5}}
-      \label{fig:BubbleResponse}
-      \caption{The calculated response of a two micron bubble to a \unit{1/2}\mega\hertz\ wave at various pressures
-as measured optically (using the Keller-Miksis model) and acoustically (using the acoustically-measured-Keller-Miksis model)
-      The radial response is shown in the figures on the left, the velocity response on the right.}
- \end{figure}
-We finish by briefly examining the non-linear response of the two models to an incident sound pulse.
-The strongly non-linear response of bubbles is important 
-in medical applications because it is a property not  shared by the surrounding tissue,
-and therefore provides a means of identifying the bubble.
-
-To start, we compare  the response of the two models for 3 different pressures:
-\unit{100}\kilo\pascal, \unit{300}\kilo\pascal\ and \unit{500}\kilo\pascal.
-The equilibrium radius of the bubble is chosen to be \unit{2}\micro\meter, 
-which, like the pressures, is typical for diagnostic ultrasound applications.
-The pressure applied is a sinusoidal  with a frequency of \unit{500}\kilo\hertz.
-The pulse consists of 10 cycles and the first and last quarter of the pulse is tempered with a cosine function.
-The radial and velocity response of the bubble is plotted in \figref{BubbleResponse}.
-
-
-
-
-For the low incident pressure of \unit{100}\kilo\pascal\ the radial response of the bubble is essentially identical in the two models (\figref{R1rad}).
-This is as would be expected, for as \figref{R1vel} shows,  at this pressure the velocity of the bubble wall 
-is always a small fraction of the sound speed.
-
-At the higher pressure of \unit{100}\kilo\pascal 
-the original Keller-Miksis model predicts that the bubble wall collapses at very high velocities,
-even surpassing the speed of sound on some occasions.
-It is obvious that ultrasound measurements cannot measure the speed of a bubble wall undergoing  supersonic collapse, 
-and so the predictions of the original Keller-Miksis equation is contrary to what is measured acoustically.
-\Figref{R3vel} illustrates what ultrasound would measure when a bubble responds to the pulse.
-The acoustically measured velocity is always slower than the sound speed.
-The radial response as measured by ultrasound is predicted to be different to the response as measured optically, 
-as is shown in \figref{R3rad}.
-
-At the yet higher pressure of \unit{500}\kilo\pascal\ there is a small surprise.
-As before the original Keller-Miksis model predicts that the bubble wall will collapse at speeds that cannot be measured acoustically,
-and as before the acoustically-observed-Keller-Miksis model assigns the  spatial and temporal locations according to the pulse-echo definitions.
-The surprise, 
-however, is how well it does in comparison to \Figref{R3rad}.
-In \figref{R5rad} the predicted radial response of the bubble looks very similar with both models;
-the maximal radii are in good agreement, as are the  times at which the bubble reaches its minimal radii.
-All this despite the large differences in the predicted velocity \figref{R5rad}.
-
-A clue as to why the radial response at some pressures looks very similar for both models (\figref{R1rad} and \figref{R5rad}),
-while at other pressures it looks very different (\figref{R3rad}) 
-- apparently without any obvious correlation with the speed of the bubble wall -
-is found in the predicted scattering cross section of the two models.
-
-\subsection{ The scattering cross section}\label{sec:measurement:scatteringxs}
-The scattering cross section, $\sigma$ is found from the ratio of the  emitted acoustic power to the incident intensity, \cite{ShutilovBook}
-\begin{align}
-  \sigma(\omega) = 4\pi r^2 \oint \frac{ \lr{p(r, t) a(t)}^2}{p_i(r,t)^2} dt,\label{eqn:sigmaff}
-\end{align}
-where $p$ is the emitted pressure, $p_i$ is the incident pressure (a plain wave of frequency $\omega$, and $a$ is the bubble radius.
-In the acoustic far field the pressure emitted by the bubble\cite{Howe2003} is 
-\begin{align}
-p(r, t) =  \frac{a^2 \ddot a+  2a {\dot a}^2}{r^2}, \label{eqn:pff}
-\end{align}
-and so the $r^2$ dependence of \eqnref{sigmaff} and \eqnref{pff} cancels.
-The scattering cross section may be normalised by dividing out the area of the bubble at equilibrium, $4\pi a_e^2$.
-
-
-The scattering cross section is only well defined for an incident planar wave.
-The period of the emitted wave can be different from period of the incident wave.
-The integral is carried out over the
-time period where both incident and emitted waves are stable - the closed integral sign being an mnemonic of this.
-This occurs when both the imaging and emitted wave oscillate an integer number of times within the period.
-However, this can make the scattering cross section hard to evaluate, 
-for such a period may not exist (the ratio of the periodicity of the incident and emitted waves may be irrational),
-or else may be very long, and hence hard to find numerically.
-%Furthermore, it is not applicable to the short pulses that are used in diagnostic ultrasound.
-%The integral in \eqnref{sigmaff} is therefore evaluated over the shortest time 
-%that is an integer multiple of the period of the incident and emitted sound waves.
-%Such a interval is not always finite, however;
-%the ratio of the periodicity of the incident and emitted waves may be irrational.
-
-
-Since the temporal and spatial dependence of the scattering cross section are integrated out,
-the scattering cross section is not expected to be dependant upon the measurement process.
-On the other hand, however,
-the scattering cross section is dependent upon the bubble wall's measured radius, velocity and acceleration
-in \eqnref{pff} -
-and therefore the two models will give different answers when $M^2$ is not small.
-We note, however, that the original Keller-Miksis model, unlike the acoustically measured version,
-never claimed to be accurate in presence of high velocities.
-The scattering cross section should therefore be computed using the acoustically measured theory.
-
-
-To find the scattering cross section  numerically 
-a finite incident sinusoid must be used to drive the oscillation,
-and the incident number of cycles must be sufficient for the transient response to dampen.
-In this chapter, we use 750 cycles.
-To evaluate whether the response has stabilised
- a 12 cycle section of the radial response  (i.e. from cycle 738 to 750) is chosen as a reference 
-and the cross-correlation of the this 12-cycle segment is evaluated with previous 12-cycle segments.
-When the average of the cross-correlation coefficients is to within \unit{0.1}\% of the average of the autocorrelation coefficients,
-we consider that the bubble response is sufficiently stable
-and that the ratio of the periodicities of the incident and driving wave are sufficiently close to being integer.
-The scattering cross section is then evaluated over the segment.
-This procedure will fail if 
-\begin{enumerate}
-\item the transient response has not been sufficiently damped.
-\item the ratio of the periodicities of the incident and driving wave wave cannot be expressed in 12 cycles
-(i.e. the super-harmonic ratio is not  1/6, 1/3,1/2, 2/3, 1, 2, 3/2, 3, 6).
-\end{enumerate}
-If the procedure fails then then the search is abandoned and the scattering cross section is not given.
-While it is possible for more super-harmonics to be searched for,
-this process cannot go on forever, for irrational super-harmonics will never be found.
-
-The normalised scatting cross section of a two micron bubble
-as a function of the incident frequency is plotted in  \figref{nxs_high}.
-%The pressures of the incident wave are low in \figref{nxs_low} (\unit{10}\kilo\pascal\ and \unit{100}\kilo\pascal)
-%and are high (\unit{300}\kilo\pascal\ and \unit{500}\kilo\pascal) in  \figref{nxs_high}.
-Below the figures it is 
-%\figref{nxs_low1}, \figref{nxs_high3} and \figref{nxs_high5} is 
-plotted  where the scattering cross section could not be evaluated.
-
-%In \figref{nxs_low01} the scattering cross section could always be found it is not misleading to interpolate between the evaluated points and this is done.
-
- \begin{figure}[p!]
-      \centering
-     \subfloat[\unit{10}\kilo\pascal]{
-           \label{fig:nxs_low01}
-           \includegraphics{xs_freq_r_2_amp_0.01.0}}
-      \subfloat[\unit{100}\kilo\pascal]{
-           \label{fig:nxs_low1}
-           \includegraphics{xs_freq_r_2_amp_0.1.1}}
-%      \label{fig:nxs_low}
- \end{figure}
-\begin{figure}[p!]
-      \centering
- \subfloat[\unit{300}\kilo\pascal]{
-           \label{fig:nxs_high3}
-           \includegraphics{xs_freq_r_2_amp_0.2.2}}
- \subfloat[\unit{500}\kilo\pascal]{
-           \label{fig:nxs_high5}
-           \includegraphics{xs_freq_r_2_amp_0.5.5}}
-      \caption{The calculated normalised scattering cross section as a function of frequency evaluated at various pressures as measured optically (using the Keller-Miksis model) and acoustically (using the acoustically-measured-Keller-Miksis model). The bubble has an equilibrium radius of \unit{2}\micro\metre. 
-Below the graphs the frequencies at which the scattering cross section could not be evaluated is plotted.
-The small vertical axis of this plot is meaningless, it is used to help convey the density of points.
-}
-      \label{fig:nxs_high}
- \end{figure}
-
-
-
-%The pressures used  are the same  as were used in \figref{BubbleResponse},
-%except that here the very low pressure of \unit{10}\kilo\pascal\ is also considered.
-At \unit{10}\kilo\pascal\ the  bubble's response is nearly linear when evaluated with both models,
-and \figref{nxs_low01} exhibits a large resonance peak near to \unit{2}\mega\hertz  -
-which is familiar from linear studies on bubble response\cite{Hoff2001}.
-At the higher pressure of  \unit{100}\kilo\pascal, drawn in \figref{nxs_low1}, the fundamental resonance occurs at lower frequency, the bubble also responds when pulsated at the first harmonic and at fractions of the fundamental. 
-The response of the two models at  \unit{100}\kilo\pascal\ is essentially identical, 
-as was seen for the same pressure in  \figref{R1rad} and \figref{R1vel}.
-
-At the higher pressures shown in \figref{nxs_high} differences do emerge between the responses predicted by the two models.
-Considering  \figref{nxs_high3} first, 
-we find that the fundamental again occurs at a lower frequency.
-Above this resonance the scattering cross section predicted by the two models is essentially identical.
-Near the resonance it becomes  hard to evaluate the scattering cross-section, and there is a large drop-out in returned values.
-Such dropouts occur when unusual harmonics are present (or developing) within the bubble's response.
-Below the resonance the scattering cross section for both models becomes more stable (with few dropouts)
-but the scattering cross section evaluated using the acoustically-measured model is systematically 
-lower than for when the scattering cross section is evaluated from the original model.
-These observations are repeated in \figref{nxs_high5}, except that the discrepancy seems to begin at a harmonic of the fundamental.
-
-\Figref{nxs_high} may now be used to give an explanation the observations of \figref{BubbleResponse}.
-The frequency used to pulsate the bubbles in \figref{BubbleResponse} was \unit{1/2}\mega\hertz.
-In \figref{nxs_high3} \unit{1/2}\mega\hertz\ is seen to occur in the region of the graph near resonance where 
-the scatting cross section is hard to evaluate.
-This suggests that the differences observed in the response of \figref{R3rad} 
-are due to differences in the harmonic response of the two equations.
-In \figref{nxs_high5}, \unit{1/2}\mega\hertz\ is well below the dropout region, 
-suggesting that the harmonics have little role.
-This would explain why the radial response appeared so similar.
-The difference in the scattering cross section between the two models in \figref{nxs_high5} 
-would therefore seem to result from the differing velocity and acceleration that is measured by the two models,
-which manifests itself in the scattering cross via the $\dot a$ and $\ddot a$ terms in equation \eqnref{pff}.
-
-
-\section{Discussion}\label{sec:discussion}
-
-In this chapter we have derived for the first time the pulsations of a bubble as they would be measured with ultrasound.
-The model is based upon the Keller-Miksis model, but is exact.
-Indeed, the original Keller-Miksis equation can be obtained by approximating the acoustically-measured version -
-valid for when velocity of the bubble wall is small in comparison to the sound speed.
 
 The derivation followed from noting that for ultrasound to measure distances (using pulse-echo) 
 the sound speed in the medium must be known {\em a priori}, 
@@ -3326,21 +2948,16 @@ with the additional constraint that the speed of sound equal the speed of light.
 We have shown that the sound does indeed propagate linearly in this case.
 Indeed, we have shown it obeys Maxwell's relations.
 
-Finally, the response of the acoustically-measured-Keller-Miksis equation to an acoustic wave has been simulated,
-and the results compared to the original Keller-Miksis equation.
-The radial pulsations observed by the two models is similar when the harmonic response of the bubble is not strong -
-otherwise the pulsations become quite different.
-The velocity response for the two models diverges when the bubble wall speed is high.
-The acoustically-measured-Keller-Miksis equation correctly maintains
-that ultrasound cannot measure supersonic bubble collapse, 
-and predicts what is measured acoustically when such collapses do occur.
 
-When the bubble wall moves at speeds close or exceeding the sound speed,
-differences are found between the scattering cross section obtained from the two models.
-The acoustically-measured-Keller-Miksis model claims accuracy in this regime.
-The original does not.
-The scattering cross section predictions therefore
-provide a means of testing the acoustically-measured-Keller-Miksis equation directly.
+It is instructive to see this argument borne out in the equations that describe an acoustically measured fluid.
+The equations of motion must  be Lorentz invariant and this condition  is automatically fulfilled  when  the equations 
+are obtained from the divergence of the energy-momentum tensor of the ideal fluid.
+In the derivation we also need to use the hitherto unused  condition
+that the sound speed takes the role  of the speed of light.
+This condition is imposed by equating the two speeds.
+This further requires that the energy density for the fluid, as measured acoustically, be a function of the pressure only (barotripic),
+for the sound speed cannot equal the speed of light otherwise\cite{Taub1978}.
+
 
 
 
