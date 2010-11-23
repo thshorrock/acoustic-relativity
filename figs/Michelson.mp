@@ -113,7 +113,7 @@ pair o, ob;
 o = (0,0);
 ob = (0,0);
 path bounding[];
-bounding0:= ob--(ob+(4cm,0))-- (ob+(4cm,4cm))-- (ob+(0,4cm))--cycle;
+bounding0:= ob--(ob+(4.5cm,0))-- (ob+(4.5cm,4.5cm))-- (ob+(0,4.5cm))--cycle;
 
 beginfig(0);
   
