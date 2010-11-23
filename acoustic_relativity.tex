@@ -1,4 +1,4 @@
-\documentclass[10pt, fleqn,final,showtrims,oldfontcommands]{article} %twoside,%\documentclass[10pt, astron]{article} %when have admin rights,astron
+\documentclass[10pt, fleqn,final,showtrims,oldfontcommands, article,a4paper,oneside]{memoir} %twoside,%\documentclass[10pt, astron]{article} %when have admin rights,astron
 
 
 \usepackage{emp,ifpdf}
@@ -18,6 +18,40 @@
 \setlength{\parskip}{2mm} 
 
 
+%
+\renewcommand{\partnamefont}{\normalfont\huge\sffamily\scshape}
+\renewcommand{\partnumfont}{\normalfont\huge\sffamily\scshape}
+\renewcommand{\parttitlefont}{\normalfont\Huge\scshape} %\raggedright
+\makeatletter
+\pagestyle{plain}
+
+\setsecnumdepth{subsection}% alternative B
+\setsecheadstyle{\raggedright\Large\scshape}
+\setsubsecheadstyle{\large \scshape}
+\setsubsubsecheadstyle{\normalsize \itshape}
+
+\renewcommand{\thesection}{\arabic{section}} 
+\renewcommand{\thesubsection}{\@arabic\c@section.\arabic{subsection}} 
+
+
+\def\@seccntformat#1{%
+       \protect\makebox[0pt][r]{%
+              \csname  the#1\endcsname\quad}}
+
+\pretitle{\begin{center}\LARGE\scshape}
+  \posttitle{\par\end{center}\vskip 0.5em}
+  \preauthor{\begin{center}
+    \large \lineskip .5em%
+    \begin{tabular}[t]{c}}
+  \postauthor{\end{tabular}\par\end{center}}
+  \predate{\begin{center}\large}
+  \postdate{\par\end{center}}
+
+    \setcounter{totalnumber}{2}     % Number of frames per page 2 may work better
+
+%\renewcommand*{\abstractname}{abstract}
+%\renewcommand{\abstractnamefont}{\normalfont\small\scshape\bfseries}
+
 \usepackage{graphicx}
 \usepackage[mediumspace , textstyle, amssymb ]{SIunits} %change \mu to \micro
 \usepackage{subfig}
@@ -26,7 +60,6 @@
 
 \usepackage{marginnote}
 \usepackage{todonotes}
-
 
 \newcommand{\sub}[1]{\begin{subequations}#1\end{subequations}}
  \newcommand{\subl}[2]{\begin{subequations}\label{eqn:#2}#1\end{subequations}}
@@ -135,6 +168,9 @@
 \begin{document}
 
 \maketitle
+%\abstractrunin
+
+%\abscolnamefont{\normalfont\Large\scshape}
 \begin{abstract}
 Abstract goes here
 \end{abstract}
@@ -366,7 +402,7 @@ with the world that is measured with ultrasound. % - on a simple pulse echo expe
      \subfloat[Apparatus when bulk medium is stationary.]{
            \label{fig:setupA}
            \includegraphics{Michelson.0}}
-\hfill
+\hspace{2cm}
      \subfloat[Apparatus when the laminar flow of the bulk medium is $v$]{
            \label{fig:setupB}
            \includegraphics{Michelson.1}}
@@ -402,7 +438,7 @@ When the to-fro times along the two arms are the same, irrespective of the flow 
      \subfloat[Observer stationary with respect to medium.]{
            \label{fig:StatGA}
            \includegraphics{Michelson.2}}
-\hfill
+\hspace{2cm}
      \subfloat[Observer moves at speed $v$ with respect to medium]{
            \label{fig:MovingGA}
            \includegraphics{Michelson.3}}
