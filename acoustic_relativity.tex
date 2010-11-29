@@ -121,6 +121,7 @@
 % \newcommand{\jp}{\pi}
  \newcommand{\M}{\alpha}
  \newcommand{\vP}{\vect P}
+ \newcommand{\us}{{\text{us}}}
 %\newcommand{\vf}{\vect f}
 % \newcommand{\vF}{\vect F}
 % \renewcommand{\AA}{\mathbbm{A}}
@@ -184,7 +185,7 @@ This  property enables the  distance between an observer and a faraway object  t
 The measurement is local to the observer and all they require is a local light source and receiver. 
 They do not need to know their speed relative to the speed of the light medium - the {\em \aether} - because the speed of the \aether\ does not alter the speed of light.
 Therefore they can consider themselves to be stationary and not consider the \aether\ at all.
-This elmination of the \aether, however, only emphasises the uniqueness of light, for it is the  only  signal that has a  medium with no measurable mechanical properties.
+This elimination of the \aether, however, only emphasises the uniqueness of light, for it is the  only  signal that has a  medium with no measurable mechanical properties.
 %The central role of light in the measurement process is unsettling. 
 %How lucky we are to be born with eyes! 
 %Surely otherwise we would not have thought to look for such a signal. %be the only signal that has no measurable medium - no \aether.
@@ -621,106 +622,171 @@ is contradictory to the acoustic definition of time and space given in equation~
 %It is impossible to define an effective speed of sound that is a function of this relative velocity.
 %
 
-A physicist moving with respect to the apparatus of \figref{setupA} %that is stationary with respect to the medium
-%attempting to infer the passage of the sound through \figref{SetupB} %the apparatus that moves with respect to the bulk 
-% equipment %(unlike the Galilean observer they cannot directly measure it)
- will  draw the same figure, \figref{MovingGA}, as the Galilean observer.
-However, unlike the Galilean observer they cannot directly measure the propagation of the sound.
-The inference of the ultrasound physicist is subject to the rules of their measurement system - 
-the speed of sound is fixed - and so they would write equation~\ref{eqn:setupA:moving:Tab} as 
+For concreteness let us again consider the experiment of \figref{setupB},
+where the apparatus is stationary but is placed in a laminar flow of speed $v$.
+The ultrasound physicist has the recorded to-fro times between $A$, $B$, and $A^\prime$ and between
+$A$, $C$, and $A^\prime$, which are numerically equal to the value of $2l/c$ (equations~\ref{eqn:setupB:moving:Tab} and \ref{eqn:setupB:moving:Tac}).
+However, unlike the Galilean observer, they cannot directly measure the propagation of the sound through their apparatus.
+Instead the physicist must try to infer the sound path.
+To do so they  must know:
+\nlist{
+\item The speed of the flow, $v$.
+They can directly measure this with the definitions of equation~\eqnref{radar}.
+\item The dimensions of their apparatus.
+They can obtain this from the manufacturer's specification.
+}
+This provides enough information to predict the correct sound path, which is illustrated in \figref{MovingGA}.
+However, the predicted path  is subject to the rules of the measurement system 
+and so the ultrasound physicist predicts that sound propagates at a  constant speed, $c$.
+%- 
+%the speed of sound is fixed - and so the
+For the propagation time between $A$, $B$ and $A^\prime$ they would predict (c.f. equation~\ref{eqn:setupA:moving:Tab})
 \begin{align}
   \label{eqn:setupA:moving:Tab:acoustic}
-  t_{AB} = t_{BA} =  \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \implies t_{AB} =  t_{BA} =\frac{1}{\sqrt{1-v^2/c^2}} \frac{l}{c}.
+  t_{AB} = t_{BA^\prime} =  \frac{\sqrt{l^2+v^2t_{BA^\prime}^2}}{c} \implies t_{AB} =  t_{BA^\prime} =\frac{1}{\sqrt{1-v^2/c^2}} \frac{l}{c}.
 \end{align}
 %In this case $t_{AB}$ is larger than before but only by a small amount.
-For the sound pulse between $A$ and $C$  they would infer
+For the sound pulse between $A$ and $C$  they would predict
 \sub{
-\label{eqn:setupA:moving:Tac:acoustic}
 \begin{align}
  t_{AC} =  \frac{l+vt_{AC}}{c}\implies t_{AC} = \frac{l}{c-v}
 \end{align}
 and 
 \begin{align}
- t_{CA} =  \frac{l-vt}{c} \implies t_{CA} = \frac{l}{c+v}
+ t_{CA^\prime} =  \frac{l-vt_{CA^\prime}}{c} \implies t_{CA^\prime} = \frac{l}{c+v}
 \end{align}
 }
 rather than  equation~\ref{eqn:setupA:moving:Tac}.
-The total to-fro time between $A$ and $C$ would then be inferred to be
+The total to-fro time between $A$, $C$ and $A^\prime$ would therefore be predicted to be
 \begin{align}
-t_{AC}+t_{CA} = \frac{1}{{1-v^2/c^2}} \frac{2l}{c}.
+\label{eqn:setupA:moving:Tac:acoustic}
+t_{AC}+t_{CA^\prime} = \frac{1}{{1-v^2/c^2}} \frac{2l}{c}.
 \end{align}
 
-Unfortunately, the interpretations of equation~\ref{eqn:setupA:moving:Tab:acoustic} and \ref{eqn:setupA:moving:Tac:acoustic} do not agree with the
+These predictions are of course wrong.
+Equation~\ref{eqn:setupA:moving:Tab:acoustic} and \ref{eqn:setupA:moving:Tac:acoustic} do not agree with the
 experimentally measured intervals.
 The reassignment $c_\eff \rightarrow c$ made by the ultrasound physicist 
-has resulted in predicting time intervals for the sound to traverse between $A$ and $B$ and between $A$ and $C$ that are too large
+has resulted in predicting time intervals for the sound to traverse between $A$, $B$ and $A^\prime$ and between $A$, $C$ and $A^\prime$ that are too large
 by a factor of $\gamma$ and $\gamma^2$ respectively,
 %Unfortunately, both the inferred times for $t_{AB} + t_{AB}$ and $t_{AC}+t_{CA}$ given in \eqnref{} and \ref{} are wrong.
 %They are, as comparison with \eqnref{} and \ref{} demonstrates, too large by a factor of $\gamma$ and $\gamma^2$ respectively,
 where 
 \begin{align}
-  \gamma = \frac{1}{\sqrt{1-v^2/c^2}}.
+  \gamma = \frac{1}{\sqrt{1-v^2/c^2}}
   \label{eqn:gamma}
 \end{align}
-Moreover, the to-fro time between $A$ and $B$ is not predicted to equal  the to-fro time between $A$ and $C$,
-which is demonstrably false.
+is the Lorentz factor.
+Moreover, the to-fro time between $A$, $B$ and $A^\prime$ is not predicted to equal  the to-fro time between $A$, $C$ and $A^\prime$.
+This is in contradiction to the experimental result.
 This predicament faced by the ultrasound physicist  is, of course, the same as that which faced Lorentz, \Poincare\ and Einstein at the beginning  of the twentieth century.
 
-The solution is that the error introduced by setting the effective speed of sound to equal $c$  must be compensated by rescaling the temporal units used in ultrasound.
-The ultrasound physicist, therefore,  needs to re-write equation~\ref{eqn:setupA:moving:Tab:acoustic} as
-\begin{align}
- t_{AB}^\ast+t_{BA}^\ast  &= 2\frac{\sqrt{l^2+v^2t_{AB}^2}}{c},\label{eqn:setupA:moving:Tab:acoustic:rescaled}
-\end{align}
-where $t^\ast$ are the {\em inferred} temporal intervals of the physicist using acoustic measurements.
-By comparing \eqnref{setupA:moving:Tab:acoustic:rescaled} with \eqnref{setupA:moving:Tab} it is clear that
-\begin{align}
- t_{AB}^\ast+t_{BA}^\ast = \gamma^{-1}\lr{t_{AB}+t_{BA}}.\label{eqn:LorentzTime}
-\end{align}
-%When the effective speed of sound  is different to  the speed of sound of the medium
-%the acoustic observer has no choice but to re-scale their base unit of time.
-That is, when an acoustic observer is in motion with respect to the medium 
-the temporal interval must be smaller by the Lorentz factor:
-There must be fewer ticks to their clock than for a Galilean observer.
-%There have been  must revert to a {\em local-time} that is not the same as the time measured by a Galilean observer.
 
-%The interpretation of the pulse echo between $A$ and $C$ is more straightforward.
-For  ultrasound measurements to match equation~\ref{eqn:setupA:moving:Tac} 
-an {\em inferred} distance  must also be introduced: %If the time for the sound to travel between $A$ and $C$, 
-%In this case the observer knows that the total distance that the sound must travel is $l +vt + l - vt = 2l$.
-%Therefore 
-%\begin{align}
-%  t_{AC}+t_{CA} = \frac{2l}{c},
-%\end{align}
-%in agreement with \eqnref{}.
-%Unfortunately the acoustic observer as already had to concede that since they are in motion with respect to the medium,
-%the local-time is the unit of time that agrees with the  experiment.
-%To compensate for this in \eqnref{}
-%the unit of distance must be scaled by the same factor so that
-%is to become
+
+The error is clear to the Galilean observer:
+the ultrasound physicist has been forced by the measurement process to  set the effective speed of sound to equal $c$.
+To solve the problem the ultrasound physicist  must  compensate for the wrong sound speed by rescaling the temporal and spatial units  used when modelling.
+
+The ultrasound physicist cannot measure the sound speed and so  must work a little harder to come to this conclusion.
+The first and most simple explanation for the wrong prediction is to doubt the apparatus.
+If the distance between $A$, $C$ and $A^\prime$ was actually a factor of  $\gamma^2$ shorter than the manufacture claimed then the predicted time for that path would match the 
+experimentally measured value.
+Likewise, all would be well if the distance between $A$, $B$ and $A^\prime$ was shorter by a factor of $\gamma$.
+However, this explanation can be eliminated by counting  the number of sound pulses that propagate through each path.
+Counting the number of pulses that fit within the apparatus is straight forward with ultrasound.
+The pulse length is simply increased until the  received signal starts to interfere with the  emitted signal.
+The result is that $n = 2l/\lr{cT}$ cycles fit both  within the path  $A$-$B$-$A^\prime$  and $A$-$C$-$A^\prime$, where $T$ is the period of the sound wave.
+This result implies that the distance $A$-$C$-$A^\prime$ is not simply shorter than $A$-$B$-$A^\prime$ by a factor of $\gamma$,
+for then the number of cycles along each path would be different.
+Rather, it implies that {\em all} distances are shorter in the $A$-$C$-$A^\prime$ direction.
+That is parallel to the flow the {\em   unit of distance} is shorter  by a factor of $\gamma$.
+
+
+If the ultrasound physicist incorporates the  number of pulses into  equation~\ref{eqn:setupA:moving:Tab:acoustic}
+then they would predict that the  period between $A$-$B$-$A^\prime$ is
 \begin{align}
-  t_{AC}^\ast+t_{CA}^\ast = \frac{2l^\ast}{c},
+ T_\us= \gamma \frac{l/n}{c} = \gamma T,
 \end{align}
-where 
-\begin{align}
-l^\ast = \gamma^{-1} l.\label{eqn:LorentzSpace}
-\end{align}
-When a measurement is not stationary with respect to the medium the acoustically measured distance must be
-contracted by the Lorentz factor in order to agree with experimental results.
-This is the contraction that is postulated by \Poncare's special relativity.
-The contraction exists because any  signal that is used to measure distances must be assumed to be constant,
-not because the signal is constant, but because distances cannot be measured otherwise.
-\Poincare's contraction is true because it is experimentally measured.
-There is underlying physical reason for the contraction: it exists due to variations in the sound speed that are impossible to measure.
+where $T_\us$ distinguishes the predicted period from the experimentally measured period $T$.
+This result can occur  when either the  frequency of the ultrasound pulse is shifted by a factor of $\gamma$
+or when the {\em  unit of time} is scaled  by the factor of $\gamma$.
+The first of these interpretations does not make sense physically because the frequency of the pulse is a function of the transducer and driving pulse
+and not the transducer's motion.
 
-\subsection{Calibrating time in an ultrasound experiment}
 
-%Equations~\ref{eqn:LorentzTime} and \ref{eqn:LorentzSpace} are the Lorentz transformations of space and time that result from \Poincare's special relativity.
 
-When an ultrasound transducer moves with respect to the bulk flow the oscilloscope should be re-calibrated to the local time.
-Failure to do repeats the mistakes of the past and results in physical predications that err with experiment.
-%The mistakes of the past are repeated when this is not done.
-%When ultrasound physicists fail to re-calibrate their oscilloscopes to a local time 
-%when their transducer's move with respect to the bulk flow they are destined to repeat the mistakes of the past.
+
+% The first thing to be done is send  the apparatus back to the manufacture with an angry note.
+% Clearly the arms have been made too short. 
+% It should have taken $\gamma l/c$ to traverse between $A$ and $B$ whereas in fact it took only a time of $l/c$.
+% (The calculation and the results are included in the note).
+% However, no refund will be given.
+% It will be pointed out that 
+% for 
+% It will be pointed out that returned signal 
+
+
+
+
+
+
+
+% The ultrasound physicist, therefore,  needs to re-write equation~\ref{eqn:setupA:moving:Tab:acoustic} as
+% \begin{align}
+%  t_{AB}^\ast+t_{BA}^\ast  &= 2\frac{\sqrt{l^2+v^2t_{AB}^2}}{c},\label{eqn:setupA:moving:Tab:acoustic:rescaled}
+% \end{align}
+% where $t^\ast$ are the {\em inferred} temporal intervals of the physicist using acoustic measurements.
+% By comparing \eqnref{setupA:moving:Tab:acoustic:rescaled} with \eqnref{setupA:moving:Tab} it is clear that
+% \begin{align}
+%  t_{AB}^\ast+t_{BA}^\ast = \gamma^{-1}\lr{t_{AB}+t_{BA}}.\label{eqn:LorentzTime}
+% \end{align}
+% %When the effective speed of sound  is different to  the speed of sound of the medium
+% %the acoustic observer has no choice but to re-scale their base unit of time.
+% That is, when an acoustic observer is in motion with respect to the medium 
+% the temporal interval must be smaller by the Lorentz factor:
+% There must be fewer ticks to their clock than for a Galilean observer.
+% %There have been  must revert to a {\em local-time} that is not the same as the time measured by a Galilean observer.
+
+% %The interpretation of the pulse echo between $A$ and $C$ is more straightforward.
+% For  ultrasound measurements to match equation~\ref{eqn:setupA:moving:Tac} 
+% an {\em inferred} distance  must also be introduced: %If the time for the sound to travel between $A$ and $C$, 
+% %In this case the observer knows that the total distance that the sound must travel is $l +vt + l - vt = 2l$.
+% %Therefore 
+% %\begin{align}
+% %  t_{AC}+t_{CA} = \frac{2l}{c},
+% %\end{align}
+% %in agreement with \eqnref{}.
+% %Unfortunately the acoustic observer as already had to concede that since they are in motion with respect to the medium,
+% %the local-time is the unit of time that agrees with the  experiment.
+% %To compensate for this in \eqnref{}
+% %the unit of distance must be scaled by the same factor so that
+% %is to become
+% \begin{align}
+%   t_{AC}^\ast+t_{CA}^\ast = \frac{2l^\ast}{c},
+% \end{align}
+% where 
+% \begin{align}
+% l^\ast = \gamma^{-1} l.\label{eqn:LorentzSpace}
+% \end{align}
+These results can be summarised as follows.
+When modelling the results of an acoustic experiment,
+where the acoustic source is not stationary with respect to the medium,
+the modelled unit of distance must be
+contracted by the Lorentz factor in order to agree with experimental results,
+and likewise the modelled unit of time must be slow by the Lorentz factor.
+%The   contraction in length is postulated by \Poincare's special relativity.
+The contraction in length exists because a  signal that is used to measure distances must be assumed to be a constant,
+not because the signal is constant but because distances cannot be measured otherwise.
+
+% \subsection{Calibrating time in an ultrasound experiment}
+
+% %Equations~\ref{eqn:LorentzTime} and \ref{eqn:LorentzSpace} are the Lorentz transformations of space and time that result from \Poincare's special relativity.
+
+% When an ultrasound transducer moves with respect to the bulk flow the oscilloscope should be re-calibrated to the local time.
+% Failure to do repeats the mistakes of the past and results in physical predications that err with experiment.
+% %The mistakes of the past are repeated when this is not done.
+% %When ultrasound physicists fail to re-calibrate their oscilloscopes to a local time 
+% %when their transducer's move with respect to the bulk flow they are destined to repeat the mistakes of the past.
 
 
 %It may be noted at this point that ultrasound physicists are not in the habit of 
@@ -749,8 +815,9 @@ Failure to do repeats the mistakes of the past and results in physical predicati
 
 \Poincare's relativity postulate does not eliminate the medium.
 Rather motion with respect to the medium may be directly measured.
-It is instructive to carry out this calculation,
-and to reformulate Lighthill's theory of aeroacoustics.
+It is instructive to formulate acoustics for  a  medium that is measured with ultrasound.
+First it is shown in \secref{MaxwellAnalogue} that the acoustics when measured with sound obeys Maxwell's relation,
+and then it is shown in \secref{int:EM} that this formulation is essentially the same as  Lighthill's theory of aeroacoustics.
 
 In this section the simplest possible case is considered, that of an ideal fluid medium.
 %
@@ -758,12 +825,15 @@ In this section the simplest possible case is considered, that of an ideal fluid
 %Ultrasound is not capable of  measuring variations in the speed of sound.
 %Second order fluctuations in the density  can therefore play no role when ultrasound is used to describe the world.
 %It is instructive to see this argument borne out in the equations that describe an acoustically measured fluid.
-The equations of motion must  be Lorentz invariant and this condition  is automatically fulfilled  when  the equations 
+The equations of motion must  be Lorentz invariant and this condition  is automatically fulfilled  when  the equations of motion
 are obtained from the divergence of the energy-momentum tensor of the ideal fluid.
 Remembering that the sound speed takes the role  of the speed of light
-we equate the two speeds.
+we equate these two speeds.
 This further requires that the energy density for the fluid, as measured acoustically, be a function of the pressure only (barotripic),
 for the sound speed cannot equal the speed of light otherwise\cite{Taub1978}.
+
+\subsection{The acoustics analogue to Maxwell's relation}\label{sec:MaxwellAnalogue}
+
 
 The energy-momentum tensor of an ideal fluid is\cite{Doran2003}
 \eqal{
@@ -774,7 +844,8 @@ where, $\epsilon \equiv \epsilon(p)$ is the barotropic total energy density,
 $p$ is the pressure
 and 
 $u=u(\tau)$ is the velocity vector of the spacetime path, with the parameterisation chosen such that $u^2 = u^i u_i = 1$. % and $P$ is the pressure.
-c.g.s units have been chosen  so that the speed of light is unity.
+That is, the units of length and time are chosen so that velocity of light is set to unity.
+%That is, c.g.s. units have been chosen.
 
 The speed of sound, $c$,  given at constant entropy density, $\sigma$, is\cite{LandauBook,Taub1978} 
 \begin{align}
@@ -812,12 +883,12 @@ Setting the speed of sound to equal the speed of light (unity) and the integrati
 
 
 
-Applying \eqnref{eos} simplifies the energy momentum tensor considerably,
+Applying \eqnref{eos} to \eqnref{EMtensor} simplifies the energy momentum tensor,
 \eqal{
   T^{i j}  = p\lr{2 u^i u^j - g^{i j}} = \half \lr{ A^i A^j - A^k A_k g^{i j}/2} 
 %  T(a) =  p\lr{2 a \cdot u u  - a} \equiv  \frac{1}{4}  A a A,
 }{EMFluid}
-where the vector potential, $A$, introduced on the right hand side satisfies
+where the vector potential, $A$,  satisfies
 \eqal{
   A^i = 2p^{1/2}u^i =2 \epsilon^{1/2} u^i.
 }{defnA}
@@ -825,12 +896,13 @@ where the vector potential, $A$, introduced on the right hand side satisfies
 The motivation for introducing the vector $A$ is that it represents a potential flow.
 To demonstrate this, we first note that the relativistic generalisation to the velocity potential, $\psi$,  is defined by\cite{LandauBook}
 \begin{align}
-  \d_i \psi = - \frac{\epsilon+p}{n} u_i = - \frac{2 p}{n} u_i,
+  \d_i \psi \equiv - \frac{\epsilon+p}{n} u_i = - \frac{2 p}{n} u_i,
 % \del \psi = - \frac{\epsilon+p}{n} v = - \frac{2\epsilon}{n} v,
 \end{align}
-where $n$ is the proper particle number density of the fluid and equation \eqnref{eos} has been used for the second equality.
-To show that this is equal to the negative of the potential $A_i = 2\sqrt p u_i$, we use an argument of Taub\cite{Taub1978}.
-The internal energy, $\epsilon$, is equal to the sum of the rest mass and the thermodynamic internal energy \cite{LandauBook, Doran2003},
+where $\d_j \equiv \frac{\d}{\d x^j}$,  $n$ is the proper particle number density of the fluid.
+Equation \eqnref{eos} has been used for the second equality.
+To show that this is equal to the negative of the potential $A$, we use an argument of Taub\cite{Taub1978}.
+The internal energy, $\epsilon$, is equal to the sum of the rest mass and the thermodynamic internal energy, $e$ \cite{LandauBook, Taub1978},
 \begin{align}
   \epsilon(p) = nm( 1 + e(p)),
 \end{align}
@@ -855,14 +927,13 @@ A = 2\sqrt p  v = \frac{\epsilon + v}{n} v = - \del \psi.
 
 
 
-
-The divergence of the energy momentum tensor (equation \eqnref{EMFluid}) vanishes in the absence of external fields.
-Therefore, by projecting the divergence of \eqnref{EMFluid} along the timelike component we find
+In the absence of external fields, the equations of motion are obtained by setting the 
+ divergence of the energy momentum tensor (equation \eqnref{EMFluid}) to zero.
+By projecting the divergence of \eqnref{EMFluid} along the timelike component we find
 \eqa{
-  u_i \d_j T^{i j} = \half u_i A^i \d_j A^j = 0,
+  u_i \d_j T^{i j} = \half u_i A^i \d_j A^j = 0.
 %  u\cdot\scope T(\scope\del)= \half  u\cdot A \del \cdot A = 0.
 }
-where $\d_j \equiv \frac{\d}{\d x^j}$.
 %The check denotes the scope of the derivative.
 Since, from \eqnref{defnA}, the vector $A$ is parallel to $u$  it follows that 
 \eqal{
@@ -878,14 +949,14 @@ $\d_j T^{i j} - u^k u_i \d_j T^{i j}$, gives in turn,
 u_j \lr{\d^j A^k - \d^k A^j} = 0.
 %  u \cdot \lr{\del \wedge A} = 0.
 }{eomSpace}
-The relativistic vorticity tensor is 
+The relativistic vorticity tensor is the exterior derivative (2 form) of the vector potential, 
 \eqal{
-F^{j k} =\d^j A^k - \d^k A^j
+F^{j k} \equiv \d^j A^k - \d^k A^j
 %F = \deal \wedge A,
 }{DefnVorticity}
 and so \eqnref{eomSpace} implies that the vorticity is orthogonal to the velocity.
 
-By taking the divergence of \eqnref{DefnVorticity} and using \eqnref{eomTime} 
+By taking the divergence of \eqnref{DefnVorticity} and using \eqnref{eomTime} it follows that 
 %the vector identity
 %$\del \del \cdot A = \del^2 A - \del\cdot\lr{ \del \wedge A} $
 % we find,
@@ -895,7 +966,8 @@ By taking the divergence of \eqnref{DefnVorticity} and using \eqnref{eomTime}
 }{wave}
 %The second equality follows because $\del F = \del \cdot F + \del \wedge F$ 
 %and because the  operator identity $\del\wedge \del = 0$ causes $\del \wedge F$ to vanish.
-Equation \eqnref{wave} is a wave equation and so interpreting the right-hand-side of \eqnref{wave} as an acoustic source current, $J$, we obtain
+Equation \eqnref{wave} is a wave equation and so we interpret the right-hand-side of \eqnref{wave} as an acoustic  current source, $J$.
+Therefore 
 \sub{
 \label{eqn:Maxwell}
 \eqa{
@@ -907,8 +979,8 @@ Furthermore, from \eqnref{DefnVorticity} we have
   \epsilon_{i j k l} \d^j F^{k l} = \epsilon_{i j k l} \d^j \lr{\d^k A^l - \d^l A^k} = 0,
 \end{align}
 }
-which follows due to the repeated differential and the use of the Levi-civita permutation tensor, $\epsilon_{i j k l}$.
-The two equations of \eqnref{Maxwell} are Maxwell's relation and equation \eqnref{eomTime} has specified that we are working in the Lorenz gauge.
+which follows due to the use of the repeated differential and the Levi-Civita permutation tensor, $\epsilon_{i j k l}$.
+The two equations of \eqnref{Maxwell} are Maxwell's relation and equation \eqnref{eomTime} has specified the Lorenz gauge.
 %We do not explore this observation further here.
 
 As is well known, equations~\eqnref{Maxwell} are invariant to a gauge transformation such as
@@ -916,7 +988,8 @@ As is well known, equations~\eqnref{Maxwell} are invariant to a gauge transforma
   A_i^\prime = A_i - \d_i \psi.
 %A^\prime = A - \del \psi,
 \end{align}
-However, in equation~\eqnref{AisPotFlow} we already interpreted the vector potential as a potential flow.
+This transformation is equivalent to the addition of a potential flow to the equations.
+However, in equation~\eqnref{AisPotFlow} the vector potential was already interpreted as a potential flow.
 The gauge invariance is therefore the very same as the required invariance to the bulk flow of the medium.
 It is the manifestation of the \Poincare\ relativity postulate.
 
@@ -931,7 +1004,7 @@ It is the manifestation of the \Poincare\ relativity postulate.
 \subsection{The acoustic analogues to the electric and magnetic fields}\label{sec:int:EM}
 
 In classical electromagnetism the electric and magnetic fields are 
-3-dimensional vector fields that are measured (usually) in the laboratory frame.
+3-dimensional vector fields that are (usually) measured  in the laboratory frame.
 Such spatial vector quantities we denote in bold.
 %The laboratory frame is represented by an inertial and orthonormal frame with basis vectors $\{\gamma_\mu| \mu = 0,1,2,3\}$,
 %where $\gamma_0$ is a timelike vector with positive signature ($\g^2 =1$) 
@@ -941,7 +1014,7 @@ The most direct method of obtaining the analogues  is to project the vorticity b
 The analogue to the electric field can then be defined to be the timelike component, and the analogue to the magnetic field the spacelike component.
 The directness of this method, however, comes at the cost of it bearing little  resemblance to conventional acoustics.
 
-To demonstrate the similarities and the differences of ultrasound formulation of acoustics  to the Gallilean formulation,
+To demonstrate the similarities and the differences of the ultrasound formulation of acoustics  to the Gallilean formulation,
 we re-derive Maxwell's relation using an argument very similar to Lighthill's acoustic analogy\cite{Lighthill1952} of aeroacoustics.
 The analogues to the electric and magnetic field  become clear in this process.
 
@@ -964,11 +1037,11 @@ $\phi$ and $\vA$ are the temporal and spatial components of the vector potential
 where $\gamma = (1-\vv^2)^{-1}$, as in \eqnref{gamma}.
 
 The potential $\phi$ may be  interpreted as the relativistic  total enthalpy multiplied by the particle mass.
-The non-relativistic enthalpy $h$ is defined by
+To see this we first introduce the non-relativistic enthalpy, $h$, which is defined by
 \begin{align}
-  h = e + p/(nm),
+  h \equiv e + p/(nm).
 \end{align}
-from which it follows that 
+It then follows that 
 \begin{align}
   \phi =   \gamma\frac{\epsilon + p }{n} = \gamma m\lr{c^2 + h},
 \end{align}
@@ -978,7 +1051,7 @@ In the  non-relativistic limit this becomes
   \label{eqn:phinr}
 \end{align}
 The term $h + \half v^2$ is the usual expression of the total enthalpy.
-Equation~\ref{eqn:phinr} multiplies this by the particle mass, $m$, and the rest energy $mc^2$ absent from all non-relativistic thermodynamics.
+Equation~\ref{eqn:phinr} multiplies this by the particle mass, $m$, and adds the rest energy $mc^2$ absent from all non-relativistic thermodynamics.
 %\begin{align}
 %A = 2\sqrt p  u = \frac{2\epsilon}{n} u = \frac{wu}{n} =  - \del \psi,
 %\end{align}
@@ -1001,14 +1074,14 @@ In the non-relativistic limit the equations reduce to Galilean invariant forms,
 }
 with 
 equation \eqnref{NREuler} being Euler's equation written in Crocco's form\cite{Howe1998}.
-The difference between the two sets of equations is that the mass density, $\rho$, in the Gallilean forms is
-replaced by the mass-scaled total enthalpy density $\phi$. 
+The difference between the acoustically measured continuity equation, \label{eqn:NRcontinuity}, 
+and the Galilean form is that the mass density, $\rho$, in the Galilean form is
+replaced by the mass-scaled total enthalpy density, $\phi$. 
 %Replacing the mass with an energy is typical of Lorentz invariant theories.
 
 With the continuity and Euler equations in hand,
 we may now apply the conventional formulations of acoustics.
 We proceed with Lighthill's acoustic analogy\cite{Lighthill1952, Howe1998}.
-
 To do so we   differentiate  the continuity equation (equation \eqnref{Rcontinuity}) with respect to time 
 and subtract it from the spatial derivative of  Euler's equation (equation \eqnref{REuler}).
 A wave equation for the  total enthalpy results
@@ -1018,7 +1091,7 @@ A wave equation for the  total enthalpy results
   & = \vdel \cdot \lr{\vv \times\lr{\vdel \times \vA} } \equiv - \rho_q.
 \label{eqn:WavePhi}
   \intertext{Next, a wave equation for $\vA$ is obtained by 
-    by differentiating the continuity equation with respect to space 
+     differentiating the continuity equation with respect to space 
     and then adding the result to the temporal derivative of Euler's equation,
     }
    \lr{\vdel^2 - \dt^2}\vA 
@@ -1040,8 +1113,7 @@ had we carried out this procedure with the Gallilean continuity and Euler equati
   \end{align}
 }{WavesREG}
 These are Lighthill's equations expressed in terms of enthalpy and vorticity\cite{Howe1998}.
-The operator  $\Dt = \dt + \vv \cdot \vdel$.
-The left hand side of both equations \eqnref{WavesREG} describe a non-linear wave in homoentropic potential flow \cite{Howe1998}.
+The operator  $\Dt = \dt + \vv \cdot \vdel$ on the  left hand side of both equations of \eqnref{WavesREG} describe a non-linear wave in homoentropic potential flow \cite{Howe1998}.
 
 Equations \eqnref{WavePhi} and \eqnref{WavevA} can be simplified by introducing
 \begin{align}
@@ -1062,7 +1134,7 @@ so that
   }
 }{WavesMax}
 Equations \eqnref{WavesMax} can now be recognised as Maxwell's equations written in terms of the potentials in the Lorenz gauge\cite{Doran2003}.
-The vector $\vE$ is the Coriolis acceleration, and takes the role of the electric field in the analogy.
+The vector $\vE$ is known as the Lamb vector and is proportional to the Coriolis acceleration, it takes the role of the electric field in the analogy.
 The axial vector $\vB$ is the spatial vorticity and takes the role of the magnetic field.
 
 Writing out Maxwell's 4 equations explicitly gives
@@ -1086,77 +1158,110 @@ The acoustic interpretation of these equations are as follows:
 
 \section{Discussion}\label{sec:discussion}
 
+This report has demonstrated that when acoustic definitions of time and space are used to measure the world
+a Lorentz invariant description of time and space is required for modelling.
+Otherwise theoretical results do not match experiment.
+Ultrasound, as well as other sonar-based technologies, is in this sense  a relativistic subject
+where  the  speed of sound takes the traditional role of the speed of light.
 
+Light signals have no special function in the relativity theory used in this report 
+and are here replaced by acoustic signals.
+The propagating signal traverses at a constant speed, not because it really does have a constant speed, 
+but because it must be assumed to have a constant speed in order to measure distances with local temporal measurements.
+It is impossible to use sound, for example,  to  measure local variations in the speed of sound - even if such variations `really occur'.
 
-The derivation followed from noting that for ultrasound to measure distances (using pulse-echo) 
-the sound speed in the medium must be known {\em a priori}, 
-with no possibility of measuring variations in this sound speed.
-This has two consequences:
-\begin{enumerate}
-  \item The sound speed must be measured to be a constant.
-  \item The sound must be measured to be propagating linearly.
-\end{enumerate}
-If invariance to inertial translations is also assumed,
-then the constancy of the sound speed  implies that 
-ultrasound is subject to the considerations of special relativity,
-with the sound speed taking the role of the speed of light.
-This invariance has been assumed here.
+The \aether\ does have a role in the relativity theory used in this report:
+sound does have a propagating medium.
+However, the \aether\ is relativistic in the sense that it does not define a state of absolute rest. 
+The speed of an object may be defined with respect to the bulk flow of the medium
+but the actual speed of the bulk flow is not determined.
 
-To describe the propagation of the sound we considered an ideal fluid medium.
-When measured acoustically the relativistic (Lorentz invariant) description of the ideal fluid should be used,
-with the additional constraint that the speed of sound equal the speed of light.
-We have shown that the sound does indeed propagate linearly in this case.
-Indeed, we have shown it obeys Maxwell's relations.
+The acoustics of a  barotropic ideal fluid  medium was explicitly considered.
+When the flow of the medium with respect to the transducer  is measured acoustically
+it was shown that the energy momentum tensor may be written entirely as a function of the  potential flow.
+It was then demonstrated that the acoustics of the medium obey Maxwell's relation.
+It was shown that Gauge invariance in Maxwell's relation may be interpreted as an invariance to the  potential flow of the medium.
+Gauge invariance and a relativistic \aether\ are the same condition.
 
-
-
-This  chapter has explicitly formulated the (exact) analogy between ultrasound measured acoustics 
-and electromagnetism.
-It has been found that the acoustic analogue to the electric field is the Coriolis acceleration,
+By using a relativistic version of Lighthill's formulation of aeroacoustics it was demonstrated 
+that the acoustic analogue to the electric field is the Lamb vector (proportional to the Coriolis acceleration),
 and that the acoustic analogue to the magnetic field is the vorticity,
-The spacetime vorticity bivector takes the role of the field tensor.
+The spacetime vorticity tensor takes the role of the field tensor.
 The analogy in this form has long been suspected\cite{Marmanis2000,Sridhar1998},
-however, to the authors knowledge this is the first time that the analogy has been  completed.
-The key step, missing in previous attempts, 
-is to note that acoustics must be formulated in terms of a Lorentz invariant fluid where
-{\em the speed of sound equals the speed of light}.
-It is only when this step is made that the analogy exists.
+ however, to the authors knowledge this is the first time that the analogy has been  completed.
+ The key step, missing in previous attempts, 
+ is to note that acoustics must be formulated in terms of a Lorentz invariant fluid where
+ {\em the speed of sound equals the speed of light}.
+ It is only when this step is made that the analogy exists.
 
-Relativistic fluids where the sound speed equals the speed of light have been studied many times before
-as theoretical curiosities\cite{Taub1978,Pekeris1977}.
-For example, Pekeris observed that Hick's spherical vortex conserves angular momentum if and only if
-the sound speed equals the speed of light\cite{Pekeris1977}.
-The importance of such fluids, however, has not to the authors knowledge been recognised.
-Such fluids represent {\em what can be measured} when distances are obtained by echo-location.
-Acoustics as measured with ultrasound is therefore {\em identical} to electromagnetism (as measured with light).
-With hindsight this correspondence is not too surprising.
+
+
+In retrospect the derivation of the Maxwell relation not too surprising.
 For both acoustics as measured with ultrasound and electromagnetism as measured with light 
 attempt to measure the properties of their propagating signal.
 Both, therefore, 
 represent a similarly limited view of the world,
 the limitations manifesting themselves in the linearity of the equations.
+% It demonstrates that the generation and propagation of sound, when the world is measured with sound,
+% obeys the same physical law as the generation and propagation of light, when the world is measured with light.
+% Indeed, that  sound propagates linearly follows immediately from the impossibility of measuring local variations in the sound speed.
+%If there is nothing special about the use of light signals in measurement,
+%then many of the results of optics should have an exact analogue in acoustics.
 
-Another interesting analogy between acoustics and electromagnetism is `acoustic analogue gravity' literature (see Barcel{\'o}, Liberati and Visser\cite{Barcelo2005} for a review).
-The approach constructs an {\em acoustic} metric that describes the acoustics of sound carried in bulk flow.
-While the description of space and time in this formulation is Euclidean, the acoustic metric turns out to be pseudo-Euclidean,
-and therefore obeys the Lorentz transformation.
-This results because sound carried away in bulk flow  faster than the speed of sound will never reach us.
-The speed of sound is  therefore a limiting velocity in transformations.
-The analogue gravity literature then goes on to study the gravitational implications of the acoustic metric.
 
-While the motivations behind the two approaches is similar, in particular the demand that acoustics must be obey a Lorentz invariant metric,
-the approach given here and the approach of analogue gravity are fundamentally different.
-Analogue gravity does not consider the measurement process and so operates within a world characterised by two metrics, 
-the Lorentz invariant acoustic metric and the Galilean invariant spacetime  metric.
-Ultrasound measurement demands that the world be described by a Lorentz invariant metric.
-There is no other way to describe space and time acoustically.
-In analogue gravity the acoustic metric is Lorentz-invariant, but is not the same as the metric used here.
-In analogue gravity the metric is a function of the bulk flow,
-whereas  we argue that this is impossible:
-the sound speed must be an a priori constant in order to say anything about the world.
-Nevertheless, the success of analogue gravity is very encouraging.
-Acoustically observed microbubbles could offer an interesting experimental model in this field.
 
+
+The starting point for the relativity theory used here is very different from Einstein's theory.
+In this report light has no status while the \aether\ demonstrably exists,
+both of which are in conflict with Einstein's original formulation.
+It must be emphasised, however, that Einstein's postulates   are not 
+the only postulates that lead to the final relativity theory.
+\Poincare's relativity theory is equally valid.
+
+\Poincare\ derived the Lorentz transformations by postulating the Principle of Relativity (as Einstein)
+and the Lorentz contraction of space.
+He then derived the dilation of time, of which the consistency of the speed of light is a consequence.
+It is demonstrated in this report that the contraction in length is as  postulated by \Poincare\
+is not `real' in the sense that there is an interactions between matter and the medium that needs to be explained.
+Rather it exists due to variations in the sound speed that are impossible to measure.
+It is `real' only in the sense that ``Experiment is the sole source of truth''\cite{Poincare1902}.
+
+
+
+
+% The derivation followed from noting that for ultrasound to measure distances (using pulse-echo) 
+% the sound speed in the medium must be known {\em a priori}, 
+% with no possibility of measuring variations in this sound speed.
+% This has two consequences:
+% \begin{enumerate}
+%   \item The sound speed must be measured to be a constant.
+%   \item The sound must be measured to be propagating linearly.
+% \end{enumerate}
+% If invariance to inertial translations is also assumed,
+% then the constancy of the sound speed  implies that 
+% ultrasound is subject to the considerations of special relativity,
+% with the sound speed taking the role of the speed of light.
+% This invariance has been assumed here.
+
+% To describe the propagation of the sound we considered an ideal fluid medium.
+% When measured acoustically the relativistic (Lorentz invariant) description of the ideal fluid should be used,
+% with the additional constraint that the speed of sound equal the speed of light.
+% We have shown that the sound does indeed propagate linearly in this case.
+% Indeed, we have shown it obeys Maxwell's relations.
+
+
+
+% This  chapter has explicitly formulated the (exact) analogy between ultrasound measured acoustics 
+% and electromagnetism.
+% It has been found that the acoustic analogue to the electric field is the Coriolis acceleration,
+% and that the acoustic analogue to the magnetic field is the vorticity,
+% The spacetime vorticity bivector takes the role of the field tensor.
+% The analogy in this form has long been suspected\cite{Marmanis2000,Sridhar1998},
+% however, to the authors knowledge this is the first time that the analogy has been  completed.
+% The key step, missing in previous attempts, 
+% is to note that acoustics must be formulated in terms of a Lorentz invariant fluid where
+% {\em the speed of sound equals the speed of light}.
+% It is only when this step is made that the analogy exists.
 
 
 % The speed of sound is similarly limiting.
@@ -1165,44 +1270,38 @@ Acoustically observed microbubbles could offer an interesting experimental model
 % In this sense, the acoustic source is silent, and not, perhaps dissimilar to an a
 % emitted by an acoustic source that is carried away by bulk flow faster than the speed of sound.Starting from the observation that it is impossible to measure the acoustics of a 
 
-\subsubsection{The acoustic Lagrangian}\label{sec:int:spin}
-Finally, let us use the acoustic analogy to set out some directions for future work.
-%%
-%
-%Usually, when imagining the average motion of particles in a sound wave,
-%we think of the particles oscillating back and forth as the pressure perturbation passes through.
-%This is because we think of sound waves as being longitudinal.
-%In equation \eqnref{Maxwell} we have an exact analogy between electromagnetism and ultrasound measured acoustics.
-%that a sound waves can be considered to be a self-inducing vorticity-Coriolis wave.
-%The transverse nature (with respect to the direction of propagation)  of electromagnetic waves is well known, and applies equally to the vorticity and Coriolis fields here.
-%In this section we consider the implications of this observation.
-%\subsection{The acoustic Lagrangian}\label{sec:lagrangian}
-%From equations \eqnref{Maxwell} acoustic sources are described by the same equations that characterise electromagnetic sources.
-The common mathematical  description between acoustics and electromagnetism can be enforced by deriving both from a Lagrangian of the same form.
-The electromagnetic Lagrangian density is\cite{Lasenby1993, Doran2003},
-\begin{align}
- \L = \frac{1}{2} F \cdot F  - A \cdot J, \label{eqn:Lagrangian}
-\end{align}
-and the acoustic Lagrangian is same so long as the symbols $F$, $A$ and $J$ take their 
-acoustical meaning.
-Note that the acoustical Lagrangian is not the same as the Lagrangian of the ideal fluid.
-It describes directly the sound and the acoustic sources,
-rather than the fundamental motions of the fluid particles.
+% \subsubsection{The acoustic Lagrangian}\label{sec:int:spin}
+% Finally, let us use the acoustic analogy to set out some directions for future work.
+% %%
+% %
+% %Usually, when imagining the average motion of particles in a sound wave,
+% %we think of the particles oscillating back and forth as the pressure perturbation passes through.
+% %This is because we think of sound waves as being longitudinal.
+% %In equation \eqnref{Maxwell} we have an exact analogy between electromagnetism and ultrasound measured acoustics.
+% %that a sound waves can be considered to be a self-inducing vorticity-Coriolis wave.
+% %The transverse nature (with respect to the direction of propagation)  of electromagnetic waves is well known, and applies equally to the vorticity and Coriolis fields here.
+% %In this section we consider the implications of this observation.
+% %\subsection{The acoustic Lagrangian}\label{sec:lagrangian}
+% %From equations \eqnref{Maxwell} acoustic sources are described by the same equations that characterise electromagnetic sources.
+% The common mathematical  description between acoustics and electromagnetism can be enforced by deriving both from a Lagrangian of the same form.
+% The electromagnetic Lagrangian density is\cite{Lasenby1993, Doran2003},
+% \begin{align}
+%  \L = \frac{1}{2} F \cdot F  - A \cdot J, \label{eqn:Lagrangian}
+% \end{align}
+% and the acoustic Lagrangian is same so long as the symbols $F$, $A$ and $J$ take their 
+% acoustical meaning.
+% Note that the acoustical Lagrangian is not the same as the Lagrangian of the ideal fluid.
+% It describes directly the sound and the acoustic sources,
+% rather than the fundamental motions of the fluid particles.
 
 
 \subsection{On the absence of non-linear propagation} \label{sec:NonlinearProp}
 
-The linearity of the acoustic field is entirely appropriate for ultrasound.
-To apply a non-linear wave equation you need to know 
-the spatial variations of the speed of sound. 
-%which depend in turn, upon the spatial variations of the density.
-This is seen in the left hand side of equations \eqnref{WavesREG}.
-Such knowledge is impossible
-when using sound to define the concept of distance:
-the sound speed used by ultrasound must be a spatially invariant constant to be able to measure anything at all.
-What is to be explained, therefore, 
-is not why ultrasound measured acoustics is linear - this is surely correct - 
-but to explain how the non-linearity found in other measurement systems  manifests itself in acoustic measurements.
+In this report we have demonstrated that when time and space are measured acoustically
+the propagation of sound is linear.
+However, this is at odds with the current understanding in medical ultrasound that non-linear propagation of an acoustic pulse
+is not only measurable but also important.
+Our task is to explain how the non-linearity found in other measurement systems  manifests itself in acoustic measurements.
 To do so it is useful to frame the discussion around the linear acoustically measured equations of
 \eqnref{Waves}
 and their non-linear Galilean forms \eqnref{WavesREG}.
@@ -1227,6 +1326,43 @@ for it would mean that the acoustic current is no longer conserved:
 the term $- \dt \lr{ \vv \times \lr{\vdel \times \vA}}$ most certainly is a current.
 
 
+
+
+\subsection{Other similar studies}
+Relativistic fluids where the sound speed equals the speed of light have been studied many times before
+as theoretical curiosities\cite{Taub1978,Pekeris1977}.
+For example, Pekeris observed that Hick's spherical vortex conserves angular momentum if and only if
+the sound speed equals the speed of light\cite{Pekeris1977}.
+The importance of such fluids, however, has not to the authors knowledge been recognised.
+Such fluids represent {\em what can be measured} when distances are obtained by echo-location.
+Acoustics as measured with ultrasound is therefore {\em identical} to electromagnetism as measured with light.
+% With hindsight this correspondence is not too surprising.
+% For both acoustics as measured with ultrasound and electromagnetism as measured with light 
+% attempt to measure the properties of their propagating signal.
+% Both, therefore, 
+% represent a similarly limited view of the world,
+% the limitations manifesting themselves in the linearity of the equations.
+
+Another interesting analogy between acoustics and electromagnetism is `acoustic analogue gravity' literature (see Barcel{\'o}, Liberati and Visser\cite{Barcelo2005} for a review).
+The approach constructs an {\em acoustic} metric that describes the acoustics of sound carried in bulk flow.
+While the description of space and time in this formulation is Euclidean, the acoustic metric turns out to be pseudo-Euclidean,
+and therefore obeys the Lorentz transformation.
+This results because sound carried away in bulk flow  faster than the speed of sound will never reach us.
+The speed of sound is  therefore a limiting velocity in transformations.
+The analogue gravity literature then goes on to study the gravitational implications of the acoustic metric.
+
+While the motivations behind the two approaches is similar, in particular the demand that acoustics must be obey a Lorentz invariant metric,
+the approach given here and the approach of analogue gravity are fundamentally different.
+Analogue gravity does not consider the measurement process and so operates within a world characterised by two metrics, 
+the Lorentz invariant acoustic metric and the Galilean invariant spacetime  metric.
+Ultrasound measurement demands that the world be described by a Lorentz invariant metric.
+There is no other way to describe space and time acoustically.
+In analogue gravity the acoustic metric is Lorentz-invariant, but is not the same as the metric used here.
+In analogue gravity the metric is a function of the bulk flow,
+whereas  we argue that this is impossible:
+the sound speed must be an a priori constant in order to say anything about the world.
+Nevertheless, the success of analogue gravity is very encouraging.
+Acoustically observed microbubbles could offer an interesting experimental model in this field.
 
 
 
