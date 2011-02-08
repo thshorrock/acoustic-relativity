@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,12 +11,6 @@ Carlos Barcel{\'o}, Stefano Liberati, and Matt Visser.
 \newblock Analogue gravity.
 \newblock \emph{Living Reviews in Relativity}, 8:\penalty0 12, 2005.
 \newblock arXiv:gr-qc/0505065v2.
-
-\bibitem[Dolby and Gull(2001)]{Dolby2001}
-Carl~E. Dolby and Stephen~F. Gull.
-\newblock On radar time and the twin `paradox'.
-\newblock \emph{American Journal of Physics}, 69\penalty0 (12):\penalty0
-  1257--1261, October 2001.
 
 \bibitem[Doran and Lasenby(2003)]{Doran2003}
 Chris Doran and Anthony Lasenby.
@@ -36,46 +30,16 @@ D.~Hestenes.
 \newblock \emph{American Journal of Physics}, 71\penalty0 (7):\penalty0
   691--714, July 2003.
 
-\bibitem[Hestenes and Sobczyk(1984)]{Hestenes1984}
-David Hestenes and Garret Sobczyk.
-\newblock \emph{Clifford Algebra to Geometric Calculus: A Unified Language for
-  Mathematics and Physics}.
-\newblock D. Reidel Publishing Company, Kluwer Academic Publishers Group, 1984.
-
-\bibitem[Hoff(2001)]{Hoff2001}
-L~Hoff.
-\newblock \emph{Acoustic Characterisation of Contrast Agents for Medical
-  Ultrasound Imaging}.
-\newblock Kluser Academic Publishers, 2001.
-
 \bibitem[Howe(1998)]{Howe1998}
 M.~S. Howe.
 \newblock \emph{Acoustics of Fluid-Structure Interactions}.
 \newblock Cambridge Monographs on Mechanics. Cambridge University Press, 1998.
-
-\bibitem[Howe(2003)]{Howe2003}
-M.~S. Howe.
-\newblock \emph{Theory of Vortex Sound}.
-\newblock Cambridge Texts in Applied Mathematics. Cambridge University Press,
-  2003.
-
-\bibitem[Keller and Miksis(1980)]{Keller1980}
-Joseph~B. Keller and Michael Miksis.
-\newblock Bubble oscillations of large amplitude.
-\newblock \emph{Journal of the Acoustical Society of America}, 68\penalty0
-  (2):\penalty0 628--633, Aug 1980.
 
 \bibitem[Landau and Lifshitz(1987)]{LandauBook}
 L.D. Landau and E.M. Lifshitz.
 \newblock \emph{Fluid Mechanics}.
 \newblock Number~6 in Course of Theoretical Physics. Elsevier Butterworth
   Heinemann, 2nd edition, 1987.
-
-\bibitem[Lasenby et~al.(1993)Lasenby, Doran, and Gull]{Lasenby1993}
-A.N. Lasenby, C.J.L. Doran, and S.F. Gull.
-\newblock A multivector derivative approach to lagrangian field theory.
-\newblock \emph{Foundations of Physics}, 23\penalty0 (10):\penalty0 1295--1327,
-  1993.
 
 \bibitem[Lighthill(1952)]{Lighthill1952}
 M.~J. Lighthill.
@@ -89,17 +53,6 @@ Haralabos Marmanis.
   Appliaton to Turbulence}.
 \newblock PhD thesis, Brown University, 2000.
 
-\bibitem[Moffatt(1969)]{Moffatt1969}
-H.~K. Moffatt.
-\newblock The degree of knottedness in tangled vortex lines.
-\newblock \emph{Journal of Fluid Mechanics}, 35\penalty0 (1):\penalty0
-  117--129, 1969.
-
-\bibitem[Neppiras(1980)]{Neppiras1980}
-E.A. Neppiras.
-\newblock Acoustic cavitation.
-\newblock \emph{Physics Reports}, 61\penalty0 (3):\penalty0 159--251, 1980.
-
 \bibitem[Pekeris(1977)]{Pekeris1977}
 C.~L. Pekeris.
 \newblock Relativistic axially symmetric flows of a perfect fluid.
@@ -107,28 +60,23 @@ C.~L. Pekeris.
   Mathematical and Physical Sciences}, 355\penalty0 (1680):\penalty0 53--60,
   Jun. 30 1977.
 
+\bibitem[Pierseaux(2001)]{Pierseaux2001}
+Y.G.A Pierseaux.
+\newblock Einstein's quantum clocks and poincare's classical clocks in special
+  relativity.
+\newblock arXiv:quant-ph/0101146v1, 2001.
+
+\bibitem[Pierseaux(2005)]{Pierseaux2005}
+Yves Pierseaux.
+\newblock Special relativity: Einstein’s spherical waves versus poincar{\'e}
+  ellipsoidal waves.
+\newblock \emph{Annales de la Fondation Louis de Broglie}, 30\penalty0
+  (3-4):\penalty0 353--379, 2005.
+
 \bibitem[Poincar{\'e}(1902)]{Poincare1902}
 Henri Poincar{\'e}.
 \newblock \emph{Science and Hypothesis}.
 \newblock English translation The Walter Scott Translation Co. Ltd. 1905, 1902.
-
-\bibitem[Ra{\~n}ada(1992)]{Ranada1992}
-Antonio~F. Ra{\~n}ada.
-\newblock Topological electromagnetism.
-\newblock \emph{J. Phys. A: Math. Gen.}, 25:\penalty0 1621, 1992.
-\newblock \doi{DOI: 10.1088/0305-4470/25/6/020}.
-
-\bibitem[Ra{\~n}ada and Trueba(2002)]{Ranada2002}
-Antonio~F. Ra{\~n}ada and Jos{\'e} Trueba.
-\newblock Topological electromagnetism with hidden nonlinearity.
-\newblock In Myron~W. Evans, editor, \emph{Modern Nonlinear Optics, Part III},
-  volume 119 of \emph{Advances in Chemical Physics}, pages 197--253. John Wiley
-  \& Sons, Inc., 2nd edition, 2002.
-
-\bibitem[Shutilov(1988)]{ShutilovBook}
-V.A. Shutilov.
-\newblock \emph{Fundalmental Physics of Ultrasound}.
-\newblock Gordaon and Breach Science Publishers, 1988.
 
 \bibitem[Sridhar(1998)]{Sridhar1998}
 S.~Sridhar.
@@ -141,17 +89,5 @@ A.~H. Taub.
 \newblock Relativistic fluid mechanics.
 \newblock \emph{Annual Reviews in Fluid Mechanics}, 10\penalty0 (301--332),
   1978.
-
-\bibitem[Trueba and Ra{\~n}ada(1996)]{Trueba1996}
-Jos{\'e} Trueba and Antonio~F. Ra{\~n}ada.
-\newblock The electromagnetic helicity.
-\newblock \emph{The European Journal of Physics}, 17:\penalty0 141--144, 1996.
-
-\bibitem[Trueba and Ra{\~n}ada(2000)]{Trueba2000}
-Jos{\'e} Trueba and Antonio~F. Ra{\~n}ada.
-\newblock Helicity in classical electrodynamics and its topological
-  quantization.
-\newblock \emph{APEIRON}, 7\penalty0 (1-2):\penalty0 83--88, January-April
-  2000.
 
 \end{thebibliography}

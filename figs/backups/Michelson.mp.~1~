@@ -1,0 +1,66 @@
+
+
+vardef arcsind primary x = angle((1+-+x,x)) enddef;
+vardef arccosd primary x = angle((x,1+-+x)) enddef;
+
+
+vardef make_transducer.@#(expr at, rot_angle, scaleby) =
+  save hscaleby;  numeric hscale;  hscaleby   = 0.5*scaleby;
+  pair @#.back, @#.top, @#.bottom, @#.front, @#.backtop, @#.backbottom, @#.fronttop, @#.frontbottom, @#.joinbottom, @#.jointop ;
+  path @#;
+  
+  @#.back  = at;
+  @#.front = (at+(scaleby,0)) rotatedaround (at, rot_angle) ;
+  if (rot_angle<=90  ) :
+    @#.top = (at+(0.5*scaleby,0.5*scaleby)) rotatedaround (at, rot_angle) ;
+    @#.bottom = (at+(0.5*scaleby,-0.5*scaleby)) rotatedaround (at, rot_angle) ;
+    
+    @#.backtop = (at + (0, 0.5*hscaleby))  rotatedaround (at, rot_angle) ;
+    @#.backbottom = (at + (0, -0.5*hscaleby) )  rotatedaround (at, rot_angle) ;
+    @#.joinbottom = (at +(0.75*scaleby,-0.5*hscaleby) ) rotatedaround (at, rot_angle) ;  
+    @#.jointop = (at +(0.75*scaleby,+0.5*hscaleby) ) rotatedaround (at, rot_angle) ;
+    @#.frontbottom = (at +(scaleby,-0.5*scaleby) ) rotatedaround (at, rot_angle) ;
+    @#.fronttop = (at +(scaleby,+0.5*scaleby) ) rotatedaround (at, rot_angle) ;
+  elseif(rot_angle>=270  ) :
+
+    @#.top = (at+(0.5*scaleby,0.5*scaleby)) rotatedaround (at, rot_angle) ;
+    @#.bottom = (at+(0.5*scaleby,-0.5*scaleby)) rotatedaround (at, rot_angle) ;
+    
+    @#.backtop = (at + (0, 0.5*hscaleby))  rotatedaround (at, rot_angle) ;
+    @#.backbottom = (at + (0, -0.5*hscaleby) )  rotatedaround (at, rot_angle) ;
+    @#.joinbottom = (at +(0.75*scaleby,-0.5*hscaleby) ) rotatedaround (at, rot_angle) ;  
+    @#.jointop = (at +(0.75*scaleby,+0.5*hscaleby) ) rotatedaround (at, rot_angle) ;
+    @#.frontbottom = (at +(scaleby,-0.5*scaleby) ) rotatedaround (at, rot_angle) ;
+    @#.fronttop = (at +(scaleby,+0.5*scaleby) ) rotatedaround (at, rot_angle) ;
+  else:
+    @#.bottom = (at+(0.5*scaleby,0.5*scaleby)) rotatedaround (at, rot_angle) ;
+    @#.top = (at+(0.5*scaleby,-0.5*scaleby)) rotatedaround (at, rot_angle) ;
+    @#.backbottom = (at + (0, 0.5*hscaleby))  rotatedaround (at, rot_angle) ;
+    @#.backtop = (at + (0, -0.5*hscaleby) )  rotatedaround (at, rot_angle) ;
+    @#.jointop = (at +(0.75*scaleby,-0.5*hscaleby) ) rotatedaround (at, rot_angle) ;  
+    @#.joinbottom = (at +(0.75*scaleby,+0.5*hscaleby) ) rotatedaround (at, rot_angle) ;
+    @#.fronttop = (at +(scaleby,-0.5*scaleby) ) rotatedaround (at, rot_angle) ;
+    @#.frontbottom = (at +(scaleby,+0.5*scaleby) ) rotatedaround (at, rot_angle) ;
+  fi;
+  
+  
+  @# = @#.backtop--@#.backbottom--@#.joinbottom--@#.jointop--@#.fronttop--@#.frontbottom--@#.joinbottom--@#.jointop--cycle;
+enddef;
+
+u = 0.5cm;
+pair o;
+o = (0,0);
+path bounding[];
+bounding0:= o--(o+(4cm,0))-- (o+(4cm,4cm))-- (o+(0,4cm))--cycle;
+
+beginfig(0);
+
+  
+  make_transducer.pulser(o+(4cm-1u,2cm), 0, 1.5*u);
+  
+  draw pulser;
+
+  
+  setbounds currentpicture to bounding0;
+endfig;
+end
