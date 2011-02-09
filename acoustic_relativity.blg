@@ -3,45 +3,45 @@ The top-level auxiliary file: acoustic_relativity.aux
 The style file: plainnat.bst
 Database file #1: ../../tshorrock_thesis/bib/tshorrock.bib
 Warning--I didn't find a database entry for "Pekeris1976"
-You've used 14 entries,
+You've used 18 entries,
             2773 wiz_defined-function locations,
-            702 strings with 6872 characters,
-and the built_in function-call counts, 5002 in all, are:
-= -- 457
-> -- 182
-< -- 14
-+ -- 68
-- -- 54
-* -- 350
-:= -- 801
-add.period$ -- 46
-call.type$ -- 14
-change.case$ -- 56
-chr.to.int$ -- 14
-cite$ -- 28
-duplicate$ -- 269
-empty$ -- 473
-format.name$ -- 72
-if$ -- 1034
+            730 strings with 7652 characters,
+and the built_in function-call counts, 6393 in all, are:
+= -- 588
+> -- 222
+< -- 18
++ -- 84
+- -- 66
+* -- 432
+:= -- 1024
+add.period$ -- 62
+call.type$ -- 18
+change.case$ -- 71
+chr.to.int$ -- 18
+cite$ -- 36
+duplicate$ -- 348
+empty$ -- 613
+format.name$ -- 88
+if$ -- 1329
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 16
-newline$ -- 80
-num.names$ -- 56
-pop$ -- 112
+missing$ -- 21
+newline$ -- 103
+num.names$ -- 72
+pop$ -- 142
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 58
 quote$ -- 0
-skip$ -- 180
+skip$ -- 231
 stack$ -- 0
-substring$ -- 178
-swap$ -- 18
+substring$ -- 232
+swap$ -- 22
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 134
+type$ -- 173
 warning$ -- 0
-while$ -- 55
+while$ -- 70
 width$ -- 0
-write$ -- 191
+write$ -- 248
 (There was 1 warning)

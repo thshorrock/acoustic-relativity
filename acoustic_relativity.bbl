@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -73,10 +73,38 @@ Yves Pierseaux.
 \newblock \emph{Annales de la Fondation Louis de Broglie}, 30\penalty0
   (3-4):\penalty0 353--379, 2005.
 
+\bibitem[Poincar{\'e}(1898)]{Poincare1898}
+Henri Poincar{\'e}.
+\newblock La mesure du temps.
+\newblock \emph{Revue de métaphysique et de morale 6}, 1898.
+\newblock English translation used: The Foundations of Science (The Value of
+  Science) 1913, New York: Science Press, Translator: George Bruce Halsted.
+
 \bibitem[Poincar{\'e}(1902)]{Poincare1902}
 Henri Poincar{\'e}.
 \newblock \emph{Science and Hypothesis}.
-\newblock English translation The Walter Scott Translation Co. Ltd. 1905, 1902.
+\newblock English translation used: The Walter Scott Translation Co. Ltd. 1905,
+  1902.
+
+\bibitem[Poincar{\'e}(1906)]{Poincare1906}
+Henri Poincar{\'e}.
+\newblock Sur la dynamique de l'{\'e}lectron.
+\newblock \emph{Rendiconti del Circolo Matematico di Palemo}, 21:\penalty0
+  129--175, 1906.
+\newblock English translation for part 1 (used here) available from H.M.
+  Schwartz, American Journal of Physics, November 1971, Volume 39, 1287--1294.
+
+\bibitem[Poincar{\'e}(1908)]{Poincare1908}
+Henri Poincar{\'e}.
+\newblock La dynamique de l'{\'e}lectron.
+\newblock \emph{Revue générale des sciences pures et appliquées},
+  19:\penalty0 386--402, 1908.
+
+\bibitem[Poincar{\'e}(1913)]{PoincareScienceAndMethod}
+Henri Poincar{\'e}.
+\newblock \emph{The Foundations of Science (Science and Method: Book2)}.
+\newblock Science and Education. New York: Science Press, 1913.
+\newblock Translator: George Bruce Halsted.
 
 \bibitem[Sridhar(1998)]{Sridhar1998}
 S.~Sridhar.
