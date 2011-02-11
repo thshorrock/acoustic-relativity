@@ -1,6 +1,7 @@
 \documentclass[10pt, fleqn,final,showtrims,oldfontcommands, article,a4paper,oneside]{memoir} %twoside,%\documentclass[10pt, astron]{article} %when have admin rights,astron
 
 
+\usepackage{xspace}
 \usepackage{emp,ifpdf}
 \ifpdf
  \DeclareGraphicsRule{*}{mps}{*}{}
@@ -95,7 +96,7 @@
 
 \newcommand{\aether}{\ae ther}
 \newcommand{\aetherial}{\ae therial}
-\newcommand{\Poincare}{Poincar{\'e}}
+\newcommand{\Poincare}{Poincar{\'e}\xspace}
 
 \newcommand{\chapref}[1]{chapter~\ref{ch:#1}}
 \newcommand{\Chapref}[1]{Chapter~\ref{ch:#1}}
@@ -162,6 +163,68 @@
 	     \end{enumerate*} 
 	   }
 
+\newcommand*\she {she\xspace}
+\newcommand*\She {She\xspace}
+\newcommand*\her {her\xspace}
+\newcommand*\Her {Her\xspace}
+\newcommand*\herself {herself\xspace}
+\newcommand*\Herself {Herself\xspace}
+
+%\newif\ifhe\hetrue
+
+%\newcommand*\he*%
+%{%
+%  \ifhe%
+%    he\xspace%
+%    \hefalse%
+%  \else%es
+%    she\xspace%
+%    \hetrue
+%  \fi%
+%}%
+%\newcommand*\He*%
+%{%
+%  \ifhe%
+%    He\xspace%
+%    \hefalse%
+%  \else%es
+%    She\xspace%
+%    \hetrue
+%  \fi%
+%}%
+%\newcommand*\himself*%
+%{%
+%  \ifhe%
+%    himself\xspace%
+%    \hefalse%
+%  \else%es
+%    herself\xspace%
+%    \hetrue
+%  \fi%
+%}%
+
+
+% Capitalized version:
+%\newcommand*\Heorshe{%
+%   \iffemale
+%      She
+%      \femalefalse
+%   \else
+%      He
+%      \femaletrue
+%   \if
+%}
+
+%\newcommand*\himselforherself{%
+%   \iffemale
+%      herself
+%      \femalefalse% next one is male
+%   \else
+%      himself
+%      \femaletrue% next one is female
+%   \if
+%}
+
 \begin{document}
 
 \title{An acoustic theory of special relativity}
@@ -213,7 +276,7 @@ nor alters the units of the measurements made by the observer.
 %which demands that the units of measurement that are stationary for one observer  as the units at that move uniformly to one another.
 %
 %and secondly because the \aether\ is assumed not to alter the length of a {\em rigid} measuring device (physical identity of the  units of measure - a consequence of Einstein's relativity  relativity postulate).
-The observer can therefore consider herself to be stationary and not consider the \aether\ at all.
+The observer can therefore consider \herself to be stationary and not consider the \aether\ at all.
 This elimination of the \aether, however, only emphasises the uniqueness of light, for it is the  only  signal that has a  medium with no measurable mechanical properties.
 %The central role of light in the measurement process is unsettling. 
 %How lucky we are to be born with eyes! 
@@ -223,30 +286,28 @@ more and more distant from the world that we can touch and hear.
 %We are very fortunate that we can see.
 %Would this definition of time and space be satisfactory if we could not?
 
-The relativity theory of \Poincare\ is different.
+The relativity theory of \Poincare is different.
 %In the relativity theory of \Poincare, on the other hand,
 %The relativity theory of \Poincare, on the other hand, neither  eliminates the \aether\ nor 
 %postulates the constancy of the speed of light.
-%For \Poincare\ 
+%For \Poincare 
 For \Poincare, light does have a medium and all motions can be  measured with respect to it;
 `stationary' means stationary with respect to the \aether\cite{Poincare1908,PoincareScienceAndMethod,Pierseaux2005}.
 Unlike Einstein's theory, the length of a measuring rule used by an observer is affected by the observers motion.
-Indeed, \Poincare\ {\em postulates} that it contracts from its  length when stationary with respect to the \aether,
-with the size of the contraction  determined by the spatial Lorentz transformation\cite{Pierseaux2005}.
+Indeed, \Poincare\ {\em postulates} that it contracts from its  length measured when stationary with respect to the \aether,
+with the size of the contraction  determined by the spatial Lorentz transformation\cite{Poincare1906, Pierseaux2005}.
 %\ and
 %so there is only one stationary reference.
 %This leads to a difference in the  interpretation given to  the Lorentz transformation.
 %\Poincare's  Principle of Relativity is also slightly different from Einstein's.
 It follows that the principle of relativity  is also different;
-\Poincare\ assumes  that there is no absolute reference from  which to measure the speed of the \aether\cite{Poincare1906}.
-However, in the refusal of an absolute frame of reference, \Poincare's relativity postulate does
-enable a complete theory of special relativity to be derived.
-Using it with the spatial transformation \Poincare\ determines the temporal Lorentz transformation\cite{Poincare1906,Pierseaux2001}.
-\Poincare's formulation of special relativity is not at odds with any experimental confirmation of Einstein's theory\cite{Pierseaux2001}.
-The constancy of the speed of light 
-is not directly postulated in \Poincare's derivation\cite{Pierseaux2005}.
-However, this is not because \Poincare\ did not recognise the postulate;
-in 1898\cite{Poincare1898} he notes that when an astronomer measures the speed of light, 
+\Poincare assumes  that there is no absolute reference from  which to measure the speed of the \aether\cite{Poincare1906}.
+However, \Poincare's formulation of special relativity is not at odds with any experimental confirmation of Einstein's theory\cite{Pierseaux2001}.
+This is because \Poincare, like Einstein, uses the Lorentz transformations to switch between the spatial-temporal measurements of different observers,
+and because both theories are invariant in  the quadratic form;
+light does have a constant speed in  \Poincare's theory of relativity\cite{Pierseaux2001}.
+Like Einstein, \Poincare recognises that the constancy of the speed of light is postulate.
+In 1898\cite{Poincare1898} he notes that when an astronomer measures the speed of light, 
 \begin{quote}
   He has begun by supposing that light has a constant velocity, 
   and in particular that its velocity is the same in all directions. 
@@ -255,11 +316,34 @@ in 1898\cite{Poincare1898} he notes that when an astronomer measures the speed o
 %  it might be contradicted by it if the results of different measurements were not concordant.
 %  We  should think ourselves fortunate that this contradiction has not happened...
 \end{quote}
-Light does have a constant speed in  \Poincare's theory of relativity\cite{Pierseaux2001}.
-However, \Poincare's  theory does not depend upon this postulate.
+However, \Poincare's  theory does not depend upon this postulate,
+for \Poincare uses the Lorentz length contraction instead\cite{Pierseaux2005}.
+
+
+ %\Poincare's  theory does not depend upon this postulate,
+%for \Poincare postulates length contraction instead.
+%in the refusal of an absolute frame of reference, \Poincare's relativity postulate does
+%enable a complete theory of special relativity to be derived.
+%Using the relativity postulate with the spatial transformation \Poincare determines the temporal Lorentz transformation\cite{Pierseaux2001}.
+%\Poincare's formulation of special relativity is not at odds with any experimental confirmation of Einstein's theory\cite{Pierseaux2001}.
+%The constancy of the speed of light 
+%is not directly postulated in \Poincare's derivation\cite{Pierseaux2005}.
+%However, this is not because \Poincare did not recognise the postulate;
+%in 1898\cite{Poincare1898} he notes that when an astronomer measures the speed of light, 
+%\begin{quote}
+%  He has begun by supposing that light has a constant velocity, 
+%  and in particular that its velocity is the same in all directions. 
+%  That is a postulate without which no measurement of this velocity could be attempted. 
+%%  This postulate could never be verified directly by experiment; 
+%%  it might be contradicted by it if the results of different measurements were not concordant.
+%%  We  should think ourselves fortunate that this contradiction has not happened...
+%\end{quote}
+%Light does have a constant speed in  \Poincare's theory of relativity\cite{Pierseaux2001}.
+%However, \Poincare's  theory does not depend upon this postulate,
+%for \Poincare postulates length contraction instead.
 
 % The constancy of the speed of light is not postulated\cite{Pierseaux2005}.
-%Indeed in 1900 \Poincare\ writse
+%Indeed in 1900 \Poincare writse
 %\begin{quote}
 %  That postulate could never be verified directly by experiment; 
 %  it might be contradicted by it if the results of different measurements were not concordant. 
@@ -271,7 +355,7 @@ However, \Poincare's  theory does not depend upon this postulate.
 %% but  at the cost of  introducing motion dependant deformations.
 
 
-%\Poincare\ postulates that a rod that moves with respect to the \aether\ is contracted in comparison to its length when stationary\cite{Pierseaux2005}.
+%\Poincare postulates that a rod that moves with respect to the \aether\ is contracted in comparison to its length when stationary\cite{Pierseaux2005}.
 
 
 %The length of 
@@ -281,14 +365,14 @@ However, \Poincare's  theory does not depend upon this postulate.
 %Instead 
 %Furthermore, instead of postulating that the speed of light is a constant,
 %The size of the contraction is determined by the spatial Lorentz transformation.
-%For \Poincare\ a rod that moves with respect  to the \aether\ really is contracted in comparison to  its length when stationary, with the size of the contraction determined from the Lorentz formula.
+%For \Poincare a rod that moves with respect  to the \aether\ really is contracted in comparison to  its length when stationary, with the size of the contraction determined from the Lorentz formula.
 %This is the first postulate used by \Poincare\cite{Pierseaux2005}.
 %This postulate is used with the  Principle of Relativity - the assumption that there is no absolute reference from  which to measure the speed of the \aether\ - to derive the temporal Lo%rentz transformation:
 %clocks that move with respect to the \aether\ run more  slowly than when they are stationary.
 %As is discussed in detail by Pierseaux\cite{Pierseaux2001,Pierseaux2005},
 %\Poincare's relativity is just as valid as Einstein's but is fundamentally different in its starting assumptions.
 %The constancy of the speed of light is not postulated\cite{Pierseaux2005}.
-%Indeed in 1900 \Poincare\ writse
+%Indeed in 1900 \Poincare writse
 %\begin{quote}
 %  That postulate could never be verified directly by experiment; 
 %  it might be contradicted by it if the results of different measurements were not concordant. 
@@ -305,11 +389,11 @@ A fundamental explanation for these is  missing, however,
 and this gives \Poincare's theory an incomplete feel.
 Einstein's theory is, of course,
 just as incomplete as it does not answer why
-light should enter, through the concepts of time and space, every domain of physics.
-As \Poincare\ notes\cite{Poincare1906}:
+light should enter, through the concepts of time and space, every physical force.
+With regard to this question \Poincare\cite{Poincare1906} notes that:
 \begin{quote}
   Either there is nothing in the world that is not of electromagnetic origin,
-  or this part [of the relativity postulate (the speed of light)], which is common to all physical phenomena,
+  or this part [the speed of light], which is common to all physical phenomena,
   is only an appearance, something stemming from our methods of measurement.
 \end{quote}
 Modern physical theories do not agree with the first of these options.
@@ -353,14 +437,14 @@ In any case, when faced with a choice between the relativity theories of Einstei
 %
 %
 % It should be emphasised that both theories are `relativistic' in the sense that they both reject the concept of absolute space 
-% (for \Poincare\ there is no {\em true} motion to the \aether),
+% (for \Poincare there is no {\em true} motion to the \aether),
 % both predict that the measured  spatio-temporal location of a moving object 
 % varies according to the Lorentz transformations
 % and both theories explain the Michelson-Morely result.
 % The difference between the two theories is in the physical interpretation given to the Lorentz transformation.
-% For \Poincare\ a measuring rod that moves  with respect to the \aether\ really is smaller,
+% For \Poincare a measuring rod that moves  with respect to the \aether\ really is smaller,
 % and their clock really does run more slowly, than if the lengths and times were measured by an observer stationary to the medium.
-% For \Poincare\ stationary means stationary with respect to the \aether.
+% For \Poincare stationary means stationary with respect to the \aether.
 % For Einstein there is no measurable \aether\ and any observer can assert themselves to be stationary.
 % For Einstein, a rod that is stationary with respect From this perspective the 
 
@@ -383,10 +467,10 @@ In any case, when faced with a choice between the relativity theories of Einstei
 % how distances are measured (they both use the to-fro time of light)
 % or the
 
-% In 1900 \Poincare\ noted that 
-% Instead, in addition to the relativity postulate, \Poincare\ postulated a  contraction to an object  when it moves with respect to the \aether.
+% In 1900 \Poincare noted that 
+% Instead, in addition to the relativity postulate, \Poincare postulated a  contraction to an object  when it moves with respect to the \aether.
 %For Einstein  moving objects are {\em measured} to be smaller.
-%For \Poincare\ moving objects {\em are} smaller.
+%For \Poincare moving objects {\em are} smaller.
 
 %Without a  physical explanation for these contractions
 %this cure, for many, is worse than the illness.
@@ -397,14 +481,15 @@ It is demonstrated in section~\ref{sec:measurement} that in order for ultrasound
 to agree with experiment the Lorentz transformations need to be applied.
 This is achieved by explicitly considering an acoustic analogue to the Michelson-Morely experiment.
 Since sound  does have a mechanical medium through which it propagates and since ultrasound does not care about the speed of light
-it is the relativity theory of \Poincare\ that is recovered in acoustics.
+it is the relativity theory of \Poincare that is recovered in acoustics.
 It is demonstrated in  \secref{measurement} that \Poincare's motion dependent contraction 
 results from the dependence of the  sound speed on the bulk flow of the medium.
 The contraction is real in the sense that it is measured.
 However, since the contraction results from the measurement process there is 
 no need to seek some fundamental interaction between material objects and their \aether.
 
-In section~\ref{sec:Maxwell} it is demonstrated that the acoustics of an ideal fluid obey Maxwell's relations when time and space are defined acoustically.
+In section~\ref{sec:Maxwell} it is demonstrated that  when time and space are defined with sound, 
+the acoustics of an ideal fluid obey the same relations as Maxwell's formulation of electrodynamics.
 Therefore the generation and propagation of sound,  when time and space are defined with  sound,
 obey the same physical law as the generation and propagation of light,  when time and space are defined with light.
 
@@ -469,7 +554,7 @@ occurred is the midpoint of $\tm$ and $\tp$,
 \end{align}
 }
 These are the definitions of time and space that are used in ultrasound.
-They are also identical to definitions used by \Poincare\ and Einstein,
+They are also identical to definitions used by \Poincare\cite{Poincare1908, Pierseaux2005} and Einstein\cite{Einstein1905,Dolby2001}
 with the exception that the speed, $c$, is here the speed of sound rather than the speed of light.
 %The assumption that the sound returns at the same speed as it left may be relaxed.
 %Then $\tau(x) =\epsilon \tp + (1-\epsilon)\tm$ and 
@@ -483,9 +568,10 @@ for otherwise distances cannot be determined from temporal measurements.
 In diagnostic ultrasound scanners this speed is usually taken to be \unit{1540}\metre\reciprocal\second.
 The constancy of the speed of sound is identical to Einstein's  second postulate for special relativity\cite{Einstein1905},
 except that the sound speed takes the role of the speed of light.
-However, the speed of sound is here a constant not because of some   physical law
+However, the speed of sound is here a constant not because of some physical law
 but because when using sound to make measurements 
 there is no other choice  but to assume the sound speeds constancy. %that the speed of sound is constant.
+As discussed in the introduction, this conforms more to \Poincare's view of the light postulate than to Einstein's.
 
 %This is of course obvious because ultrasound attempts to determine distances from temporal measurements.
 %Nevertheless, 
@@ -498,13 +584,14 @@ there is no other choice  but to assume the sound speeds constancy. %that the sp
 %and radar-distance and their application to the example of the ``twin paradox'' is discussed by Dolby and Gull  \cite{Dolby2001}.
 
 Ultrasound has inherited from fluid mechanics the principle that it is impossible to determine absolute uniform motions:
-an object at rest in a laminar flow is equivalent to an object moving in a stationary fluid.
-The velocity of an object may always be measured with respect to the bulk flow of the fluid,
-but the  notion of a true speed with respect to some absolute reference is never  invoked.
+an object at rest in a laminar flow is equivalent to an object moving uniformly in a stationary fluid.
+The velocity of an object within a fluid, or even parts of the fluid itself, may always be measured with respect to the bulk flow of the fluid.
+%the choice of what is meant by the bulk flow is always a matter of convenience.
+The notion of a true speed with respect to some absolute reference is never  invoked.
 This is the relativity postulate as envisaged by \Poincare.
 %It does not  eliminate the meaningful concept of a measurable medium,
 %as is done by Einstein.
-%This is due to a slight difference in the notion of simultaneity between \Poincare\ and Einstein, 
+%This is due to a slight difference in the notion of simultaneity between \Poincare and Einstein, 
 %as is discussed in \secref{comparison}.
 %Nevertheless, ultrasound does assume a relativity postulate
 %and it follows that  measurements in ultrasound are subject to the Lorentz invariance of special relativity.
@@ -535,16 +622,19 @@ cannot be measured.
 This is not because such motions are impossible but because the sound will never catch  up with the entity and so there will never be an echo to record.
 
 The second is that ultrasound is not capable of  measuring variations in the speed of sound.
-In order to measure distances (and therefore speeds) the speed of sound must be known {\em a priori}.
-Fluctuations in the sound speed  cannot be known without further {\em a priori} knowledge of the medium. 
-Fluctuations in the density  can therefore play no role in determining the sound speed. % when ultrasound is used to describe the world.
+%In order to measure distances (and therefore speeds) the speed of sound must be known {\em a priori}.
+%Fluctuations in the sound speed  cannot be known without further {\em a priori} knowledge of the medium. 
+Since the sound speed must be known before any distance can be measured,
+changes in the sound speed  cannot be measured. 
+They may only be determined  with additional {\em a priori} knowledge of the structure of the medium. 
+Therefore, in ultrasound theory, fluctuations in the density  cannot alter the sound speed. %can therefore play no role in determining the sound speed. % when ultrasound is used to describe the world.
 It follows that the acoustic medium must be incompressible (in the relativistic sense\cite{Pekeris1976, Pekeris1977, Taub1978})
 and that  sound must propagate according to a linear wave equation. % when the acoustic definitions of time and space are used.
 In \secref{Maxwell} it is demonstrated that this linear relation is identical to Maxwell's relation.
 
 The ultrasound literature does not comply with these remarks.
-Currently, when describing the physics of ultrasound, a fluid medium is always described by a Galilean invariant theory such as Euler's equation or the Naiver-Stokes equation.
-This enables motions that are faster than the speed of sound to be measured 
+Currently, when modelling an ultrasound experiment, a fluid medium is always described by a Galilean invariant theory such as Euler's equation or the Naiver-Stokes equation.
+The resulting model is then capable of predicting motions that are faster than the speed of sound
 and predicts that  a sound pulse  propagates according to  a non-linear wave equation.
 Both of these predictions are impossible when the world is measured with sound.
 %Such a description is only meaningful only when distances and times are to be defined with light, 
@@ -553,7 +643,7 @@ Both of these predictions are impossible when the world is measured with sound.
 %This is appropriate only if distances and times are to be defined with light, which travels at such a tremendous speed that the Galilean approximation is appropriate.
 %If distances and times are to be defined with sound, as is done by the ultrasound scanner,
 %then the Galilean description of the world is meaningless, in the sense that it predicts  results that are impossible to verify.
-Currently ultrasound physics fails to recognise the distinction between  two equally valid descriptions of the world -
+The ultrasound literature fails to recognise the distinction between  two equally valid descriptions of the world -
 the world that is seen
 and the world that is heard.
 Curiously, ultrasound physics repeats the   fallacy that  the world must be seen to be believed.
@@ -565,7 +655,7 @@ To make it concrete it is useful to discuss a simple pulse-echo experiment and  
 - the Galilean%
 \footnote{Formally the `Galilean' measurements are the distances and times that are  measured with light signals in accordance to Einstein's method\cite{Einstein1905}.
 In ultrasound experiments, however, the Galilean approximation is entirely appropriate.}
- world that is {\em seen}, compared with the world that is measured with ultrasound. % - on a simple pulse echo experiment.
+ world that is {\em seen}, with the world that is measured with ultrasound. % - on a simple pulse echo experiment.
 %To do so, an acoustic version of the  Michelson-Morely experiment is considered.
 %For this we %
 %
@@ -624,7 +714,7 @@ In ultrasound experiments, however, the Galilean approximation is entirely appro
 The first case to be considered is illustrated in \figref{setupA}.
 This apparatus is appropriate when the equipment is stationary with respect to the bulk flow of the medium.
 It is  analogous to  Michelson and Morely's famous experiment:
-a piezoelectric transducer  replaces both the light source and the recorder while a medium that partially reflects sound  replaces the semi-silvered mirror.
+a piezoelectric transducer  replaces both the light source and the receiver while a medium that partially reflects sound  replaces the semi-silvered mirror.
 The distance between $A$ and $B$ is denoted $l$ and is the same  as the distance between $A$ and $C$.
 In the following the time it takes for the sound to propagate from $A$ to $B$ and back again is compared with the to-fro times between $A$ and $C$.
 
@@ -661,15 +751,15 @@ This is in accordance to the description of the Michelson-Morely result.
 
 First we consider the case of the apparatus being stationary with respect to the bulk flow (\figref{setupA}).
 If the propagation of the sound pulse were observed by a Galilean observer that is also stationary with respect to the flow
-then they would observe the sound travelling according to \figref{StatGA}.
-The time, $t_{AB}$, the time it takes for the sound to propagate from the $A$ to $B$ is the same as the time, $t_{BA}$, it takes the sound to propagate from $B$ to $A$.
+then \she would observe the sound travelling according to \figref{StatGA}.
+The time, $t_{AB}$,  it takes for the sound to propagate from $A$ to $B$ is the same as the time, $t_{BA}$, it takes the sound to propagate from $B$ to $A$.
 It is given by $l/c$, where  $c$ is the speed of sound of the medium.
-This time interval is the same for the to and fro paths between $A$ and $C$ and so
+This time interval is the same for the to and fro paths between $A$ and $C$,
 \begin{align}
   t_{AB}=t_{BA}=t_{AC}=t_{CA}=l/c\label{eqn:setupA:stationary:Tab}.
 \end{align}
 
-An observer for whom  both the medium and apparatus flow past at a speed $v$ will measure the same time intervals 
+An observer for whom  both the medium and apparatus flow past at a speed, $v$, will measure the same time intervals 
 but will witness an altogether more complicated experiment.
 The acoustic paths that will be observed are illustrated in \figref{MovingGA}.
 When the sound travels between $A$ and $B$ the observer will record that the sound travels at an effective speed of
@@ -677,8 +767,8 @@ When the sound travels between $A$ and $B$ the observer will record that the sou
 \label{eqn:ceffone}
 c_\eff(v) = \sqrt{c^2 +v^2}.
 \end{align}
-This is due to the additional contribution to the speed given by the  laminar flow.
-Additionally, the distance between $A$ and $B$ will be measured to be greater by  $\sqrt{l^2+v^2t_{AB}^2}$.
+This is due to  the  contribution of the  laminar flow.
+Additionally, the measured distance between $A$ and $B$ will be greater by  $\sqrt{l^2+v^2t_{AB}^2}$.
 The increased distance and increased speed cancel so that 
 \begin{align}
   \label{eqn:setupA:moving:Tab}
@@ -689,9 +779,9 @@ as before.
 For the moving observer the bulk flow will also contribute to the effective speed of the pulse from $A$ to $C$  ($c_\eff = c+v$) 
 and hinder  the return from $C$ to $A$ ($c_\eff = c-v$).
 However, this is again exactly compensated by changes in the total distance that the moving observer measures.
-As is illustrated in \figref{MovingGA}, the effective distance from $A$ to $C$ is $l+vt$. % when the pulse passes $A$, the position $C$ is seen to be moving away at a speed of $v$ - the speed of the bulk flow - 
+As is illustrated in \figref{MovingGA}, the total distance from $A$ to $C$ is $l+vt$. % when the pulse passes $A$, the position $C$ is seen to be moving away at a speed of $v$ - the speed of the bulk flow - 
 %and so effective distance between $A$ and $C$ is $l+vt$.  
-When the sound travels from $C$ to $A$ the effective distance is $l-vt$. % because the sound pulse is now travelling the opposite direction.
+When the sound travels from $C$ to $A$ the total  distance is $l-vt$. % because the sound pulse is now travelling the opposite direction.
 %%
 %
 %the travelling from  $A$ to $C$ is also viewed by this observer as having further to travel: a distance of $l+vt$.
@@ -705,7 +795,7 @@ Therefore the measured times are
 Next, we must check that these timings still hold when the apparatus is moving with respect to the medium (\figref{setupB}).
 %The analysis  proceeds similarly to before.
 The equivalence of \figref{setupB} and \figref{MovingGA} demonstrate this.
-An observer that is stationary with respect to the apparatus (and moving with a speed $v$ with respect to the medium) will record,
+An observer that is stationary with respect to the apparatus (and moving with a speed, $v$, with respect to the medium) will record,
 \begin{align}
   \label{eqn:setupB:moving:Tab}
   t_{AB} = t_{BA^\prime} =  \frac{\sqrt{l^2+v^2t_{AB}^2}}{\sqrt{c^2 +v^2}} = \frac{l}{c},
@@ -724,41 +814,49 @@ identical to the time it takes the sound to propagate from $A$ to $C$ and back,
 irrespective of the speed of the observer with respect to the medium.
 The acoustic Michelson-Morely experiment, therefore, should yield a  {\em null} result.
 %A {\em null} result  the acoustic Michelson-Morely experiment is correct.
+
 \subsubsection{An acoustic interpretation}\label{sec:MMLorentzian}
 
-When distances are measured acoustically  it is difficult to interpret experiments that are not stationary with respect to the medium. %previous experiment is  difficult to interpret.
-This is because the effective sound speed (such as is  used in equation~\ref{eqn:ceffone})
-is contradictory to the acoustic definition of time and space given in equation~\ref{eqn:radar}.
-%If ultrasound data is all you have then you cannot define a  speed of sound that is a function of the relative velocity of the bulk medium:
-%you need the speed of sound {\em before} you can determine the relative speed.%
-%
-%
-%A physicist using  ultrasound measurements may determine their speed relative to the bulk flow by using \eqnref{radar},
-%but only after a constant speed of sound has been assumed.
-%It is impossible to define an effective speed of sound that is a function of this relative velocity.
-%
+Unlike the Galilean observer, the ultrasound physicist cannot directly measure the propagation of sound.
+The sound path of a pulse-echo experiment must be inferred afterwards from the measurements and the  definitions of equation~\ref{eqn:radar}.
+In order to  predict a  sound path the ultrasound physicist must have further {\em a priori}  knowledge,
+which we assume here to be the dimensions  of the apparatus.
 
-For concreteness let us again consider the experiment of \figref{setupB},
-where the apparatus is stationary but is placed in a laminar flow of speed $v$.
-The ultrasound physicist has the recorded to-fro times between $A$, $B$, and $A^\prime$ and between
-$A$, $C$, and $A^\prime$, which are numerically equal to the value of $2l/c$ (equations~\ref{eqn:setupB:moving:Tab} and \ref{eqn:setupB:moving:Tac}).
-However, unlike the Galilean observer, they cannot directly measure the propagation of the sound through their apparatus.
-Instead the physicist must try to infer the sound path.
-To do so they  must know the speed, $v$, of the apparatus with respect to the laminar flow.
-They can directly measure this by using the pulse echo technique and the definitions of equation~\eqnref{radar}.
-In order to {\em test} the predicted sound paths the ultrasound physicist must have further {\em a priori}  knowledge.
-In this example we assume that the ultrasound physicist also knows
-the  dimensions of their apparatus, as obtained from the manufacturer's specification, for example.
+%When distances are measured acoustically  it is difficult to interpret measurements that are not stationary with respect to the medium. %previous experiment is  difficult to interpret.
+%This is because the effective sound speed (such as is  used in equation~\ref{eqn:ceffone})
+%is contradictory to the acoustic definition of time and space given in equation~\ref{eqn:radar}.
 
-Knowledge of the apparatus causes the ultrasound physicist to predict the  sound path illustrated in \figref{MovingGA}.
-However, the predicted path  is subject to the rules of the measurement system 
-and so the ultrasound physicist uses the ultrasound requirement that  sound always propagates at a  constant speed, $c$.
-%- 
-%the speed of sound is fixed - and so the
-For the propagation time between $A$, $B$ and $A^\prime$ they  predict (c.f. equation~\ref{eqn:setupA:moving:Tab})
+Let us again consider the experiment of \figref{setupA},
+where all the apparatus is stationary with respect to the bulk flow of the fluid.
+The sound path illustrated in  \figref{StatGA} is the simplest through the apparatus and we assume
+that this path is predicted.
+%
+%In order to {\em test} the predicted sound paths the ultrasound physicist must have further {\em a priori}  knowledge,
+%which we assume to be the dimensions  of \her apparatus. % as obtained from the manufacturer's specification, for example.
+To test this prediction the ultrasound  physicist measures the to-fro times between $A$ and $B$ and between
+$A$ and  $C$.
+Both of these times  are equal to $2l/c$ (equation~\ref{eqn:setupA:stationary:Tab}),
+which is  consistent with the known lengths, $l$.
+The predicted sound paths are to this extent confirmed.
+
+
+Let us now suppose that the  same setup is measured by a transducer that moves uniformly at a speed, $v$, with respect to the medium.
+Again with knowledge of the apparatus, we assume that the ultrasound physicist  predicts the simplest path.
+This is the path illustrated in \figref{MovingGA} and is the same path that is measured by the  moving Galilean observer.
+%Note that while the ultrasound physicist would measure the fluid flowing past the transducer,
+%they do not have to consider themselves in motion with respect to the bulk flow.
+%Instead, they can  consider themselves to be stationary with the bulk flow 
+%and the measured fluid motion as nothing more than a local disturbance.  
+%
+%
+A difference from the Galilean case arises,
+however,
+because the predicted path is subject to the rules of the measurement system
+and, for the ultrasound physicist,  sound always propagates at a  constant speed, $c$.
+For the propagation time between $A$ and $B$ the ultrasound physicist therefore predicts (c.f. equation~\ref{eqn:setupA:moving:Tab})
 \begin{align}
   \label{eqn:setupA:moving:Tab:acoustic}
-  t_{AB} = t_{BA^\prime} =  \frac{\sqrt{l^2+v^2t_{BA^\prime}^2}}{c} \implies t_{AB} =  t_{BA^\prime} =\frac{1}{\sqrt{1-v^2/c^2}} \frac{l}{c}.
+  t_{AB} = t_{BA} =  \frac{\sqrt{l^2+v^2t_{BA}^2}}{c} \implies t_{AB} =  t_{BA} =\frac{1}{\sqrt{1-v^2/c^2}} \frac{l}{c}.
 \end{align}
 %In this case $t_{AB}$ is larger than before but only by a small amount.
 For the sound pulse between $A$ and $C$  they  predict
@@ -768,11 +866,11 @@ For the sound pulse between $A$ and $C$  they  predict
 \end{align}
 and 
 \begin{align}
- t_{CA^\prime} =  \frac{l-vt_{CA^\prime}}{c} \implies t_{CA^\prime} = \frac{l}{c+v}
+ t_{CA} =  \frac{l-vt_{CA}}{c} \implies t_{CA} = \frac{l}{c+v}
 \end{align}
 }
 rather than  equation~\ref{eqn:setupA:moving:Tac}.
-The total to-fro time between $A$, $C$ and $A^\prime$ is   predicted therefore to be
+Therefore the total to-fro time between $A$ and $C$  is   predicted   to be
 \begin{align}
 \label{eqn:setupA:moving:Tac:acoustic}
 t_{AC}+t_{CA^\prime} = \frac{1}{{1-v^2/c^2}} \frac{2l}{c}.
@@ -782,7 +880,7 @@ These predictions are of course wrong.
 Equation~\ref{eqn:setupA:moving:Tab:acoustic} and \ref{eqn:setupA:moving:Tac:acoustic} do not agree with the
 experimentally measured intervals.
 The reassignment $c_\eff \rightarrow c$ made by the ultrasound physicist 
-has resulted in predicting time intervals for the sound to traverse between $A$, $B$ and $A^\prime$ and between $A$, $C$ and $A^\prime$ that are too large
+has resulted in predicting time intervals for the sound to traverse between $A$ and $B$ and between $A$ and $C$ that are too large
 by a factor of $\gamma$ and $\gamma^2$ respectively,
 %Unfortunately, both the inferred times for $t_{AB} + t_{AB}$ and $t_{AC}+t_{CA}$ given in \eqnref{} and \ref{} are wrong.
 %They are, as comparison with \eqnref{} and \ref{} demonstrates, too large by a factor of $\gamma$ and $\gamma^2$ respectively,
@@ -792,9 +890,9 @@ where
   \label{eqn:gamma}
 \end{align}
 is the Lorentz factor.
-Moreover, the to-fro time between $A$, $B$ and $A^\prime$ is not predicted to equal  the to-fro time between $A$, $C$ and $A^\prime$.
-This is in contradiction to the experimental result.
-This predicament faced by the ultrasound physicist  is, of course, the same as that which faced Lorentz, \Poincare\ and Einstein at the beginning  of the twentieth century.
+Moreover, the to-fro time between $A$ and $B$ is not predicted to equal  the to-fro time between $A$ and $C$,
+in contradiction to the  experimental result.
+This predicament faced by the ultrasound physicist  is, of course, the same as that which faced Lorentz, \Poincare and Einstein at the beginning  of the twentieth century.
 
 
 
@@ -802,33 +900,34 @@ The error is clear to the Galilean observer:
 the ultrasound physicist has been forced by the measurement process to  set the effective speed of sound to equal $c$.
 To solve the problem the ultrasound physicist  must  compensate for the wrong sound speed by rescaling the temporal and spatial units  used when modelling.
 
-The ultrasound physicist, who cannot measure the sound speed,
+The ultrasound physicist, who cannot measure variations in the sound speed,
 must work a little harder to come to this conclusion.
 The first explanation that they might try  is to doubt the apparatus.
 %The first and most simple explanation for the wrong prediction is to doubt the apparatus.
-If the distance between $A$, $C$ and $A^\prime$ was actually a factor of  $\gamma^2$ shorter than the manufacture claimed then the predicted time for that path would match the 
+If the distance between $A$ and $C$  was actually a factor of  $\gamma^2$ shorter than the manufacture claimed then the predicted time for that path would match the 
 experimentally measured value.
-Likewise, all would be well if the distance between $A$, $B$ and $A^\prime$ was shorter by a factor of $\gamma$.
+Likewise, all would be well if the distance between $A$ and $B$  was shorter by a factor of $\gamma$.
 However, this explanation can be shown to be incorrect by  counting  the number of cycles of the sound wave that propagate through each arm of the apparatus.
-Counting the number of cycles that fit within the apparatus 
-can be achieved by increasing the pulse length until the received signal starts to interfere with the emitted signal.
+This can be done straight-forwardly with ultrasound,
+the  pulse length is simply increased until the received signal starts to interfere with the emitted signal.
 %The pulse length is simply increased until the  received signal starts to interfere with the  emitted signal.
-The experimental result would be that  $n = 2l/\lr{cT}$ cycles fit both  within the path  $A$-$B$-$A^\prime$  and $A$-$C$-$A^\prime$, where $T$ is the period of the sound wave.
-This result implies that the distance $A$-$C$-$A^\prime$ is not simply shorter than $A$-$B$-$A^\prime$ by a factor of $\gamma$,
+The experimental result would be that  $n = 2l/\lr{cT}$ cycles fit both  between  $A$ and $B$ and between $A$ and $C$, where $T$ is the period of the sound wave.
+This result implies that the distance between $A$ and $C$ is not simply shorter than between $A$ and $B$, % by a factor of $\gamma$,
 for then the number of cycles along each path would be different.
-Rather, it implies that {\em all} distances are shorter in the $A$-$C$-$A^\prime$ direction.
-That is, parallel to the flow the {\em   unit of distance} is contracted  by a factor of $\gamma$.
+Rather, it implies that {\em all} distances are shorter in the $A$-$C$ direction, including the wavelength of the sound wave.
+That is, parallel to the motion the {\em   unit of distance} is contracted  by a factor of $\gamma$.
 
 
 If the ultrasound physicist incorporates the  number of pulses into  equation~\ref{eqn:setupA:moving:Tab:acoustic}
-then they would predict that the  period between $A$-$B$-$A^\prime$ is
+then they would predict that the  period between $A$ and $B$ is
 \begin{align}
  T_\us= \gamma \frac{l/n}{c} = \gamma T,
 \end{align}
 where $T_\us$ distinguishes the predicted period from the experimentally measured period $T$.
-This result can occur  if the  frequency of the ultrasound pulse is shifted by the factor of $\gamma$.
-However, this interpretation does not make sense physically because the frequency of the pulse is a function of the piezoelectric crystal in the transducer.
-The only alternative explanation is that the {\em  unit of time} itself is scaled  by the factor of $\gamma$.
+That is to say, the {\em  unit of time} used in the model must be scaled  by a factor of $\gamma$ in order to agree with experiment.
+%This result can occur  if the  frequency of the ultrasound pulse is shifted by the factor of $\gamma$.
+%However, this interpretation does not make sense physically because the frequency of the pulse is a function of the piezoelectric crystal in the transducer.
+%The only alternative explanation is that the {\em  unit of time} itself is scaled  by the factor of $\gamma$.
 
 %The first of these interpretations does not make sense physically because the frequency of the pulse is a function of the transducer piezoelectric crystal.
 
@@ -887,31 +986,38 @@ The only alternative explanation is that the {\em  unit of time} itself is scale
 % \begin{align}
 % l^\ast = \gamma^{-1} l.\label{eqn:LorentzSpace}
 % \end{align}
-This comparison can be summarised as follows:
+
+As before, the equivalence of \figref{setupB} and \figref{MovingGA} guarantee that the same conclusion 
+would be drawn when the apparatus is not stationary with respect to the bulk flow.
+
+The comparison between the Galilean and experimental observer can be summarised as follows:
 when modelling an acoustic experiment 
 %where the acoustic source is not stationary with respect to the medium,
 the  unit of distance used in the model must be
 contracted by the Lorentz factor in order to agree with experimental results,
-and likewise the unit of time must be slow by the Lorentz factor.
-These are the results of \Poincare's special relativity
+and likewise the unit of time must be reduced by the Lorentz factor.
+These are the results of \Poincare's special relativity.
 %The   contraction in length is postulated by \Poincare's special relativity.
 \Poincare's postulated contraction in length is the manifestation of the dependence of the sound speed upon
 the flow of the medium.
-It  exists because a  signal that is used to measure distances must be assumed to be a constant,
-not because the signal is constant but because distances cannot be measured otherwise.
+It  exists because  the speed of a  signal that is used to measure distances must be assumed to be a constant,
+not because the speed is constant but because distances cannot be measured otherwise.
 
 
 
-To finish this section we ask what changes  to our reasoning must be made if the flow in the acoustic medium is not uniform.
-In this case the notion of a  bulk flow of the medium is not well defined and we have no rule with which to define the 'stationary' frame of reference.
-We consider what happens if the stationary frame is arbitrarily assigned.
-To do so, we reconsider the above example for the case that the ob
-and so there is no stationary frame may be assigned 
-
- the laminar flow considered here is local, 
-and is different from the far-away bulk flow of the medium.
-
-That is, what if the flow carrying the 
+%To finish this section we note that flow of the medium can be chosen arbitrarily.
+%
+%
+% ask what changes  to our reasoning must be made if the flow in the acoustic medium is not uniform.
+%In this case the notion of a  bulk flow of the medium is not well defined and we have no rule with which to define the 'stationary' frame of reference.
+%We consider what happens if the stationary frame is arbitrarily assigned.
+%To do so, we reconsider the above example for the case that the ob
+%and so there is no stationary frame may be assigned 
+%
+% the laminar flow considered here is local, 
+%and is different from the far-away bulk flow of the medium.%
+%
+%That is, what if the flow carrying the 
 
 
 % \subsection{Calibrating time in an ultrasound experiment}
@@ -1132,7 +1238,7 @@ As is well known, Maxwell's relations are invariant to a gauge transformation su
 This transformation is equivalent to the addition of a potential flow to the equations.
 However, in equation~\eqnref{AisPotFlow} the vector potential was already interpreted as a potential flow.
 The gauge invariance is therefore the very same as the required invariance to the bulk flow of the medium.
-It is the manifestation of the \Poincare\ relativity postulate.
+It is the manifestation of the \Poincare relativity postulate.
 
 %Therefore, and as asserted, the presence of a potential flow in the acoustic medium corresponds to a gauge transformation of Maxwell's equations,
 %and hence, the description of the acoustic wave is unaffected by potential flows of the medium.%
@@ -1366,7 +1472,7 @@ the limitations manifesting themselves in the linearity of the equations.
 %the only postulates that lead to the final relativity theory.
 %\Poincare's relativity theory is equally valid.
 
-%\Poincare\ derived the Lorentz transformations by postulating the Principle of Relativity (as Einstein)
+%\Poincare derived the Lorentz transformations by postulating the Principle of Relativity (as Einstein)
 %and the Lorentz contraction of space.
 %He then derived the dilation of time, of which the consistency of the speed of light is a consequence.
 %It is demonstrated in this report that the contraction in length is as  postulated by \Poincare\
@@ -1442,7 +1548,7 @@ the limitations manifesting themselves in the linearity of the equations.
 % It describes directly the sound and the acoustic sources,
 % rather than the fundamental motions of the fluid particles.
 
-In {\em Science and Hypothesis}\cite{Poincare1902} \Poincare\ declared that ``Experiment is the sole source of truth''
+In {\em Science and Hypothesis}\cite{Poincare1902} \Poincare declared that ``Experiment is the sole source of truth''
 %We interpret this as \Poincare's {\em definition} of truth.
 and in this report we agree.
 %If an object  `appears' to be contracted then it is contracted.
@@ -1541,6 +1647,61 @@ Nevertheless, the success of analogue gravity is very encouraging.
 
 
 
+
+% where there is a  laminar flow of speed $v$ with respect to the apparatus.
+% The ultrasound physicist has the recorded to-fro times between $A$, $B$, and $A^\prime$ and between
+% $A$, $C$, and $A^\prime$, which are equal to the value of $2l/c$ (equations~\ref{eqn:setupB:moving:Tab} and \ref{eqn:setupB:moving:Tac}).
+% However, unlike the Galilean observer, \she cannot directly measure the propagation of the sound through \her apparatus.
+% The ultrasound physicist must try to infer the sound path using the definitions of equation~\ref{eqn:radar}.
+
+% When the equipment and the medium is stationary, such as in \figref{StatGA}, 
+% the acoustic experiment is identical to the optical .
+% The ultrasound physicist records the to-fro times between $A$ and $B$, and between
+% $A$ and  $C$,
+% both of which  are equal to  $2l/c$ (equations~\ref{eqn:setupB:stationary:Tab}.
+
+% If the acoustic observer, the transducer, moves with a speed, $v$, with respect to the other apparatus 
+
+
+
+
+% When distances are measured acoustically  it is difficult to interpret experiments that are not stationary with respect to the medium. %previous experiment is  difficult to interpret.
+% This is because the effective sound speed (such as is  used in equation~\ref{eqn:ceffone})
+% is contradictory to the acoustic definition of time and space given in equation~\ref{eqn:radar}.
+% %If ultrasound data is all you have then you cannot define a  speed of sound that is a function of the relative velocity of the bulk medium:
+% %you need the speed of sound {\em before} you can determine the relative speed.%
+% %
+% %
+% %A physicist using  ultrasound measurements may determine their speed relative to the bulk flow by using \eqnref{radar},
+% %but only after a constant speed of sound has been assumed.
+% %It is impossible to define an effective speed of sound that is a function of this relative velocity.
+% %
+
+% Let us again consider the experiment of \figref{setupB},
+% where there is a  laminar flow of speed $v$ with respect to the apparatus.
+% The ultrasound physicist has the recorded to-fro times between $A$, $B$, and $A^\prime$ and between
+% $A$, $C$, and $A^\prime$, which are equal to the value of $2l/c$ (equations~\ref{eqn:setupB:moving:Tab} and \ref{eqn:setupB:moving:Tac}).
+% However, unlike the Galilean observer, \she cannot directly measure the propagation of the sound through \her apparatus.
+% The ultrasound physicist must try to infer the sound path using the definitions of equation~\ref{eqn:radar}.
+
+% In order to {\em test} the predicted sound paths the ultrasound physicist must have further {\em a priori}  knowledge.
+% In this example we assume that the \she knows
+% the  dimensions of \her apparatus. % as obtained from the manufacturer's specification, for example.
+% The ultrasound physicist can then predict the  sound path that is illustrated in \figref{MovingGA}.
+
+% To do so \she  must know the speed, $v$, of the apparatus with respect to the laminar flow.
+% \She can directly measure this by using the pulse echo technique so long as the speed of sound is assumed to be constant.
+% The ultrasound physicist can then predict the  sound path that is illustrated in \figref{MovingGA}.
+
+% In order to {\em test} the predicted sound paths the ultrasound physicist must have further {\em a priori}  knowledge.
+% In this example we assume that the \she knows
+% the  dimensions of \her apparatus. % as obtained from the manufacturer's specification, for example.
+% The ultrasound physicist can then predict the  sound path that is illustrated in \figref{MovingGA}.
+
+% The predicted path, however,  is subject to the rules of the measurement system 
+% and so the ultrasound physicist uses the ultrasound requirement that  sound always propagates at a  constant speed, $c$.
+% %- 
+% %the speed of sound is fixed - and so the
 
 
 %%% Local Variables: 

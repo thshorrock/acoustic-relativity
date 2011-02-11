@@ -111,7 +111,13 @@
      "g"
      "vu"
      "vA"
-     "vv")
+     "vv"
+     "she"
+     "She"
+     "her"
+     "Her"
+     "herself"
+     "Herself")
     (TeX-run-style-hooks
      "todonotes"
      "marginnote"
@@ -129,6 +135,7 @@
      "super"
      "ifpdf"
      "emp"
+     "xspace"
      "latex2e"
      "memoir10"
      "memoir"

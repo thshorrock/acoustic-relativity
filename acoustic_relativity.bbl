@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,12 @@ Carlos Barcel{\'o}, Stefano Liberati, and Matt Visser.
 \newblock Analogue gravity.
 \newblock \emph{Living Reviews in Relativity}, 8:\penalty0 12, 2005.
 \newblock arXiv:gr-qc/0505065v2.
+
+\bibitem[Dolby and Gull(2001)]{Dolby2001}
+Carl~E. Dolby and Stephen~F. Gull.
+\newblock On radar time and the twin `paradox'.
+\newblock \emph{American Journal of Physics}, 69\penalty0 (12):\penalty0
+  1257--1261, October 2001.
 
 \bibitem[Doran and Lasenby(2003)]{Doran2003}
 Chris Doran and Anthony Lasenby.
@@ -52,6 +58,12 @@ Haralabos Marmanis.
 \newblock \emph{Analogy between the Electromagnetic and Hydrodynamic Equations:
   Appliaton to Turbulence}.
 \newblock PhD thesis, Brown University, 2000.
+
+\bibitem[Pekeris(1976)]{Pekeris1976}
+C.~L. Pekeris.
+\newblock A relativistic spherical vortex.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 73\penalty0 (3):\penalty0 687--691, March 1976.
 
 \bibitem[Pekeris(1977)]{Pekeris1977}
 C.~L. Pekeris.
