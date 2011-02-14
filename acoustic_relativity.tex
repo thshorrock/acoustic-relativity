@@ -72,6 +72,10 @@
 
 \newcommand{\epsillon}{\epsilon}
 
+\newcommand{\scalefactor}{\Xi_0} 
+\newcommand{\permitivity}{\xi_0} % normally epsilon but this implies something else
+\newcommand{\permeability}{\mu_0} % normally epsilon but this implies something else
+
 \newcommand{\lr}[1]{\left( #1 \right)}
 \newcommand{\lrsquare}[1]{\left[ #1 \right]}
 \newcommand{\dprime}{{\prime\prime}}
@@ -1057,8 +1061,9 @@ not because the speed is constant but because distances cannot be measured other
 
 \Poincare's relativity postulate does not eliminate the medium.
 %Rather motion with respect to the medium may be directly measured.
-To demonstrate the role of the medium we formulate the acoustics of  an ideal fluid that is measured with ultrasound.
-It is shown in \secref{MaxwellAnalogue} that the acoustics  obey Maxwell's relations.
+To demonstrate the role of the medium we formulate the acoustics of  an ideal fluid that is measured with ultrasound,
+where the motions of the fluid are  understood to be local perturbations to the bulk flow.
+It is shown in \secref{MaxwellAnalogue} that the acoustics  obey the same law as Maxwell's equations of electromagnetism.
 The derivation is direct but the co-variant notation makes the comparison to conventional acoustics difficult.
 In \secref{int:EM} Maxwell's relations are re-derived in the spirit of Lighthill's formulation of aeroacoustics.
 In doing so the acoustic analogues to the electric and magnetic field are obtained.
@@ -1070,8 +1075,8 @@ In doing so the acoustic analogues to the electric and magnetic field are obtain
 %Ultrasound is not capable of  measuring variations in the speed of sound.
 %Second order fluctuations in the density  can therefore play no role when ultrasound is used to describe the world.
 %It is instructive to see this argument borne out in the equations that describe an acoustically measured fluid.
-When measured with ultrasound the equations of motion of the ideal fluid must be Lorentz invariant.
-This condition is  automatically fulfilled  when the equations are obtained from the  divergence of the energy-momentum tensor.
+A model that is to be compared to ultrasound measurements must be  Lorentz invariant.
+This condition is  automatically fulfilled  when the equations of fluid motion obtained from the  divergence of the energy-momentum tensor of an ideal fluid.
 The condition that the sound speed takes the role  of the speed of light
 is enforced by simply equating these two speeds.
 This further requires that the energy density of the fluid, as measured acoustically, be a function of the pressure only (barotripic),
@@ -1098,8 +1103,7 @@ The speed of sound, $c$,  given at constant entropy density, $\sigma$, is\cite{L
   c^2 = \given{\frac{\d p}{\d \epsillon}}{\sigma}. \label{eqn:soundspeed}
 \end{align}
 This is the same as the non-relativistic expression except that the energy density has replaced the mass density.
-Setting the speed of sound to equal the speed of light (unity) and the integrating 
- gives
+The speed of sound to equal the speed of light (unity) if 
 % \begin{align}
 %   \epsilon = p^\prime - p_0 + \epsilon_0
 % \end{align} 
@@ -1110,10 +1114,11 @@ Setting the speed of sound to equal the speed of light (unity) and the integrati
 %\begin{align}
 %  p \equiv p^\prime - p_0 + \epsilon_0. \label{eqn:pshort}
 %\end{align}
- the equation of state first introduced by Taub\cite{Taub1978},
+% the equation of state first introduced by Taub\cite{Taub1978},
 \eqal{
   \epsilon(p) = p.
 }{eos}
+This equation of state was first introduced by Taub\cite{Taub1978}.
 %At infinity $p^\prime = p_0$ 
 %and so $\epsilon_\infty = p_\infty = \epsilon_0 \ne p_0$.
 
@@ -1131,13 +1136,19 @@ Setting the speed of sound to equal the speed of light (unity) and the integrati
 
 Applying \eqnref{eos} to \eqnref{EMtensor} simplifies the energy momentum tensor,
 \eqal{
-  T^{i j}  = p\lr{2 u^i u^j - g^{i j}} = \half \lr{ A^i A^j - A^k A_k g^{i j}/2} 
+  T^{i j}  = p\lr{2 u^i u^j - g^{i j}} = \frac{1}{2 \scalefactor^2} \lr{ A^i A^j - A^k A_k g^{i j}/2} 
 %  T(a) =  p\lr{2 a \cdot u u  - a} \equiv  \frac{1}{4}  A a A,
 }{EMFluid}
 where the vector potential, $A$,  satisfies
 \eqal{
-  A^i = 2p^{1/2}u^i =2 \epsilon^{1/2} u^i.
+  A^i = 2\tfrac{1}{\scalefactor}p^{1/2}u^i =2 \tfrac{1}{\scalefactor} \epsilon^{1/2} u^i.
 }{defnA}
+The constant scale-factor, $\scalefactor$, is determined from the ambient proper number density of the fluid, $n_0$, and the ambient pressure, $p_0$, as follows,
+\begin{align}
+\scalefactor = \frac{n_0}{\sqrt{p_0}}. 
+\label{eqn:scalefactor}
+\end{align}
+%As will be seen, its role in the formulation is analogous to the free permitivity of space in electromagnetism.
 
 The motivation for introducing the 4-vector $A$ is that it represents a potential flow.
 To demonstrate this, we first note that the relativistic generalisation to the velocity potential, $\psi$,  is defined\cite{LandauBook} by
@@ -1147,8 +1158,8 @@ To demonstrate this, we first note that the relativistic generalisation to the v
 \end{align}
 where $\d_j \equiv \frac{\d}{\d x^j}$ and  $n$ is the proper particle number density of the fluid.
 Equation \eqnref{eos} has been used to obtain the second equality.
-To show that this is equal to the negative of the potential $A$, we use an argument of Taub\cite{Taub1978}.
-The internal energy, $\epsilon$, is equal to the sum of the rest mass and the thermodynamic internal energy\cite{LandauBook, Taub1978}, $e$, 
+To show that this is equal to the negative of the potential $A$, we use a thermodynamic argument given by Taub\cite{Taub1978}.
+The internal energy density, $\epsilon$, is equal to the sum of the rest mass and the internal energy per particle\cite{LandauBook, Taub1978}, $e$, 
 \begin{align}
   \epsilon(p) = nm( 1 + e(p)),
 \end{align}
@@ -1160,13 +1171,15 @@ it follows that
 \end{align}
 Applying equation \eqnref{eos} and integrating we obtain
 \begin{align}
-n = \sqrt p,
+n =\scalefactor \sqrt{   p },
 \end{align}
-from which we find
+where $\scalefactor$ is the constant introduced in \eqnref{scalefactor}.
+With the aid of equation \eqnref{eos} it follows that
 \begin{align}
-A_i = 2\sqrt p  u_i = \frac{\epsilon + p}{n} u_i = - \d_i \psi.
+A_i = 2\tfrac{1}{\scalefactor}\sqrt p  u_i =\frac{\epsilon + p}{n} u_i =  -\d_i \psi,
 \label{eqn:AisPotFlow}
 \end{align}
+as asserted.
 %Therefore, and as asserted, the presence of a potential flow in the acoustic medium corresponds to a gauge transformation of Maxwell's equations,
 %and hence, the description of the acoustic wave is unaffected by potential flows of the medium.
 
@@ -1188,26 +1201,26 @@ Since, from \eqnref{defnA}, the vector $A$ is parallel to $u$  it follows that
 }{eomTime}
 and so the vector potential $A$ is conserved.
 The spacelike projection,
-$\d_j T^{i j} - u^k u_i \d_j T^{i j}$, gives in turn,
+$\d_j T^{k j} - u^k u_i \d_j T^{i j}$, gives in turn,
 % $\scope T(\scope \del) - u u\cdot \scope T(\scope\del)$, gives in turn,
 \eqal{
 %  u^j \d_j A^k - u^l \d_j A_l g^{k j} = 
 u_j \lr{\d^j A^k - \d^k A^j} = 0.
 %  u \cdot \lr{\del \wedge A} = 0.
 }{eomSpace}
-The relativistic vorticity tensor is the exterior derivative (2 form) of the vector potential, 
+The relativistic vorticity tensor is the exterior derivative  of the vector potential, 
 \eqal{
 F^{j k} \equiv \d^j A^k - \d^k A^j
 %F = \deal \wedge A,
 }{DefnVorticity}
-and so \eqnref{eomSpace} implies that the vorticity is orthogonal to the velocity.
+and so \eqnref{eomSpace} implies that the vorticity tensor is orthogonal to the velocity.
 
 By taking the divergence of \eqnref{DefnVorticity} and using \eqnref{eomTime} it follows that 
 %the vector identity
 %$\del \del \cdot A = \del^2 A - \del\cdot\lr{ \del \wedge A} $
 % we find,
 \eqal{
-  \d_i \d^i A^j = \d_i F^{i j}
+  \d_i \d^i A^j = \d_i F^{i j}.
 %  \del^2 A = \del \cdot F = \del F.
 }{wave}
 %The second equality follows because $\del F = \del \cdot F + \del \wedge F$ 
@@ -1252,38 +1265,41 @@ It is the manifestation of the \Poincare relativity postulate.
 
 In classical electromagnetism the electric and magnetic fields are 
 3-dimensional vector fields that are (usually) measured  in the laboratory frame.
-Such spatial vector quantities we denote in bold.
+Such spatial vector quantities are denoted in bold in this section.
 %The laboratory frame is represented by an inertial and orthonormal frame with basis vectors $\{\gamma_\mu| \mu = 0,1,2,3\}$,
 %where $\gamma_0$ is a timelike vector with positive signature ($\g^2 =1$) 
 %and $\{\gamma_k | k=1,2,3\}$ are spacelike with negative signature ($\g^2=-1$).
 
 The most direct method of obtaining the acoustic analogues to the electric and magnetic fields
  is to project the vorticity tensor, $F$, into the laboratory  frame\cite{Hestenes2003, Doran2003}.
-The analogue to the electric field can then be defined to be the timelike component, and the analogue to the magnetic field the spacelike component.
+The analogue to the electric field can then be defined to be the timelike component, and the analogue to the magnetic field the spacelike component\cite{Hestenes2003}.
 The directness of this method, however, comes at the cost of it bearing little  resemblance to conventional acoustics.
 
-To demonstrate the similarities and the differences between  the ultrasound and the Galilean  formulations of acoustics
+To demonstrate the similarities and the differences between  the ultrasonic and the Galilean  formulations of acoustics
 we re-derive Maxwell's relations using a relativistic version of Lighthill's formulation of aeroacoustics\cite{Lighthill1952}.
 The analogues to the electric and magnetic field  become clear in this process.
+To aid the comparison, in this section we revert to S.I. units and so the speed of sound will again be denoted $c$.
+
 
 We start  by projecting the temporal and spatial equations of motion, equations \eqnref{eomTime} and \eqnref{eomSpace},
 into the laboratory frame.
 The result is
 \sub{
   \begin{align}
-     \vdel \cdot \vA &=  - \dt \phi, \label{eqn:Rcontinuity}\\ % &\quad\text{and} &&
-\dt \vA - \vv \times  \lr{\vdel \times \vA} \label{eqn:REuler}
+     \vdel \cdot \vA &=  - \tfrac{1}{c^2}\dt \phi, \label{eqn:Rcontinuity}\\ % &\quad\text{and} &&
+\dt \vA -  \vv \times  \lr{\vdel \times \vA} \label{eqn:REuler}
 &= - \vdel \phi.
   \end{align}
 }
-$\phi$ and $\vA$ are the temporal and spatial components of the vector potential $A$,
+$\dt \equiv \frac{\partial }{\partial t}$ and $\vdel$ is the spatial vector derivative;
+$\phi / c$ and $\vA$ are the temporal and spatial components of the vector potential $A$, such that
 \begin{align}
-\phi &\equiv  2\gamma \sqrt {p}   %= A \cdot \g,\gamma \frac{\epsilon + p}{\rho} 2\gamma  p^{1/2}
+\phi &\equiv  2\gamma \tfrac{1}{\scalefactor }\sqrt {p}   %= A \cdot \g,\gamma \frac{\epsilon + p}{\rho} 2\gamma  p^{1/2}
 & \quad\text{and} &&
-\vA &\equiv  \phi \vv,  %A \wedge \g.
+\vA &\equiv \tfrac{1}{c^2} \phi \vv,  %A \wedge \g.
  \end{align}
 where $\vv$ is the velocity  of the fluid as measured in the laboratory frame and 
- $\gamma = (1-\vv^2)^{-1}$, as in \eqnref{gamma}.
+ $\gamma = (1-\vv^2/c^2)^{-1}$, as in \eqnref{gamma}.
 
 The potential $\phi$ may be  interpreted as the relativistic  total enthalpy multiplied by the particle mass.
 To see this we first introduce the non-relativistic enthalpy, $h$, which is defined by
@@ -1292,8 +1308,9 @@ To see this we first introduce the non-relativistic enthalpy, $h$, which is defi
 \end{align}
 It then follows that 
 \begin{align}
-  \phi =   \gamma\frac{\epsilon + p }{n} = \gamma m\lr{c^2 + h},
+  \phi  =   \gamma\frac{\epsilon + p }{n} = \gamma m\lr{c^2 + h}.
 \end{align}
+%where 
 In the  non-relativistic limit this becomes
 \begin{align}
   \phi \rightarrow \lr{1+\tfrac{1}{2}\tfrac{v^2}{c^2}} \lr{mc^2 + mh} = mc^2 + \tfrac{1}{2}m v^2 + mh \text{\quad as ${v/c\rightarrow 0.}$}
@@ -1318,54 +1335,107 @@ Equations \eqnref{Rcontinuity} and \eqnref{REuler} are the acoustically measured
 In the non-relativistic limit the equations reduce to Galilean invariant forms, 
 \sub{
 \begin{align}
-  \vdel\cdot\lr{\rho \vv}  &= -\dt \rho, \label{eqn:NRcontinuity}\\
-  \dt \vv - \vv\times \lr{\vdel\times \vv} &= - \vdel \phi.\label{eqn:NREuler}
+  \vdel\cdot \vv  &= 0, \label{eqn:NRcontinuity}\\
+  \dt \vv - \vv\times \lr{\vdel\times \vv} &= - \vdel \lr{\tfrac{1}{2} v^2 + h}.\label{eqn:NREuler}
 \end{align}
 }
-Equation~\eqnref{NREuler} is Euler's equation written in Crocco's form\cite{Howe1998}
-and Equation~\eqnref{NRcontinuity} is very similar to the Galilean continuity equation.
-The difference between  equation~\ref{eqn:NRcontinuity}
-and the Galilean form is that the mass density, $\rho$, in the Galilean form is
-replaced by the mass-scaled total enthalpy density, $\phi$. 
+Equation~\eqnref{NREuler} is the incompressible version of Euler's equation written in Crocco's form\cite{Howe1998}
+and Equation~\eqnref{NRcontinuity} is the continuity equation of an incompressible fluid.
+%The difference between  equation~\ref{eqn:NRcontinuity}
+%and the Galilean form is that the mass density, $\rho$, in the Galilean form is
+%replaced by the mass-scaled total enthalpy density, $\phi$. 
 %Replacing the mass with an energy is typical of Lorentz invariant theories.
 
-With the acoustic version of the  continuity and Euler equations in hand,
-we may now apply the conventional formulations of acoustics.
+With  the  continuity and Euler equation that are valid for acoustic measurements now available,
+we may  apply them to the  conventional formulations of acoustics.
 We proceed with Lighthill's acoustic analogy\cite{Lighthill1952, Howe1998}.
 To do so we   differentiate  the continuity equation (equation \eqnref{Rcontinuity}) with respect to time 
 and subtract it from the spatial derivative of  Euler's equation (equation \eqnref{REuler}).
 A wave equation for the  total enthalpy results
 \subl{
 \eqa{
-   \lr{\vdel^2 - \dt^2}\phi
-  & = \vdel \cdot \lr{\vv \times\lr{\vdel \times \vA} } \equiv - \rho_q.
+   \lr{\vdel^2 - \frac{1}{c^2}\dt^2}\phi 
+  & = \vdel \cdot \lr{\vv \times\lr{\vdel \times \vA} }. % \equiv -  \frac{\rho_q} {\permitivity} .
 \label{eqn:WavePhi}
   \intertext{Next, a wave equation for $\vA$ is obtained by 
      differentiating the continuity equation with respect to space 
-    and then adding the result to the temporal derivative of Euler's equation,
+    and then subtracting  the result from the temporal derivative of Euler's equation,
     }
-   \lr{\vdel^2 - \dt^2}\vA 
-   &  = - \vdel\times\lr{\vdel \times \vA} - \dt \lr{ \vv \times \lr{\vdel \times \vA}} \equiv -\vJ.
+   \lr{\vdel^2 - \tfrac{1}{c^2}\dt^2}\vA 
+   &  = - \vdel\times\lr{\vdel \times \vA} - \tfrac{1}{c^2}\dt \lr{ \vv \times \lr{\vdel \times \vA}}. % \equiv - \permeability \vJ.
     \label{eqn:WavevA}
   }
 }{Waves}
-In keeping with Lighthill's analogy we interpret the right hand side of \eqnref{WavePhi} and  \eqnref{WavevA} 
-as an acoustic source density, $\rho_q$, and acoustic current density, $\vJ$, 
-respectively.
-% Notice the nice property that the current is conserved $\vdel\cdot \vJ + \dt \rho_q = 0$.
-
 For comparison, 
-had we carried out this procedure with the Gallilean continuity and Euler equation we would have obtained\cite{Howe1998},
+had we carried out this procedure with the Galilean invariant continuity and Euler equation (not the incompressible versions) we would have obtained\cite{Howe1998},
 \subl{
   \begin{align}
-    \lrsquare{  \Dt \lr{\frac{1}{c^2} \Dt} - \frac{1}{\rho}\vdel \cdot \lr{\rho \vdel}}\phi &= -\frac{1}{\rho} \vdel \cdot \lr{\rho \vv \times \lr{\vdel\times \vv}} \label{eqn:WavephiREG}\\
-    \lrsquare{  \Dt \lr{\frac{1}{c^2} \Dt} - \frac{1}{\rho}\vdel \cdot \lr{\rho \vdel}}\vv  &= \frac{1}{\rho} \vdel \times \lr{\rho \vdel \times \vv}. \label{eqn:WavevvREG}
+    \lrsquare{  \Dt \lr{\frac{1}{c^2} \Dt} - \frac{1}{\rho}\vdel \cdot \lr{\rho \vdel}}\frac{\phi}{m} &= -\frac{1}{\rho} \vdel \cdot \lr{\rho \vv \times \lr{\vdel\times \vv}} \label{eqn:WavephiREG}\\
+    \lrsquare{  \Dt \lr{\frac{1}{c^2} \Dt} - \frac{1}{\rho}\vdel \cdot \lr{\rho \vdel}}\vv  &= \frac{1}{\rho} \vdel \times \lr{\rho \vdel \times \vv}, \label{eqn:WavevvREG}
   \end{align}
 }{WavesREG}
-These are Lighthill's equations expressed in terms of enthalpy and vorticity\cite{Howe1998}.
-The operator  $\Dt = \dt + \vv \cdot \vdel$ on the  left hand side of both equations of \eqnref{WavesREG} describe a non-linear wave in homoentropic potential flow \cite{Howe1998}.
+where  $\Dt \equiv \dt + \vv \cdot \vdel$.
+The equations of \eqnref{WavesREG} express  Lighthill's analogy in terms of enthalpy and vorticity\cite{Howe1998}.
+The left hand side of both describe a non-linear wave in homoentropic potential flow \cite{Howe1998}.
 
-Equations \eqnref{WavePhi} and \eqnref{WavevA} can be simplified by introducing
+In keeping with Lighthill's acoustic analogy, we  interpret the right hand side of \eqnref{WavePhi} and  \eqnref{WavevA} 
+as the fluctuations generated by the acoustic sources.
+If the magnitude of the  fluctuations is proportional to the density of the acoustic sources, $\rho_q$,
+then we may define the constant of proportionality, $\permitivity$, so that
+\subl{
+\eqa{
+  \vdel \cdot \lr{\vv \times\lr{\vdel \times \vA} } \equiv -   \frac{\rho_q}{\permitivity}.
+\label{eqn:WavePhiP}
+  \intertext{%where $\permitivity$ is an experimentally determined proportionality constant. 
+    Likewise, we may define an acoustic current, $\vJ = \rho_q \vv$, by 
+    }
+ \vdel\times\lr{\vdel \times \vA} + \tfrac{1}{c^2}\dt \lr{ \vv \times \lr{\vdel \times \vA}} \equiv \permeability \vJ,
+    \label{eqn:WavevAP}
+  }
+}{WavesP}
+where $\permeability$ is again  a constant of proportionality.
+If the acoustic current is conserved %,
+%such that 
+%\begin{align}
+%  \vdel\cdot \vJ + \dt \rho_q = 0,
+%\end{align}
+then it follows that the two constants are related: 
+\begin{align}
+  c^2 = \frac{1}{\permitivity\permeability}.
+\end{align}
+In the rest of this report we assume this to be the case.
+%We assume that this relation holds.
+
+
+%Equation \eqnref{Waves} may therefore be considered a definition of an acoustic source.
+%However, rather than consider \eqnref{Waves} as the definition of an acoustic source,
+%it is more useful to consider the right hand side of \eqnref{Waves} as the {\em response} to an acoustic source density, $\rho_q$,
+%and an acoustic current density, $\vJ$.
+%We therefore define an acoustic source density, $\rho_q$,
+%and an acoustic current density, $\vJ$, as follows
+
+
+
+%However.
+%in terms of an acoustic source  density, $\rho_q$,  and an acoustic current density, $\vJ$, 
+%respectively.
+%$\rho_q$ is a number density, which is as it should be for an acoustic source,
+%and $\vJ = \rho_q \vv$.
+%In order to express the number density $\rho_q$, 
+%two constants had to be introduced, $\permitivity$ and $\permeability$,
+%that have the unitts 
+
+
+%Since a sound pulse is caused by a
+%The acoustic source is a number density
+%The quantity $\permeability$,
+%\begin{align}
+%  \permeability = \frac{1}{ \permitivity c^2} =  \frac{m}{n_0} 
+%\end{align}
+
+
+
+This section is completed by noting that equations \eqnref{WavePhiP} and \eqnref{WavevAP} can be simplified by introducing
 \begin{align}
   \vE &= - \vv \times \lr{ \vdel \times \vA} &\text{and}&&
   \vB &= \vdel \times \vA,
@@ -1373,28 +1443,30 @@ Equations \eqnref{WavePhi} and \eqnref{WavevA} can be simplified by introducing
 so that
 \subl{
 \eqa{
-   \lr{\vdel^2 - \dt^2}\phi
-  & = - \vdel \cdot \vE  \equiv - \rho_q.
+   \lr{\vdel^2 -  \frac{1}{c^2}\dt^2}\phi 
+  & = - \vdel \cdot \vE  \equiv -  \frac{\rho_q}{\permitivity}
 \label{eqn:WavePhiMax}
   \intertext{and
     }
-   \lr{\vdel^2 - \dt^2}\vA 
-   &  = - \vdel\times\vB + \vE \equiv -\vJ.
+   \lr{\vdel^2 -  \tfrac{1}{c^2}\dt^2}\vA 
+   &  = - \vdel\times\vB +  \tfrac{1}{c^2} \dt \vE \equiv - \permeability \vJ.
     \label{eqn:WavevAMax}
   }
 }{WavesMax}
-Equations \eqnref{WavesMax} can now be recognised as Maxwell's equations written in terms of the potentials in the Lorenz gauge\cite{Doran2003}.
+The equations of \eqnref{WavesMax} are the same as  Maxwell's equations of electromagnetism when written in terms of the potentials in the Lorenz gauge\cite{Doran2003}
+(equation \eqnref{Rcontinuity}).
 The vector $\vE$ is known as the Lamb vector and is proportional to the Coriolis acceleration;
  it takes the role of the electric field in the analogy.
 The axial vector $\vB$ is the spatial vorticity and takes the role of the magnetic field.
+The constants $\permitivity$ and $\permeability$ are, respectively, the analogues of the permitivity and permeability of free space.
 
 Writing out Maxwell's 4 equations explicitly gives
 \sub{
 \eqa{
- \vdel \cdot \vE &= q,\label{eqn:M1}  \\ 
- \vdel \times \vB &= \vJ + \dt E, \label{eqn:M2}\\
+  \vdel \cdot \vE &= \frac{\rho_q}{\permitivity},\label{eqn:M1}  \\ 
+ \vdel \times \vB &= \permeability \vJ + \tfrac{1}{c^2} \dt E, \label{eqn:M2}\\
  \vdel \times \vE &= -\dt\vB\label{eqn:M3},\\
- \vdel \cdot \vB &= 0\label{eqn:M4},
+ \vdel \cdot \vB &= 0\label{eqn:M4}.
 }
 }
 The acoustic interpretation of these equations are as follows:

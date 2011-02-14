@@ -29,6 +29,7 @@
      "sec:Maxwell"
      "sec:MaxwellAnalogue"
      "eqn:soundspeed"
+     "eqn:scalefactor"
      "eqn:AisPotFlow"
      "eqn:Maxwell"
      "sec:int:EM"
@@ -41,6 +42,8 @@
      "eqn:WavevA"
      "eqn:WavephiREG"
      "eqn:WavevvREG"
+     "eqn:WavePhiP"
+     "eqn:WavevAP"
      "eqn:WavePhiMax"
      "eqn:WavevAMax"
      "eqn:M1"
@@ -79,6 +82,9 @@
      '("subl" 2)
      '("sub" 1)
      "epsillon"
+     "scalefactor"
+     "permitivity"
+     "permeability"
      "dprime"
      "del"
      "vdel"
