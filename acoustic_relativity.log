@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.9)  14 FEB 2011 18:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.9)  15 FEB 2011 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -816,9 +816,9 @@ it-ten in Crocco's
  []
 
 [13] [14] [15]
-Overfull \hbox (13.31612pt too wide) in paragraph at lines 1670--1673
+Overfull \hbox (23.19269pt too wide) in paragraph at lines 1753--1756
 \temp mean that the acous-tic cur-rent is no longer con-served: the term $\OMS/
-cmsy/m/n/10 ^^@[] []$
+cmsy/m/n/10 ^^@[][] []$
  []
 
 [16] (./acoustic_relativity.bbl [17]
@@ -861,7 +861,7 @@ hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texlive/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb>
-Output written on acoustic_relativity.pdf (18 pages, 309454 bytes).
+Output written on acoustic_relativity.pdf (18 pages, 309442 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
