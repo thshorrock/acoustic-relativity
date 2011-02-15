@@ -1,7 +1,7 @@
 (TeX-add-style-hook "acoustic_relativity"
  (lambda ()
     (LaTeX-add-bibliographies
-     "../../tshorrock_thesis/bib/tshorrock")
+     "./bib/tshorrock")
     (LaTeX-add-labels
      "eqn:#2"
      "sec:introduction"

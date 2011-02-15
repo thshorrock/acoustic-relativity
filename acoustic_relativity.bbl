@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -91,12 +91,6 @@ Henri Poincar{\'e}.
 \newblock \emph{Revue de métaphysique et de morale 6}, 1898.
 \newblock English translation used: The Foundations of Science (The Value of
   Science) 1913, New York: Science Press, Translator: George Bruce Halsted.
-
-\bibitem[Poincar{\'e}(1902)]{Poincare1902}
-Henri Poincar{\'e}.
-\newblock \emph{Science and Hypothesis}.
-\newblock English translation used: The Walter Scott Translation Co. Ltd. 1905,
-  1902.
 
 \bibitem[Poincar{\'e}(1906)]{Poincare1906}
 Henri Poincar{\'e}.

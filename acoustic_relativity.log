@@ -1,12 +1,9 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.9)  15 FEB 2011 17:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.9)  15 FEB 2011 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**acoustic_relativity.tex
+**\input acoustic_relativity.tex
 (./acoustic_relativity.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
 (/usr/share/texmf-texlive/tex/latex/memoir/memoir.cls
 Document Class: memoir 2009/09/21 v1.61803398b configurable book, report, artic
 le document class
@@ -823,13 +820,13 @@ Missing character: There is no Ã in font cmti10!
 Missing character: There is no © in font cmti10!
 ) [18] (./acoustic_relativity.aux) ) 
 Here is how much of TeX's memory you used:
- 13804 strings out of 495061
- 218874 string characters out of 1182621
- 329855 words of memory out of 20000000
- 16736 multiletter control sequences out of 15000+50000
+ 13801 strings out of 495061
+ 218814 string characters out of 1182621
+ 329824 words of memory out of 20000000
+ 16733 multiletter control sequences out of 15000+50000
  16045 words of font info for 56 fonts, out of 3000000 for 9000
  29 hyphenation exceptions out of 8191
- 60i,13n,83p,350b,607s stack positions out of 5000i,500n,10000p,2000000b,50000s
+ 60i,13n,83p,357b,607s stack positions out of 5000i,500n,10000p,2000000b,50000s
 </usr/share/texmf-texlive/fonts/type1/publi
 c/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.
@@ -849,7 +846,7 @@ hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texlive/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb>
-Output written on acoustic_relativity.pdf (18 pages, 308872 bytes).
+Output written on acoustic_relativity.pdf (18 pages, 308771 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
