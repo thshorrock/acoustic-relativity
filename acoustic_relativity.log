@@ -1,9 +1,12 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.9)  15 FEB 2011 16:37
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.9)  15 FEB 2011 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\input acoustic_relativity.tex
+**acoustic_relativity.tex
 (./acoustic_relativity.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
 (/usr/share/texmf-texlive/tex/latex/memoir/memoir.cls
 Document Class: memoir 2009/09/21 v1.61803398b configurable book, report, artic
 le document class
@@ -741,25 +744,25 @@ LaTeX Info: Redefining \addtolength on input line 77.
 (./acoustic_relativity.aux)
 \openout1 = `acoustic_relativity.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 232.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 232.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 233.
+LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 233.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 233.
 
  (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    ... okay on input line 233.
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count183
@@ -776,10 +779,10 @@ LaTeX Font Info:    ... okay on input line 232.
 Option `amssymb' provided! 
  Command \square redefined by SIunits package!
 
-LaTeX Info: Redefining \micro on input line 232.
+LaTeX Info: Redefining \micro on input line 233.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
-LaTeX Info: Redefining \subref on input line 232.
+LaTeX Info: Redefining \subref on input line 233.
 Package caption Info: End \AtBeginDocument code.
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
@@ -794,34 +797,19 @@ File: figs/Michelson.1 Graphic file (type mps)
 File: figs/Michelson.2 Graphic file (type mps)
  [MP to PDF]
 (./figs/Michelson.2)
-Underfull \hbox (badness 1057) in paragraph at lines 744--744
-[]\OT1/cmr/m/n/8 (a) |Ob-server sta-tion-ary with re-
- []
-
 File: figs/Michelson.3 Graphic file (type mps)
-[MP to PDF] (./figs/Michelson.3) [5] [6] [7] [8] [9] [10] [11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1293
+ [MP to PDF] (./figs/Michelson.3) [5] [6] [7] [8] [9]
+[10] [11]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1294
 .
-
-(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1293.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1294.
 
- [12]
-Overfull \hbox (6.41725pt too wide) in paragraph at lines 1341--1348
-\temp Equation 36b[] is the in-com-press-ible ver-sion of Eu-ler's equa-tion wr
-it-ten in Crocco's
- []
-
-[13] [14] [15]
-Overfull \hbox (23.19269pt too wide) in paragraph at lines 1753--1756
-\temp mean that the acous-tic cur-rent is no longer con-served: the term $\OMS/
-cmsy/m/n/10 ^^@[][] []$
- []
-
-[16] (./acoustic_relativity.bbl [17]
+ [12] [13]
+[14] [15] [16] (./acoustic_relativity.bbl [17]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -835,13 +823,13 @@ Missing character: There is no Ã in font cmti10!
 Missing character: There is no © in font cmti10!
 ) [18] (./acoustic_relativity.aux) ) 
 Here is how much of TeX's memory you used:
- 13803 strings out of 495061
- 218867 string characters out of 1182621
- 329854 words of memory out of 20000000
+ 13804 strings out of 495061
+ 218874 string characters out of 1182621
+ 329855 words of memory out of 20000000
  16736 multiletter control sequences out of 15000+50000
  16045 words of font info for 56 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 60i,13n,83p,357b,607s stack positions out of 5000i,500n,10000p,2000000b,50000s
+ 29 hyphenation exceptions out of 8191
+ 60i,13n,83p,350b,607s stack positions out of 5000i,500n,10000p,2000000b,50000s
 </usr/share/texmf-texlive/fonts/type1/publi
 c/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.
@@ -861,7 +849,7 @@ hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texlive/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb>
-Output written on acoustic_relativity.pdf (18 pages, 309089 bytes).
+Output written on acoustic_relativity.pdf (18 pages, 308872 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

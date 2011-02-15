@@ -173,6 +173,7 @@
 \newcommand*\Her {Her\xspace}
 \newcommand*\herself {herself\xspace}
 \newcommand*\Herself {Herself\xspace}
+\hyphenation{ Croc-co }
 
 %\newif\ifhe\hetrue
 
@@ -739,11 +740,11 @@ This is in accordance to the description of the Michelson-Morely result.
 
  \begin{figure}[t]
       \centering
-     \subfloat[Observer stationary with respect to medium.]{
+     \subfloat[Observer that is stationary with respect to the medium.]{
            \label{fig:StatGA}
            \includegraphics{Michelson.2}}
 \hspace{2cm}
-     \subfloat[Observer moves at speed $v$ with respect to medium]{
+     \subfloat[Observer moves at speed $v$ with respect to the medium]{
            \label{fig:MovingGA}
            \includegraphics{Michelson.3}}
       % \subfloat[\unit{100}\kilo\pascal]{
@@ -1339,7 +1340,7 @@ In the non-relativistic limit the equations reduce to Galilean invariant forms,
   \dt \vv - \vv\times \lr{\vdel\times \vv} &= - \vdel \lr{\tfrac{1}{2} v^2 + h}.\label{eqn:NREuler}
 \end{align}
 }
-Equation~\eqnref{NREuler} is the incompressible version of Euler's equation written in Crocco's form\cite{Howe1998}
+Equation~\eqnref{NREuler} is the incompressible version of Euler's equation written in Croc\-co's form\cite{Howe1998}
 and Equation~\eqnref{NRcontinuity} is the continuity equation of an incompressible fluid.
 %The difference between  equation~\ref{eqn:NRcontinuity}
 %and the Galilean form is that the mass density, $\rho$, in the Galilean form is
@@ -1745,14 +1746,18 @@ The split of source and wave in \eqnref{WavesREG} is convenient  interpretativel
 for it mixes local terms with those that can propagate indefinitely.
 
 The influence of non-linear propagation on what can be measured acoustically is found by comparing the right hand sides of equations \eqnref{Waves} and equations \eqnref{WavesREG}.
-It is seen that the only major difference between the two is the term $- \frac{1}{c^2}\dt \lr{ \vv \times \lr{\vdel \times \vA}}$ on the right-hand-side of \eqnref{WavevA}.
+It is seen that the only major difference between the two is the term 
+\eqa{
+- \frac{1}{c^2}\dt \lr{ \vv \times \lr{\vdel \times \vA}} \nonumber
+}
+ on the right-hand-side of \eqnref{WavevA}.
 This term is part of the non-linear operator in equation~\ref{eqn:WavevvREG}.
 It is, if you like, a ghost of the non-linear operator $\Dt$ on what can be measured acoustically.
 When measured with ultrasound it is interpreted  as part of the current.
-
 We note that an attempt to re-incorporate the ghost  term back into some `acoustically measured non-linear operator' would be ill-conceived 
 for it would mean that the acoustic current is no longer conserved:
-the term $- \frac{1}{c^2} \dt \lr{ \vv \times \lr{\vdel \times \vA}}$ most certainly is a current.
+the term %$- \frac{1}{c^2} \dt \lr{ \vv \times \lr{\vdel \times \vA}}$ 
+most certainly is a current.
 
 
 
